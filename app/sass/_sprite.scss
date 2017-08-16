@@ -1,0 +1,288 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$auricular-phone-symbol-in-a-circle-name: 'auricular-phone-symbol-in-a-circle';
+$auricular-phone-symbol-in-a-circle-x: 128px;
+$auricular-phone-symbol-in-a-circle-y: 0px;
+$auricular-phone-symbol-in-a-circle-offset-x: -128px;
+$auricular-phone-symbol-in-a-circle-offset-y: 0px;
+$auricular-phone-symbol-in-a-circle-width: 128px;
+$auricular-phone-symbol-in-a-circle-height: 128px;
+$auricular-phone-symbol-in-a-circle-total-width: 416px;
+$auricular-phone-symbol-in-a-circle-total-height: 384px;
+$auricular-phone-symbol-in-a-circle-image: '../img/png_sprite/sprite.png';
+$auricular-phone-symbol-in-a-circle: (128px, 0px, -128px, 0px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'auricular-phone-symbol-in-a-circle', );
+$ball-name: 'ball';
+$ball-x: 384px;
+$ball-y: 0px;
+$ball-offset-x: -384px;
+$ball-offset-y: 0px;
+$ball-width: 32px;
+$ball-height: 32px;
+$ball-total-width: 416px;
+$ball-total-height: 384px;
+$ball-image: '../img/png_sprite/sprite.png';
+$ball: (384px, 0px, -384px, 0px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'ball', );
+$book-one-name: 'book-one';
+$book-one-x: 0px;
+$book-one-y: 128px;
+$book-one-offset-x: 0px;
+$book-one-offset-y: -128px;
+$book-one-width: 128px;
+$book-one-height: 128px;
+$book-one-total-width: 416px;
+$book-one-total-height: 384px;
+$book-one-image: '../img/png_sprite/sprite.png';
+$book-one: (0px, 128px, 0px, -128px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'book-one', );
+$book-name: 'book';
+$book-x: 128px;
+$book-y: 128px;
+$book-offset-x: -128px;
+$book-offset-y: -128px;
+$book-width: 128px;
+$book-height: 128px;
+$book-total-width: 416px;
+$book-total-height: 384px;
+$book-image: '../img/png_sprite/sprite.png';
+$book: (128px, 128px, -128px, -128px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'book', );
+$bookmark-star-name: 'bookmark-star';
+$bookmark-star-x: 256px;
+$bookmark-star-y: 0px;
+$bookmark-star-offset-x: -256px;
+$bookmark-star-offset-y: 0px;
+$bookmark-star-width: 128px;
+$bookmark-star-height: 128px;
+$bookmark-star-total-width: 416px;
+$bookmark-star-total-height: 384px;
+$bookmark-star-image: '../img/png_sprite/sprite.png';
+$bookmark-star: (256px, 0px, -256px, 0px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'bookmark-star', );
+$books-name: 'books';
+$books-x: 256px;
+$books-y: 128px;
+$books-offset-x: -256px;
+$books-offset-y: -128px;
+$books-width: 128px;
+$books-height: 128px;
+$books-total-width: 416px;
+$books-total-height: 384px;
+$books-image: '../img/png_sprite/sprite.png';
+$books: (256px, 128px, -256px, -128px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'books', );
+$boxing-name: 'boxing';
+$boxing-x: 384px;
+$boxing-y: 256px;
+$boxing-offset-x: -384px;
+$boxing-offset-y: -256px;
+$boxing-width: 32px;
+$boxing-height: 32px;
+$boxing-total-width: 416px;
+$boxing-total-height: 384px;
+$boxing-image: '../img/png_sprite/sprite.png';
+$boxing: (384px, 256px, -384px, -256px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'boxing', );
+$buddhist-yoga-pose-name: 'buddhist-yoga-pose';
+$buddhist-yoga-pose-x: 384px;
+$buddhist-yoga-pose-y: 160px;
+$buddhist-yoga-pose-offset-x: -384px;
+$buddhist-yoga-pose-offset-y: -160px;
+$buddhist-yoga-pose-width: 32px;
+$buddhist-yoga-pose-height: 32px;
+$buddhist-yoga-pose-total-width: 416px;
+$buddhist-yoga-pose-total-height: 384px;
+$buddhist-yoga-pose-image: '../img/png_sprite/sprite.png';
+$buddhist-yoga-pose: (384px, 160px, -384px, -160px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'buddhist-yoga-pose', );
+$dance-instructor-name: 'dance-instructor';
+$dance-instructor-x: 384px;
+$dance-instructor-y: 128px;
+$dance-instructor-offset-x: -384px;
+$dance-instructor-offset-y: -128px;
+$dance-instructor-width: 32px;
+$dance-instructor-height: 32px;
+$dance-instructor-total-width: 416px;
+$dance-instructor-total-height: 384px;
+$dance-instructor-image: '../img/png_sprite/sprite.png';
+$dance-instructor: (384px, 128px, -384px, -128px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'dance-instructor', );
+$discount-sticker-with-percentage-name: 'discount-sticker-with-percentage';
+$discount-sticker-with-percentage-x: 0px;
+$discount-sticker-with-percentage-y: 0px;
+$discount-sticker-with-percentage-offset-x: 0px;
+$discount-sticker-with-percentage-offset-y: 0px;
+$discount-sticker-with-percentage-width: 128px;
+$discount-sticker-with-percentage-height: 128px;
+$discount-sticker-with-percentage-total-width: 416px;
+$discount-sticker-with-percentage-total-height: 384px;
+$discount-sticker-with-percentage-image: '../img/png_sprite/sprite.png';
+$discount-sticker-with-percentage: (0px, 0px, 0px, 0px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'discount-sticker-with-percentage', );
+$dumbbells-rounded-couple-in-silhouettes-name: 'dumbbells-rounded-couple-in-silhouettes';
+$dumbbells-rounded-couple-in-silhouettes-x: 384px;
+$dumbbells-rounded-couple-in-silhouettes-y: 32px;
+$dumbbells-rounded-couple-in-silhouettes-offset-x: -384px;
+$dumbbells-rounded-couple-in-silhouettes-offset-y: -32px;
+$dumbbells-rounded-couple-in-silhouettes-width: 32px;
+$dumbbells-rounded-couple-in-silhouettes-height: 32px;
+$dumbbells-rounded-couple-in-silhouettes-total-width: 416px;
+$dumbbells-rounded-couple-in-silhouettes-total-height: 384px;
+$dumbbells-rounded-couple-in-silhouettes-image: '../img/png_sprite/sprite.png';
+$dumbbells-rounded-couple-in-silhouettes: (384px, 32px, -384px, -32px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'dumbbells-rounded-couple-in-silhouettes', );
+$hand-with-a-dumbbell-name: 'hand-with-a-dumbbell';
+$hand-with-a-dumbbell-x: 384px;
+$hand-with-a-dumbbell-y: 64px;
+$hand-with-a-dumbbell-offset-x: -384px;
+$hand-with-a-dumbbell-offset-y: -64px;
+$hand-with-a-dumbbell-width: 32px;
+$hand-with-a-dumbbell-height: 32px;
+$hand-with-a-dumbbell-total-width: 416px;
+$hand-with-a-dumbbell-total-height: 384px;
+$hand-with-a-dumbbell-image: '../img/png_sprite/sprite.png';
+$hand-with-a-dumbbell: (384px, 64px, -384px, -64px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'hand-with-a-dumbbell', );
+$hockey-name: 'hockey';
+$hockey-x: 384px;
+$hockey-y: 96px;
+$hockey-offset-x: -384px;
+$hockey-offset-y: -96px;
+$hockey-width: 32px;
+$hockey-height: 32px;
+$hockey-total-width: 416px;
+$hockey-total-height: 384px;
+$hockey-image: '../img/png_sprite/sprite.png';
+$hockey: (384px, 96px, -384px, -96px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'hockey', );
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-name: 'menu-interface-symbol-of-four-horizontal-lines-with-dots';
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-x: 256px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-y: 256px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-offset-x: -256px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-offset-y: -256px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-width: 128px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-height: 128px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-total-width: 416px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-total-height: 384px;
+$menu-interface-symbol-of-four-horizontal-lines-with-dots-image: '../img/png_sprite/sprite.png';
+$menu-interface-symbol-of-four-horizontal-lines-with-dots: (256px, 256px, -256px, -256px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'menu-interface-symbol-of-four-horizontal-lines-with-dots', );
+$percentage-name: 'percentage';
+$percentage-x: 128px;
+$percentage-y: 256px;
+$percentage-offset-x: -128px;
+$percentage-offset-y: -256px;
+$percentage-width: 128px;
+$percentage-height: 128px;
+$percentage-total-width: 416px;
+$percentage-total-height: 384px;
+$percentage-image: '../img/png_sprite/sprite.png';
+$percentage: (128px, 256px, -128px, -256px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'percentage', );
+$ping-pong-name: 'ping-pong';
+$ping-pong-x: 384px;
+$ping-pong-y: 192px;
+$ping-pong-offset-x: -384px;
+$ping-pong-offset-y: -192px;
+$ping-pong-width: 32px;
+$ping-pong-height: 32px;
+$ping-pong-total-width: 416px;
+$ping-pong-total-height: 384px;
+$ping-pong-image: '../img/png_sprite/sprite.png';
+$ping-pong: (384px, 192px, -384px, -192px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'ping-pong', );
+$soccer-ball-variant-name: 'soccer-ball-variant';
+$soccer-ball-variant-x: 384px;
+$soccer-ball-variant-y: 224px;
+$soccer-ball-variant-offset-x: -384px;
+$soccer-ball-variant-offset-y: -224px;
+$soccer-ball-variant-width: 32px;
+$soccer-ball-variant-height: 32px;
+$soccer-ball-variant-total-width: 416px;
+$soccer-ball-variant-total-height: 384px;
+$soccer-ball-variant-image: '../img/png_sprite/sprite.png';
+$soccer-ball-variant: (384px, 224px, -384px, -224px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'soccer-ball-variant', );
+$store-name: 'store';
+$store-x: 0px;
+$store-y: 256px;
+$store-offset-x: 0px;
+$store-offset-y: -256px;
+$store-width: 128px;
+$store-height: 128px;
+$store-total-width: 416px;
+$store-total-height: 384px;
+$store-image: '../img/png_sprite/sprite.png';
+$store: (0px, 256px, 0px, -256px, 128px, 128px, 416px, 384px, '../img/png_sprite/sprite.png', 'store', );
+$swimming-name: 'swimming';
+$swimming-x: 384px;
+$swimming-y: 288px;
+$swimming-offset-x: -384px;
+$swimming-offset-y: -288px;
+$swimming-width: 32px;
+$swimming-height: 32px;
+$swimming-total-width: 416px;
+$swimming-total-height: 384px;
+$swimming-image: '../img/png_sprite/sprite.png';
+$swimming: (384px, 288px, -384px, -288px, 32px, 32px, 416px, 384px, '../img/png_sprite/sprite.png', 'swimming', );
+$spritesheet-width: 416px;
+$spritesheet-height: 384px;
+$spritesheet-image: '../img/png_sprite/sprite.png';
+$spritesheet-sprites: ($auricular-phone-symbol-in-a-circle, $ball, $book-one, $book, $bookmark-star, $books, $boxing, $buddhist-yoga-pose, $dance-instructor, $discount-sticker-with-percentage, $dumbbells-rounded-couple-in-silhouettes, $hand-with-a-dumbbell, $hockey, $menu-interface-symbol-of-four-horizontal-lines-with-dots, $percentage, $ping-pong, $soccer-ball-variant, $store, $swimming, );
+$spritesheet: (416px, 384px, '../img/png_sprite/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
