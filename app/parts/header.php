@@ -3,7 +3,7 @@
         <div id="offcanvas-usage" class="uk-offcanvas">
             <div class="uk-offcanvas-bar">
 
-                <a href="" class="uk-close uk-close-alt"></a>
+                <a href="" class="uk-close"></a>
 
                 <h3>Title</h3>
 

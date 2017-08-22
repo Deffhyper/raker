@@ -140,7 +140,92 @@
             </div>
         </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="uk-flex uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid="{gutter:10}">
+        <div>
+            <div class="uk-panel uk-panel-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda blanditiis dignissimos
+                    distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam distinctio
+                    reprehenderit tempore.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-panel uk-panel-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda blanditiis dignissimos
+                    distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam
+                    reprehenderit tempore.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-panel uk-panel-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda blanditiis dignissimos
+                    distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam distinctio
+                    reprehenderit tempore.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-panel uk-panel-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda blanditiis dignissimos
+                    distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-panel uk-panel-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda blanditiis dignissimos
+                    distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam
+                    reprehenderit tempore.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-panel uk-panel-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda blanditiis dignissimos
+                    distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam distinctio
+                    dolores enim et ex fugiat harum laboriosam maxime minus molestiae omnis optio quae, quam quisquam
+                    reprehenderit tempore.</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div data-uk-slideset="{small: 2, medium: 3, large: 5}">
+        <ul class="uk-grid uk-slideset">
+            <li><img src="img/jpeg_files/slide-1%20(1).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(2).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(3).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(4).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(5).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(1).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(1).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(2).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(3).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(4).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(5).jpg" alt=""></li>
+            <li><img src="img/jpeg_files/slide-1%20(1).jpg" alt=""></li>
+        </ul>
+        <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+        <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
+    </div>
 </div>
+
+
 
 
 <?php include_once "parts/footer.php" ?>
