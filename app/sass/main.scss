@@ -1,7 +1,14 @@
 @import "fonts";
+@import "mixin";
 @import "var";
+@import "tipography";
+
 @import "parts/header";
+@import "parts/footer";
+
+@import "parts/main-page";
+
 @import "styles";
-@import "large";
-@import "medium";
-@import "small";
+@import "media/large";
+@import "media/medium";
+@import "media/small";

@@ -39,20 +39,12 @@ gulp.task('sprite', function () {
 
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
+		
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
 		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
-		'app/libs/uikit/js/uikit.min.js', // Ui Kit
-		'app/libs/uikit/js/components/accordion.js', // Ui accordion
-		'app/libs/uikit/js/components/grid.js', // Ui grid
-		'app/libs/uikit/js/components/lightbox.js', // Ui lightbox
-		'app/libs/uikit/js/components/nestable.js', // Ui nestable
-		'app/libs/uikit/js/components/parallax.js', // Ui parallax
-		'app/libs/uikit/js/components/slider.js', // Ui slider
-		'app/libs/uikit/js/components/slideset.js', // Ui slideset
-		'app/libs/uikit/js/components/slideshow.js', // Ui slideshow
-		'app/libs/uikit/js/components/slideshow-fx.js' // Ui slideshow-fx
-
-
+		'app/libs/tether/dist/js/tether.min.js', // connect popper
+		'app/libs/bootstrap/dist/js/bootstrap.min.js'
+		
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
