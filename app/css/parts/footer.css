@@ -1,0 +1,14 @@
+body:after {
+  content: '';
+  height: 306px;
+  display: block; }
+
+.site-footer {
+  color: #9b9b9b;
+  height: 306px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden; }

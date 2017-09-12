@@ -1,0 +1,173 @@
+
+
+body:after {
+  content: '';
+  height: rem(630);
+  display: block;
+}
+
+.site-footer {
+  background-color: $black-background;
+  color: #9b9b9b;
+  height: rem(630);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-top: rem(65);
+}
+
+.site-footer-top {
+  padding: 0 0 rem(100);
+  min-height: rem(149);
+  border-bottom: 1px dashed #9b9b9b;
+}
+
+.site-footer-title {
+  font-size: rem(31);
+  margin-bottom: rem(40);
+}
+
+.site-footer-list {
+  li {
+    margin-bottom: rem(25);
+  }
+  a{
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.site-footer-timing {
+  font-size: rem(24);
+  margin-top: rem(45);
+  margin-bottom: rem(25);
+}
+
+.site-footer-tel {
+  font-family: $font-bold;
+  font-size: rem(32);
+}
+
+.social-block {
+  li {
+    margin-right: rem(20);
+    margin-bottom: rem(20);
+  }
+}
+
+.site-footer-copyright {
+  float: left;
+}
+
+
+.site-footer-nav {
+  float: right;
+  li {
+    margin-left: rem(20);
+  }
+}
+
+.site-footer-bottom {
+  padding: rem(60) 0 0;
+}
+
+.site-footer-apps {
+  &__item {
+    margin-right: rem(12);
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      height: 100%;
+      width: 130px;
+      overflow: hidden;
+      border: 1px solid #9b9b9b;
+      border-radius: rem(16);
+      padding: rem(16);
+    }
+  }
+}
+
+@media ($tablet) {
+  .site-footer {
+    height: rem(370);
+  }
+}
+
+
+
+@media ($mobile) {
+  body:after {
+    content: none;
+  }
+
+  .site-footer {
+    height: auto;
+    padding-top: rem(20);
+  }
+
+  .site-footer-title {
+    border-bottom: 1px dashed #9b9b9b;
+    padding-bottom: rem(11);
+    margin-bottom: rem(11);
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 7px;
+      width: 7px;
+      border-top: 1px solid #fff;
+      border-right: 1px solid #fff;
+      transform: rotateZ(135deg);
+      position: absolute;
+      top: 7px;
+      right: 8px;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
+    &.rotate:after {
+      transform: rotateZ(315deg) translateY(5px);
+    }
+  }
+
+  .site-footer-content {
+    display: none;
+  }
+
+  .site-footer-copyright {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: rem(10);
+  }
+
+  .social-block {
+    text-align: center;
+  }
+
+  .site-footer-apps {
+    text-align: center;
+  }
+
+  .site-footer-nav {
+    float: none;
+    text-align: center;
+    &.list-inline {
+      &>* {
+        display: block;
+      }
+    }
+  }
+
+
+
+}
+

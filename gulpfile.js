@@ -17,7 +17,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
 		.pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
-		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+		.pipe(browserSync.reload({stream: true}));// Обновляем CSS на странице при изменении
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
@@ -59,7 +59,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'sprite'], function() {
-	gulp.watch('app/sass/*.+(scss|sass)', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('app/sass/**/*.+(scss|sass)', ['sass']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/**/*.php', browserSync.reload); // Наблюдение за php файлами в корне проекта
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
@@ -108,6 +108,6 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 gulp.task('clear', function (callback) {
 	return cache.clearAll();
-})
+});
 
 gulp.task('default', ['watch']);

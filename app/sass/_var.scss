@@ -1,30 +1,28 @@
 //////// font var //////////////
 
-$font: "FiraSans-Regular", sans-serif;
-$font-light: "FiraSans-Light", sans-serif;
-$font-bold: "FiraSans-Bold", sans-serif;
-$font-black: "FiraSans-Black", sans-serif;
-$font-italic: "FiraSans-Italic", sans-serif;
-$font-cond-reg: "FiraSans-Condensed-Regular", sans-serif;
-$font-cond-bold: "FiraSans-Condensed-Bold", sans-serif;
-$font-cond-semi: "FiraSans-Condensed-SemiBold", sans-serif;
-$font-cond-extra: "FiraSans-Condensed-ExtraBold", sans-serif;
+$font: "Roboto-Regular", sans-serif;
+$font-medium: "Roboto-Medium", sans-serif;
+$font-light: "Roboto-Light", sans-serif;
+$font-bold: "Roboto-Bold", sans-serif;
+$font-black: "Roboto-Black", sans-serif;
+$font-italic: "Roboto-Italic", sans-serif;
 
-$font-size: 14px;
+$font-heavy: "Andrijtype", sans-serif;
+
+$font-size: 28px;
 
 ////////// color var //////////////////////
 
-$accent: #ffcc00;
-$accent-hover: #fde200;
+$accent: #e95b44;
+$black-background: #231f20;
 
-$black-background: #22201c;
-$gray-background: #f2f2f7;
 
-$text-color: #181613;
-$footer-text-color: #878686;
+$text-color: #231f20;
+$footer-text-color: #9b9b9b;
+
 
 
 ////////// media query //////////////////////
 $desktop: "max-width:1279px";
 $tablet: "max-width:991px";
-$mobile: "max-width: 766px";
+$mobile: "max-width: 767px";

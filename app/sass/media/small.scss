@@ -1,6 +1,8 @@
-@media (max-width: 767px) {
-  .my-container {
-    width: auto;
-    padding: 0 15px;
+@media ($mobile) {
+  .mob-hide {
+    display: none;
+  }
+  html {
+    font-size: 13px;
   }
 }

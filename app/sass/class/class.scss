@@ -1,0 +1,9 @@
+.color-accent {
+  color: $accent;
+}
+
+.list-inline {
+  &>* {
+    display: inline-block;
+  }
+}

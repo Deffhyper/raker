@@ -2,15 +2,15 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
-  font-size: 14px;
+  font-size: $font-size;
 }
 
 body {
   background-color: #fff;
-  color: black; //todo
-  font-size: rem(20);//todo
-  font-family: sans-serif; //todo
-  line-height: normal; //todo
+  color: $text-color;
+  font-size: inherit;
+  font-family: $font;
+  line-height: rem(24);
   min-height: 100%;
   width: 100%;
   position: relative;
@@ -28,7 +28,6 @@ body {
 p {
   padding: 0;
   margin-top: 0;
-  line-height: 1.714;
   margin-bottom: 5px;
 }
 
@@ -41,12 +40,12 @@ a {
   }
   &:focus {
     text-decoration: none;
-
+    color: inherit;
   }
 }
 
 i {
-  font-family: sans-serif;//todo
+  font-family: $font-italic;
 }
 
 div, ul, li, button, input, textarea {
@@ -69,11 +68,8 @@ input, button {
 }
 
 h1, h2 ,h3, h4, h5, h6 {
-  font-family: sans-serif;//todo
-  color: black; //todo
-  text-transform: uppercase;
+  color: $text-color;
   margin-top: 0;
-
   padding: 0;
   line-height: inherit;
 }

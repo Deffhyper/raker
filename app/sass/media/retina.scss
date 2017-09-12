@@ -1,0 +1,53 @@
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and ('min-width: 1500px') {
+  html {
+    font-size: 22px;
+  }
+  .container {
+    width: 1460px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and ('min-width: 2000px') {
+  html {
+    font-size: 28px;
+  }
+  .container {
+    width: 1950px;
+  }
+
+}
+
+@media
+not screen and (-webkit-min-device-pixel-ratio: 2),
+not screen and (   min--moz-device-pixel-ratio: 2),
+not screen and (     -o-min-device-pixel-ratio: 2/1),
+not screen and (        min-device-pixel-ratio: 2),
+not screen and (                min-resolution: 192dpi),
+not screen and (                min-resolution: 2dppx) and ('min-width: 1500px') {
+
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 1280px;
+  }
+
+}
+
+@media
+not screen and (-webkit-min-device-pixel-ratio: 2),
+not screen and (   min--moz-device-pixel-ratio: 2),
+not screen and (     -o-min-device-pixel-ratio: 2/1),
+not screen and (        min-device-pixel-ratio: 2),
+not screen and (                min-resolution: 192dpi),
+not screen and (                min-resolution: 2dppx) and ('min-width: 1900px') {
+
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 1460px;
+  }
+
+}

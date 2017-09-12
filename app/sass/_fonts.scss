@@ -1,54 +1,90 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "OpenSans-Regular";
-  src: url("../fonts/open-sans/OpenSansRegular.eot");
-  src: url("../fonts/open-sans/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/open-sans/OpenSansRegular.woff") format("woff"),
-  url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  font-family: "Roboto-Regular";
+  src: url("../fonts/roboto/roboto-regular-font.eot");
+  src: url("../fonts/roboto/roboto-regular-font.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/roboto/roboto-regular-font.woff") format("woff"),
+  url("../fonts/roboto/roboto-regular-font.woff2") format("woff2"),
+  url("../fonts/roboto/roboto-regular-font.ttf") format("truetype"),
+  url("../fonts/roboto/roboto-regular-font.svg#webfont") format("swg");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "OpenSans-Semibold";
-  src: url("../fonts/open-sans/OpenSansSemiBold.eot");
-  src: url("../fonts/open-sans/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/open-sans/OpenSansSemiBold.woff") format("woff"),
-  url("../fonts/open-sans/OpenSans-Semibold.ttf") format("truetype");
+  font-family: "Roboto-Medium";
+  src: url("../fonts/roboto/roboto-medium-font.eot");
+  src: url("../fonts/roboto/roboto-medium-font.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/roboto/roboto-medium-font.woff") format("woff"),
+  url("../fonts/roboto/roboto-medium-font.woff2") format("woff2"),
+  url("../fonts/roboto/roboto-medium-font.ttf") format("truetype"),
+  url("../fonts/roboto/roboto-medium-font.svg#webfont") format("swg");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "OpenSans-SemiboldItalic";
-  src: url("../fonts/open-sans/OpenSans-SemiboldItalic.ttf") format("truetype"),
-  url("../fonts/open-sans/OpenSansSemiBoldItalic.eot"),
-  url("../fonts/open-sans/OpenSansSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/open-sans/OpenSansSemiBoldItalic.woff") format("woff");
+  font-family: "Roboto-Bold";
+  src: url("../fonts/roboto/roboto-bold-font.eot");
+  src: url("../fonts/roboto/roboto-bold-font.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/roboto/roboto-bold-font.woff") format("woff"),
+  url("../fonts/roboto/roboto-bold-font.woff2") format("woff2"),
+  url("../fonts/roboto/roboto-bold-font.ttf") format("truetype"),
+  url("../fonts/roboto/roboto-bold-font.svg#webfont") format("swg");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../fonts/open-sans/OpenSansBold.eot");
-  src: url("../fonts/open-sans/OpenSansBold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/open-sans/OpenSansBold.woff") format("woff"),
-  url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Roboto-Light";
+  src: url("../fonts/roboto/roboto-light-font.eot");
+  src: url("../fonts/roboto/roboto-light-font.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/roboto/roboto-light-font.woff") format("woff"),
+  url("../fonts/roboto/roboto-light-font.woff2") format("woff2"),
+  url("../fonts/roboto/roboto-light-font.ttf") format("truetype"),
+  url("../fonts/roboto/roboto-light-font.svg#webfont") format("swg");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "OpenSans-Light";
-  src: url("../fonts/open-sans/OpenSansLight.eot");
-  src: url("../fonts/open-sans/OpenSansLight.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/open-sans/OpenSansLight.woff") format("woff"),
-  url("../fonts/open-sans/OpenSans-Light.ttf") format("truetype");
+  font-family: "Roboto-Black";
+  src: url("../fonts/roboto/roboto-black-font.eot");
+  src: url("../fonts/roboto/roboto-black-font.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/roboto/roboto-black-font.woff") format("woff"),
+  url("../fonts/roboto/roboto-black-font.woff2") format("woff2"),
+  url("../fonts/roboto/roboto-black-font.ttf") format("truetype"),
+  url("../fonts/roboto/roboto-black-font.svg#webfont") format("swg");
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../fonts/roboto/roboto-italic-font.eot");
+  src: url("../fonts/roboto/roboto-italic-font.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/roboto/roboto-italic-font.woff") format("woff"),
+  url("../fonts/roboto/roboto-italic-font.woff2") format("woff2"),
+  url("../fonts/roboto/roboto-italic-font.ttf") format("truetype"),
+  url("../fonts/roboto/roboto-italic-font.svg#webfont") format("swg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Andrijtype";
+  src: url("../fonts/bold/andrijtype_-_oksanatextheavy-font.eot");
+  src: url("../fonts/bold/andrijtype_-_oksanatextheavy-font.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/bold/andrijtype_-_oksanatextheavy-font.woff") format("woff"),
+  url("../fonts/bold/andrijtype_-_oksanatextheavy-font.woff2") format("woff2"),
+  url("../fonts/bold/andrijtype_-_oksanatextheavy-font.ttf") format("truetype"),
+  url("../fonts/bold/andrijtype_-_oksanatextheavy-font.svg#webfont") format("swg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 
 @font-face {
   font-family: "FontAwesome";
@@ -59,4 +95,47 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url("../fonts/iconmoon/icomoon.eot");
+  src:  url('../fonts/iconmoon/icomoon.eot?113q2e#iefix') format('embedded-opentype'),
+  url('../fonts/iconmoon/icomoon.ttf?113q2e') format('truetype'),
+  url('../fonts/iconmoon/icomoon.woff?113q2e') format('woff'),
+  url('../fonts/iconmoon/icomoon.svg?113q2e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.iconmoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-anchor:before {
+  content: "\e900";
+}
+.icon-cart:before {
+  content: "\e901";
+}
+.icon-electro:before {
+  content: "\e903";
+}
+.icon-house:before {
+  content: "\e904";
+}
+.icon-rak:before {
+  content: "\e905";
+}
+
 

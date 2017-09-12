@@ -1,14 +1,17 @@
+@import "var";
 @import "fonts";
 @import "mixin";
-@import "var";
 @import "tipography";
 
+@import "class/class";
 @import "parts/header";
 @import "parts/footer";
+
 
 @import "parts/main-page";
 
 @import "styles";
+@import "media/retina";
 @import "media/large";
 @import "media/medium";
 @import "media/small";

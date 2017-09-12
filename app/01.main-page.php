@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-8">
+        <div class="col-md-8 col-sm-12">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown button
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-sm-12">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                 Launch demo modal
