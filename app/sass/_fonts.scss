@@ -122,6 +122,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "\e908";
+}
+.icon-electro-2:before {
+  content: "\e909";
+  color: #00b0ff;
+}
+.icon-roket:before {
+  content: "\e90a";
+  color: #00b0ff;
+}
+.icon-crab:before {
+  content: "\e902";
+}
+.icon-fish:before {
+  content: "\e906";
+}
+.icon-shrimp:before {
+  content: "\e907";
+}
 .icon-anchor:before {
   content: "\e900";
 }
@@ -137,5 +157,7 @@
 .icon-rak:before {
   content: "\e905";
 }
+
+
 
 

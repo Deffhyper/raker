@@ -11,9 +11,10 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and ('min-width: 2000px') {
   html {
     font-size: 28px;
+    overflow-x: hidden;
   }
   .container {
-    width: 1950px;
+    width: 1880px;
   }
 
 }
@@ -51,3 +52,8 @@ not screen and (                min-resolution: 2dppx) and ('min-width: 1900px')
   }
 
 }
+
+
+
+
+

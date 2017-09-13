@@ -17,6 +17,7 @@ body:after {
   width: 100%;
   overflow: hidden;
   padding-top: rem(65);
+  font-size: rem(24);
 }
 
 .site-footer-top {
@@ -27,12 +28,13 @@ body:after {
 
 .site-footer-title {
   font-size: rem(31);
-  margin-bottom: rem(40);
+  margin-bottom: rem(30);
 }
 
 .site-footer-list {
+  font-size: rem(24);
   li {
-    margin-bottom: rem(25);
+    margin-bottom: rem(15);
   }
   a{
     text-decoration: underline;
@@ -108,16 +110,31 @@ body:after {
   }
 
   .site-footer {
-    height: auto;
-    padding-top: rem(20);
+    height: auto !important;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .site-footer-top {
+    padding: 0 0 15px;
+    min-height: inherit;
+  }
+
+  .site-footer-bottom {
+    padding: 15px 0;
+  }
+
+  .site-footer-list {
+    font-size: 1rem;
   }
 
   .site-footer-title {
     border-bottom: 1px dashed #9b9b9b;
-    padding-bottom: rem(11);
-    margin-bottom: rem(11);
+    padding-bottom: 16px;
+    margin-bottom: 15px;
     position: relative;
     cursor: pointer;
+    font-size: 16px;
 
     &:after {
       content: "";

@@ -10,7 +10,7 @@ body {
   color: $text-color;
   font-size: inherit;
   font-family: $font;
-  line-height: rem(24);
+  line-height: rem(34);
   min-height: 100%;
   width: 100%;
   position: relative;
@@ -28,7 +28,7 @@ body {
 p {
   padding: 0;
   margin-top: 0;
-  margin-bottom: 5px;
+  word-spacing: rem(2);
 }
 
 a {
@@ -69,18 +69,17 @@ input, button {
 
 h1, h2 ,h3, h4, h5, h6 {
   color: $text-color;
-  margin-top: 0;
-  padding: 0;
-  line-height: inherit;
+  //margin-top: 0;
+  //padding: 0;
 }
 
 h1, .title-h1 {
-  font-size: 52px;
+  font-size: rem(60);
 }
 
 h2, .title-h2 {
-  font-size: 46px;
-  margin-bottom: 20px;
+  font-size: rem(40);
+  margin-bottom: rem(40);
 }
 
 h3, .title-h3 {
