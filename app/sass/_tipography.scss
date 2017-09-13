@@ -10,7 +10,7 @@ body {
   color: $text-color;
   font-size: inherit;
   font-family: $font;
-  line-height: rem(34);
+  line-height: 1.2;
   min-height: 100%;
   width: 100%;
   position: relative;
@@ -28,7 +28,7 @@ body {
 p {
   padding: 0;
   margin-top: 0;
-  word-spacing: rem(2);
+  word-spacing: 1px;
 }
 
 a {
@@ -74,12 +74,15 @@ h1, h2 ,h3, h4, h5, h6 {
 }
 
 h1, .title-h1 {
-  font-size: rem(60);
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 h2, .title-h2 {
-  font-size: rem(40);
-  margin-bottom: rem(40);
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 h3, .title-h3 {

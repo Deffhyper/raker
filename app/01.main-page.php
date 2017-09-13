@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row flex-lg-row-reverse no-gutters">
-        <div class="col-lg-3 col-md-12">
+        <div class="col-lg-4 col-md-12">
             <div class="right-sidebar">
                 <p class="right-sidebar-title">Raker</p>
                 <ul class="right-sidebar-list">
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <div class="col-lg-9 col-md-12">
+        <div class="col-lg-8 col-md-12">
             <div class="left-container">
                 <h1 class="page-title">Заголовок страницы</h1>
                 <p>
@@ -90,6 +90,7 @@
                     которых
                     используется Lorem Ipsum.
                 </p>
+                <br>
 
                 <h2>H2: Откуда он появился?</h2>
 
@@ -109,7 +110,7 @@
                     1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914
                     год.
                 </p>
-
+                <br>
                 <h2>Откуда он появился?</h2>
 
                 <p>
@@ -126,8 +127,6 @@
         </div>
     </div>
 </div>
-<br><br><br>
-
 <?php include_once "parts/footer.php" ?>
 
 <script src="js/libs.min.js"></script>

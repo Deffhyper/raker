@@ -103,12 +103,12 @@
                 <ul class="site-footer-apps list-inline">
                     <li class="site-footer-apps__item">
                         <a href="#">
-                            <img src="img/jpeg_files/as.png" alt="appstore" width="" height="">
+<!--                            <img src="img/jpeg_files/as.png" alt="appstore" width="" height="">-->
                         </a>
                     </li>
                     <li class="site-footer-apps__item">
                         <a href="#">
-                            <img src="img/jpeg_files/gp.png" alt="googleplay" width="" height="">
+<!--                            <img src="img/jpeg_files/gp.png" alt="googleplay" width="" height="">-->
                         </a>
                     </li>
                 </ul>

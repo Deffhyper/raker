@@ -2,39 +2,39 @@
 
 body:after {
   content: '';
-  height: rem(630);
+  height: 315px;
   display: block;
+  margin-top: 40px;
 }
 
 .site-footer {
   background-color: $black-background;
   color: #9b9b9b;
-  height: rem(630);
+  height: 315px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   overflow: hidden;
-  padding-top: rem(65);
-  font-size: rem(24);
+  padding-top: 30px;
 }
 
 .site-footer-top {
-  padding: 0 0 rem(100);
-  min-height: rem(149);
+  padding: 0 0 53px;
+  min-height: 205px;
   border-bottom: 1px dashed #9b9b9b;
 }
 
 .site-footer-title {
-  font-size: rem(31);
-  margin-bottom: rem(30);
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .site-footer-list {
-  font-size: rem(24);
+
   li {
-    margin-bottom: rem(15);
+    margin-bottom:7px;
   }
   a{
     text-decoration: underline;
@@ -45,14 +45,14 @@ body:after {
 }
 
 .site-footer-timing {
-  font-size: rem(24);
-  margin-top: rem(45);
-  margin-bottom: rem(25);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 12px;
 }
 
 .site-footer-tel {
   font-family: $font-bold;
-  font-size: rem(32);
+  font-size: 16px;
 }
 
 .social-block {
@@ -75,31 +75,39 @@ body:after {
 }
 
 .site-footer-bottom {
-  padding: rem(60) 0 0;
+  padding: 30px 0;
+  font-size: 12px;
 }
 
 .site-footer-apps {
   &__item {
-    margin-right: rem(12);
+    margin-right: 5px;
     &:last-child {
       margin-right: 0;
     }
     a {
-      display: block;
-      height: 100%;
-      width: 130px;
-      overflow: hidden;
-      border: 1px solid #9b9b9b;
-      border-radius: rem(16);
-      padding: rem(16);
+      //display: block;
+      //height: 100%;
+      //width: 130px;
+      //overflow: hidden;
+      //border: 1px solid #9b9b9b;
+      //border-radius: rem(16);
+      //padding: rem(16);
     }
   }
 }
 
-@media ($tablet) {
+@media ($desktop) {
   .site-footer {
-    height: rem(370);
+    height: 300px;
   }
+  body:after {
+    height: 300px;
+  }
+}
+
+@media ($tablet) {
+
 }
 
 
@@ -113,6 +121,7 @@ body:after {
     height: auto !important;
     padding-top: 20px;
     position: relative;
+    margin-top: 30px;
   }
 
   .site-footer-top {
@@ -126,6 +135,7 @@ body:after {
 
   .site-footer-list {
     font-size: 1rem;
+    padding-bottom: 10px;
   }
 
   .site-footer-title {
@@ -182,6 +192,14 @@ body:after {
         display: block;
       }
     }
+  }
+
+  .site-footer-timing {
+    margin-top: 0;
+  }
+
+  .site-footer-tel {
+    margin-bottom: 15px;
   }
 
 

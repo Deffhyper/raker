@@ -1,19 +1,19 @@
 .page-header-top {
   background-color: $accent;
-  height: rem(90);
-  padding: rem(15) 0;
+  height: 50px;
+  padding-top: 10px;
   position: relative;
   color: #fff;
 }
 
 .main-logo {
   background-color: $accent;
-  width: rem(250);
-  height: rem(250);
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   position: absolute;
-  top:0;
-  left: 0;
+  top: -9px;
+  left: 11px;
   z-index: 2;
   padding: rem(20);
   svg {
@@ -34,21 +34,22 @@
 
 .page-header-right {
   float: right;
-  padding-right: rem(45);
+  padding-right: 15px;
+
   &__item {
     display: inline-block;
     vertical-align: top;
-    padding-left: rem(100);
+    padding-left: 34px;
     position: relative;
     &:not(:last-child):after {
       content: '';
       display: block;
-      height: rem(45);
+      height: 25px;
       width: 1px;
       background-color: #fff;
       position: absolute;
-      top: rem(9);
-      right: rem(-57);
+      top: 3px;
+      right: -21px;
     }
 
   }
@@ -56,29 +57,31 @@
 
 .page-header-cart {
   position: relative;
-  margin-top: rem(10);
+  margin-top: 3px;
+  padding: 0 13px;
   &__label {
     display: block;
-    padding: rem(5) rem(12);
-    border-radius: rem(20);
-    font-size: rem(16);
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 10px;
     background-color: $black-background;
     text-align: center;
     line-height: normal;
     position: absolute;
-    top: rem(-5);
-    right: rem(-15);
+    top: -1px;
+    right: 4px;
 
   }
 
   .icon-cart {
-    font-size: rem(45);
+    font-size: 23px;
   }
 
 }
 
 .page-header-lang {
-  margin-top: rem(12);
+  margin-top: 7px;
+  padding: 0 10px;
 
   .dropdown.show {
     .dropdown-toggle:after {
@@ -86,33 +89,36 @@
     }
   }
   .dropdown-toggle {
-    font-size: rem(24);
+    font-size: 12px;
     color: #fff;
   }
   .dropdown-toggle:after {
     display: inline-block;
     content: "";
-    height: rem(7);
-    width: rem(7);
+    height: 4px;
+    width: 4px;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
     border-left: 0;
     transform: rotateZ(135deg);
     position: absolute;
-    top: rem(14);
-    right: rem(-13);
+    top: 6px;
+    right: -15px;
     -webkit-transition: .3s ease;
     transition: .3s ease;
   }
   .dropdown-menu {
-    left: rem(-15);
+    left: inherit;
+    right: -35px;
+    top: 32px;
     min-width: inherit;
     padding: 0;
     margin: 0;
-    color: $text-color;
+    color: #231f20;
     text-align: center;
     border: 0;
     border-radius: 0;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.25);
     &>a {
       display: block;
       padding: rem(12);
@@ -123,24 +129,57 @@
       }
     }
   }
+  .dropdown-item {
+    font-family: $font-medium;
+    padding: 0;
+    font-weight: normal;
+    color: $text-color;
+    text-align: left;
+    &.active {
+      background-color: transparent;
+      color: $accent;
+      a {
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+    &:active {
+      background-color: transparent;
+    }
+    a {
+      padding: 15px 25px;
+      display: block;
+      transition: .3s ease;
+      &:hover {
+        background-color: $text-color;
+        color: #fff;
+      }
+    }
+    b {
+      font-family: $font-bold;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
 }
 
 .page-header-info {
   &__time {
-    font-size: rem(18);
+    font-size: 9px;
     text-align: right;
     margin-bottom: 0;
-    line-height: rem(20);
   }
   &__tel {
-    font-size: rem(36);
+    font-size: 18px;
     font-family: $font-medium;
   }
 }
 
 .page-header-authorize {
-  font-size: rem(22);
-  margin-top: rem(14);
+  font-size: 12px;
+  margin-top: 7px;
+
   &>a {
     text-decoration: underline;
     display: inline-block;
@@ -152,25 +191,25 @@
     &:after {
       content: '/';
       display: inline-block;
-      margin: 0 10px;
+      margin: 0 5px 0 7px;
     }
   }
 }
 
 .page-header-bottom {
-  height: rem(87);
+  height: 45px;
   background-color: rgba(246, 246, 246, .902);
   margin-bottom: rem(-87);
   position: relative;
   z-index: 1;
 }
 .page-header-bottom-nav {
-  margin-left: rem(300);
+  margin-left: 150px;
   display: inline-block;
 
   &__item {
-    padding: rem(15) 0;
-    margin-right: rem(60);
+    padding: 6px 0;
+    margin-right: 25px;
     a {
       &:hover {
         color: $accent;
@@ -179,17 +218,17 @@
 
     .iconmoon {
       position: relative;
-      margin-right: rem(25);
-      top: rem(4);
+      margin-right: 15px;
+      top: 4px;
     }
     .icon-rak {
-      font-size: rem(45);
+      font-size: 24px;
     }
     .icon-house {
-      font-size: rem(40);
+      font-size: 21px;
     }
     .icon-electro {
-      font-size: rem(37);
+      font-size: 24px;
     }
   }
 }
@@ -197,20 +236,21 @@
 .page-header-bottom-fresh {
   background-color: $black-background;
   color: #fff;
-  height: rem(110);
   position: relative;
+  height: 52px;
   &__title {
-    margin-bottom: rem(4);
     display: block;
   }
 
   &__prop {
     position: relative;
     margin-bottom: 0;
-    line-height: rem(28);
+    &>img {
+      max-width: 12px;
+    }
 
     .country {
-      font-size: rem(16);
+      font-size: 8px;
       margin-right: 10px;
     }
   }
@@ -226,13 +266,13 @@
   &__dropdown {
     position: absolute;
     top: 100%;
-    right: rem(-9999);
+    right: -9999px;
     background-color: #fff;
     color: $text-color;
-    width: rem(527);
+    width: 263px;
     text-align: left;
-    box-shadow: 0 rem(12) rem(32) 0 rgba(0, 0, 0, 0.25);
-    padding: rem(25) rem(25) 0;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.25);
+    padding: 12px 12px 0;
     opacity: 0;
     z-index: -1;
     transition: opacity .3s ease;
@@ -240,18 +280,20 @@
 
     li {
       position: relative;
-      margin-bottom: rem(30);
+      margin-bottom: 15px;
       a {
-        padding-left: rem(115);
+        padding-left: 60px;
         display: block;
-        border-bottom: rem(2) solid #eeeeee;
-        padding-bottom: rem(25);
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 17px;
+        padding-top: 5px;
       }
       .page-header-bottom-fresh__dropdown--all {
         padding-left: 0;
         text-align: center;
         border-bottom: 0;
-        padding-bottom: rem(5);
+        padding-bottom: 5px;
+        margin: -7px 0;
         text-decoration: underline;
         &:hover {
           text-decoration: none;
@@ -261,23 +303,23 @@
 
     &--image {
       display: inline-block;
-      width: rem(60);
-      height: rem(60);
+      width: 30px;
+      height: 30px;
       position: absolute;
-      left: rem(22);
-      top: rem(22);
-
+      left: 10px;
+      top: 15px;
     }
     &--property {
 
       &>span:first-child {
-        font-size: rem(20);
+        font-size: 10px;
+        margin-bottom: 10px;
         display: block;
         font-family: $font-medium;
       }
       &>span:last-child {
         color: #888888;
-        font-size:rem(18);
+        font-size: 9px;
         display: block;
         &.color-accent {
           color: $accent;
@@ -289,7 +331,7 @@
 
 
   .icon-anchor {
-    font-size: rem(50);
+    font-size: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -298,14 +340,14 @@
   }
   .left {
     float: left;
-    width: rem(100);
+    width: 50px;
     position: relative;
     height: 100%;
   }
   .right {
-    margin-left: rem(100);
-    padding-right: rem(25);
-    padding-top: rem(20);
+    margin-left: 50px;
+    padding-right: 13px;
+    padding-top: 10px;
 
 
 
@@ -460,3 +502,210 @@
   padding-top: 6px;
 }
 
+@media ($desktop) {
+  .mob-menu-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .8);
+    z-index: 4;
+  }
+
+  .burger-button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 4px;
+
+    span {
+      display: block;
+      width: 35px;
+      background-color: #fff;
+      height: 2px;
+      position: absolute;
+      &:first-child {
+        top:10px;
+      }
+      &:nth-child(2){
+        top: 20px;
+      }
+      &:last-child{
+        top: 30px;
+      }
+    }
+  }
+
+  .page-header-authorize {
+    display: none;
+  }
+
+  .page-header-info {
+    display: none;
+  }
+
+  .page-header-lang {
+    display: none;
+  }
+
+  .page-header-right__item:not(:last-child):after {
+    content: none;
+  }
+
+  .page-header-right {
+    padding-right: 5px;
+  }
+
+  .page-header-cart {
+    margin-top: 10px;
+  }
+
+  .main-logo {
+    background-color: #e95b44;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+  }
+
+  .page-header-top {
+    height: 65px;
+  }
+
+  .page-header-cart .icon-cart {
+    font-size: 32px;
+  }
+
+  .page-header-bottom-nav__item {
+    text-align: center;
+    width: 20%;
+    margin-right: -2px;
+    margin-left: -2px;
+    font-size: 14px;
+  }
+  .page-header-bottom-nav__item .iconmoon {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .page-header-bottom-nav {
+    margin-left: 0;
+    display: block;
+  }
+
+  .page-header-bottom {
+    height: auto;
+    margin-bottom: 0;
+    padding: 10px 0;
+  }
+
+  .page-header-bottom-fresh {
+    display: none;
+  }
+
+  .page-header-bottom-nav__item .icon-anchor {
+    font-size: 25px;
+  }
+
+  .for-small-devices {
+    display: inline-block;
+  }
+
+  .page-header-right__item {
+    padding-left: 10px;
+  }
+
+  .page-header-mobile-tel .icon-phone {
+    font-size: 30px;
+    margin-top: 11px;
+    display: inline-block;
+  }
+}
+
+@media ($tablet) {
+  .page-header-cart .icon-cart {
+    font-size: 29px;
+  }
+
+  .page-header-cart {
+    margin-top: 2px;
+  }
+
+  .burger-button span {
+    width: 30px;
+  }
+
+  .page-header-top {
+    height: 50px;
+  }
+
+  .burger-button {
+    top: -3px;
+  }
+
+  .main-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .page-header-bottom-nav__item .icon-house {
+    font-size: 23px;
+  }
+  .page-header-bottom-nav__item .icon-electro {
+    font-size: 23px;
+  }
+  .page-header-bottom-nav__item .icon-rak {
+    font-size: 24px;
+  }
+  .page-header-bottom-nav__item .icon-anchor {
+    font-size: 24px;
+  }
+  .page-header-bottom > .container{
+    padding: 0;
+  }
+
+  .page-header-mobile-tel .icon-phone {
+    font-size: 27px;
+    margin-top: 3px;
+  }
+}
+
+@media ($mobile) {
+  .page-header-bottom-nav__item {
+    font-size: 10px;
+  }
+  .page-header-cart .iconmoon {
+    margin-bottom: 10px;
+  }
+
+  .page-header-bottom-nav__item  a > span {
+    display: block;
+    padding-top: 10px;
+    font-family: $font-bold;
+  }
+
+  .mob-menu {
+    width: 100%;
+  }
+
+  .page-header-cart {
+    padding: 0;
+  }
+
+  .page-header-cart__label {
+    top: -1px;
+    right: -6px;
+  }
+
+  .page-header-top {
+    height: 55px;
+  }
+
+  .page-header-bottom-nav__item .iconmoon {
+    margin-bottom: 0;
+  }
+}

@@ -62,13 +62,13 @@
                         <li class="page-header-right__item">
                             <div class="page-header-lang">
                                 <div class="dropdown">
-                                    <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuButton"
+                                    <a href="#" class="dropdown-toggle" role="button" id="lang"
                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RU</a>
 
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">ENG</a>
-                                        <a class="dropdown-item" href="#">UA</a>
-                                    </div>
+                                    <ul class="dropdown-menu" aria-labelledby="lang">
+                                        <li class="dropdown-item"><a href="#"><b>UK</b>Українська</a></li>
+                                        <li class="dropdown-item active"><a href="#"><b>RU</b>Русский</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -228,10 +228,10 @@
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle" role="button" id="lang"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RU</a>
-                        <div class="dropdown-menu" aria-labelledby="lang">
-                            <a class="dropdown-item" href="#">ENG</a>
-                            <a class="dropdown-item" href="#">UA</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="lang">
+                            <li class="dropdown-item"><a href="#"><b>UK</b>Українська</a></li>
+                            <li class="dropdown-item active"><a href="#"><b>RU</b>Русский</a></li>
+                        </ul>
                     </div>
                 </div>
             </li>

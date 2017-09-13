@@ -2,30 +2,19 @@
   .mob-hide {
     display: none;
   }
-  html {
-    font-size: 14px;
-  }
+
   .container {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
   }
 
-  .page-header-bottom-nav__item {
-    font-size: 10px;
-  }
-  .page-header-cart .iconmoon {
-    margin-bottom: 10px;
+  h1, .title-h1 {
+    font-size: 24px;
   }
 
-  .page-header-bottom-nav__item  a > span {
-    display: block;
-    padding-top: 10px;
-    font-family: $font-bold;
-  }
-
-  .mob-menu {
-    width: 100%;
+  p {
+    margin-bottom: 5px;
   }
 
   .right-sidebar-list {
@@ -33,10 +22,11 @@
   }
 
   .right-sidebar-title {
-    padding-bottom: 14px;
+    padding-bottom: 10px;
     margin-bottom: 10px;
     position: relative;
     cursor: pointer;
+    font-size: 18px;
 
     &.rotate {
       &:after {
@@ -59,6 +49,14 @@
     }
   }
 
+  .right-sidebar-list__title {
+    font-size: 14px;
+  }
+
+  .right-sidebar {
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
   .page-title {
     margin-bottom: 15px;
     line-height: .8;

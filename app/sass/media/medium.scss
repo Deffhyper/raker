@@ -1,57 +1,29 @@
 @media ($tablet) {
 
-  .page-header-cart .icon-cart {
-    font-size: 29px;
+
+  h1, .title-h1 {
+    font-size: 28px;
   }
 
-  .page-header-cart {
+  h2, .title-h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .page-title {
+    margin-bottom: 20px;
     margin-top: 5px;
   }
 
-  .burger-button span {
-    width: 30px;
-  }
 
-  .page-header-top {
-    height: 50px;
-  }
-
-  .burger-button {
-    top: -3px;
-  }
-
-  .main-logo {
-    width: 65px;
-    height: 65px;
-  }
-
-  .page-header-bottom-nav__item .icon-house {
-    font-size: 23px;
-  }
-  .page-header-bottom-nav__item .icon-electro {
-    font-size: 23px;
-  }
-  .page-header-bottom-nav__item .icon-rak {
-    font-size: 24px;
-  }
-  .page-header-bottom-nav__item .icon-anchor {
-    font-size: 24px;
-  }
-  .page-header-bottom > .container{
-    padding: 0;
-  }
-
-  .page-header-mobile-tel .icon-phone {
-    font-size: 27px;
-    margin-top: 6px;
-  }
 
   .right-sidebar {
     padding-left: 0;
   }
 
-  .site-footer-apps__item a {
-    width: 84px;
+  .right-sidebar-list {
+    padding-bottom: 15px;
   }
 
 
