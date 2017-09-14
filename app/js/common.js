@@ -64,7 +64,7 @@ $(function() {
 
         var sTitle = $('.right-sidebar-title');
 
-        if (windowWidth < 768) {
+        if (windowWidth < 991) {
             sTitle.unbind('click').click(function () {
                 $(this).next().slideToggle();
                 $(this).toggleClass('rotate');

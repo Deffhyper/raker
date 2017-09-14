@@ -674,8 +674,11 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 4; }
+    z-index: 4;
+    cursor: pointer; }
   .burger-button {
     display: inline-block;
     height: 40px;
@@ -843,8 +846,9 @@ body:after {
   font-size: 16px; }
 
 .social-block li {
-  margin-right: 1.42857rem;
-  margin-bottom: 1.42857rem; }
+  margin-right: 7px;
+  margin-bottom: 10px;
+  max-width: 12%; }
 
 .site-footer-copyright {
   float: left; }
@@ -859,15 +863,29 @@ body:after {
   font-size: 12px; }
 
 .site-footer-apps__item {
-  margin-right: 5px; }
+  margin-right: 5px;
+  margin-bottom: 5px;
+  max-width: 47%; }
   .site-footer-apps__item:last-child {
     margin-right: 0; }
+  .site-footer-apps__item a {
+    display: block;
+    height: 100%; }
 
 @media (max-width: 1279px) {
   .site-footer {
     height: 300px; }
   body:after {
     height: 300px; } }
+
+@media (max-width: 991px) {
+  .site-footer-apps__item {
+    margin-right: 0;
+    margin-bottom: 5px;
+    max-width: 100%; }
+  .site-footer-top {
+    padding: 0 0 20px;
+    min-height: 200px; } }
 
 @media (max-width: 767px) {
   body:after {
@@ -1052,19 +1070,7 @@ body:after {
   .right-sidebar {
     padding-left: 0; }
   .right-sidebar-list {
-    padding-bottom: 15px; } }
-
-@media (max-width: 767px) {
-  .mob-hide {
-    display: none; }
-  .container {
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px; }
-  h1, .title-h1 {
-    font-size: 24px; }
-  p {
-    margin-bottom: 5px; }
+    padding-bottom: 15px; }
   .right-sidebar-list {
     display: none; }
   .right-sidebar-title {
@@ -1091,7 +1097,19 @@ body:after {
       top: 7px;
       right: 8px;
       -webkit-transition: .3s ease;
-      transition: .3s ease; }
+      transition: .3s ease; } }
+
+@media (max-width: 767px) {
+  .mob-hide {
+    display: none; }
+  .container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px; }
+  h1, .title-h1 {
+    font-size: 24px; }
+  p {
+    margin-bottom: 5px; }
   .right-sidebar-list__title {
     font-size: 14px; }
   .right-sidebar {

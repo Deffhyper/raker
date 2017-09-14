@@ -57,8 +57,9 @@ body:after {
 
 .social-block {
   li {
-    margin-right: rem(20);
-    margin-bottom: rem(20);
+    margin-right: 7px;
+    margin-bottom: 10px;
+    max-width: 12%;
   }
 }
 
@@ -82,17 +83,15 @@ body:after {
 .site-footer-apps {
   &__item {
     margin-right: 5px;
+    margin-bottom: 5px;
+    max-width: 47%;
+
     &:last-child {
       margin-right: 0;
     }
     a {
-      //display: block;
-      //height: 100%;
-      //width: 130px;
-      //overflow: hidden;
-      //border: 1px solid #9b9b9b;
-      //border-radius: rem(16);
-      //padding: rem(16);
+      display: block;
+      height: 100%;
     }
   }
 }
@@ -107,6 +106,19 @@ body:after {
 }
 
 @media ($tablet) {
+
+  .site-footer-apps {
+    &__item {
+      margin-right: 0;
+      margin-bottom: 5px;
+      max-width: 100%;
+    }
+  }
+
+  .site-footer-top {
+    padding: 0 0 20px;
+    min-height: 200px;
+  }
 
 }
 
