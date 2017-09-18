@@ -74,16 +74,32 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-dishes:before {
+  content: "\e90b"; }
+
+.icon-clock:before {
+  content: "\e90c"; }
+
+.icon-bottle:before {
+  content: "\e90d"; }
+
+.icon-oyster:before {
+  content: "\e90e"; }
+
+.icon-bear:before {
+  content: "\e90f"; }
+
+.icon-dish-fish:before {
+  content: "\e910"; }
+
 .icon-phone:before {
   content: "\e908"; }
 
 .icon-electro-2:before {
-  content: "\e909";
-  color: #00b0ff; }
+  content: "\e909"; }
 
 .icon-roket:before {
-  content: "\e90a";
-  color: #00b0ff; }
+  content: "\e90a"; }
 
 .icon-crab:before {
   content: "\e902"; }
@@ -454,6 +470,9 @@ img {
       top: 4px; }
     .page-header-bottom-nav__item .icon-rak {
       font-size: 24px; }
+    .page-header-bottom-nav__item .icon-dishes {
+      font-size: 21px;
+      margin-right: 14px; }
     .page-header-bottom-nav__item .icon-house {
       font-size: 21px; }
     .page-header-bottom-nav__item .icon-electro {
@@ -591,7 +610,16 @@ img {
     padding: 0; }
     .mob-menu .page-header-bottom-nav__item > a {
       display: block;
-      padding: 17px 20px; }
+      padding: 17px 20px 17px 55px;
+      position: relative; }
+      .mob-menu .page-header-bottom-nav__item > a .iconmoon {
+        position: absolute;
+        top: 13px;
+        left: 15px; }
+        .mob-menu .page-header-bottom-nav__item > a .iconmoon.icon-dishes {
+          left: 8px; }
+        .mob-menu .page-header-bottom-nav__item > a .iconmoon.icon-electro {
+          left: 13px; }
       .mob-menu .page-header-bottom-nav__item > a:hover {
         background-color: #231f20;
         color: #fff; }
@@ -771,7 +799,7 @@ img {
   .page-header-bottom-nav__item .icon-electro {
     font-size: 23px; }
   .page-header-bottom-nav__item .icon-rak {
-    font-size: 24px; }
+    font-size: 21px; }
   .page-header-bottom-nav__item .icon-anchor {
     font-size: 24px; }
   .page-header-bottom > .container {
@@ -799,7 +827,9 @@ img {
   .page-header-top {
     height: 55px; }
   .page-header-bottom-nav__item .iconmoon {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .mob-menu .page-header-bottom-nav__item > a .iconmoon {
+    top: 25px; } }
 
 body:after {
   content: '';

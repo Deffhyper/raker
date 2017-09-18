@@ -224,6 +224,10 @@
     .icon-rak {
       font-size: 24px;
     }
+    .icon-dishes {
+      font-size: 21px;
+      margin-right: 14px;
+    }
     .icon-house {
       font-size: 21px;
     }
@@ -406,7 +410,19 @@
     padding: 0;
     &>a {
       display: block;
-      padding: 17px 20px;
+      padding: 17px 20px 17px 55px;
+      position: relative;
+      .iconmoon {
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        &.icon-dishes {
+          left: 8px;
+        }
+        &.icon-electro {
+          left: 13px;
+        }
+      }
       &:hover {
         background-color: $text-color;
         color: #fff;
@@ -662,7 +678,7 @@
     font-size: 23px;
   }
   .page-header-bottom-nav__item .icon-rak {
-    font-size: 24px;
+    font-size: 21px;
   }
   .page-header-bottom-nav__item .icon-anchor {
     font-size: 24px;
@@ -710,5 +726,9 @@
 
   .page-header-bottom-nav__item .iconmoon {
     margin-bottom: 0;
+  }
+
+  .mob-menu .page-header-bottom-nav__item > a .iconmoon {
+    top: 25px;
   }
 }

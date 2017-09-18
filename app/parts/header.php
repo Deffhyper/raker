@@ -104,7 +104,7 @@
                         </li>
                         <li class="page-header-bottom-nav__item">
                             <a href="#">
-                                <i class="iconmoon icon-rak"></i>
+                                <i class="iconmoon icon-dishes"></i>
                                 <span>Блюда</span>
                             </a>
                         </li>
@@ -200,7 +200,7 @@
             </li>
             <li class="page-header-bottom-nav__item">
                 <a href="#">
-                    <i class="iconmoon icon-rak"></i>
+                    <i class="iconmoon icon-dishes"></i>
                     <span>Блюда</span>
                 </a>
             </li>

@@ -122,16 +122,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-dishes:before {
+  content: "\e90b";
+}
+.icon-clock:before {
+  content: "\e90c";
+}
+.icon-bottle:before {
+  content: "\e90d";
+}
+.icon-oyster:before {
+  content: "\e90e";
+}
+.icon-bear:before {
+  content: "\e90f";
+}
+.icon-dish-fish:before {
+  content: "\e910";
+}
 .icon-phone:before {
   content: "\e908";
 }
 .icon-electro-2:before {
   content: "\e909";
-  color: #00b0ff;
 }
 .icon-roket:before {
   content: "\e90a";
-  color: #00b0ff;
 }
 .icon-crab:before {
   content: "\e902";
@@ -157,7 +173,6 @@
 .icon-rak:before {
   content: "\e905";
 }
-
 
 
 
