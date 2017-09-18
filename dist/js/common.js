@@ -47,6 +47,12 @@ $(function() {
         $('.burger-button').trigger('click');
     });
 
+    $(window).resize(function () {
+        if($(this).innerWidth() > 1260 && $('.burger-button').hasClass('open')) {
+            $('.mob-menu-close').trigger('click');
+        }
+    });
+
 
     ///////////////////////////////// sidebar ///////////////////////////////
 
