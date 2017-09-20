@@ -1,5 +1,9 @@
 @media ($tablet) {
 
+  a, a:after, a:before, button, input {
+    transition: none !important;
+  }
+
 
   h1, .title-h1 {
     font-size: 28px;

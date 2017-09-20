@@ -200,7 +200,7 @@
 .page-header-bottom {
   height: 45px;
   background-color: rgba(246, 246, 246, .902);
-  margin-bottom: rem(-87);
+  margin-bottom: -45px;
   position: relative;
   z-index: 1;
 }
@@ -234,6 +234,7 @@
     .icon-dishes {
       font-size: 18px;
       margin-right: 9px;
+      top: 3px;
     }
     .icon-house {
       font-size: 20px;
@@ -435,6 +436,9 @@
       &:hover {
         background-color: $text-color;
         color: #fff;
+        .iconmoon {
+          color: #fff;
+        }
       }
     }
   }

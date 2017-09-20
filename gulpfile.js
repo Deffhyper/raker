@@ -39,7 +39,6 @@ gulp.task('sprite', function () {
 
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
 		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
 		'app/libs/tether/dist/js/tether.min.js', // connect popper

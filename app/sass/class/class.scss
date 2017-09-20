@@ -7,3 +7,160 @@
     display: inline-block;
   }
 }
+
+.btn {
+  font-family: $font;
+  font-size: 15px;
+  display: inline-block;
+  color: $text-color;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: .3s ease;
+
+  &__arrow {
+    span {
+      display: inline-block;
+      padding-right: 20px;
+      position: relative;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 1px;
+        background-color: $text-color;
+        position: absolute;
+        top: 9px;
+        right: 0;
+        transition: .3s ease;
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $text-color;
+        border-right: 1px solid $text-color;
+        transform: rotateZ(45deg);
+        position: absolute;
+        top: 7px;
+        right: 0;
+        transition: .3s ease;
+      }
+    }
+  }
+
+  &__accent {
+
+    color: #fff;
+    background-color: $accent;
+
+    span {
+      &:after {
+        border-color: #fff;
+      }
+      &:before {
+        background-color: #fff;
+      }
+    }
+
+    &--hover {
+      &:hover {
+        color: #fff;
+        background-color: $accent;
+        border-color: $accent;
+
+        span {
+          &:after {
+            border-color: #fff;
+          }
+          &:before {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__border {
+    font-family: $font-medium !important;
+    font-size: 14px;
+    border: 3px solid $text-color;
+    width: 175px;
+    padding: 10px 0 9px;
+    border-radius: 10px;
+  }
+}
+
+/////////////////////////////////////////// goods //////////////////////////////
+
+.goods {
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 7px 7px 12px;
+  text-align: center;
+  &__img {
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    a {
+      display: block;
+      height: 100%;
+    }
+
+    &--label {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      z-index: 2;
+    }
+  }
+
+  &__title {
+    font-family: $font-heavy;
+    font-size: 28px;
+    height: 66px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    font-size: 18px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 25px;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    font-family: $font-bold;
+    font-size: 12px;
+  }
+  &__time {
+    .icon-clock {
+      margin-right: 5px;
+      font-size: 16px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
