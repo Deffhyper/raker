@@ -68,51 +68,73 @@
   background-color: #e95b43;
   padding: 0 50px;
   color: #ffffff;
-  height: 169px;
+  height: 115px;
 }
 
 .accent-block__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
+  padding-top: 44px;
 }
 
 .accent-block__list--item {
   color: inherit;
-  font-weight: 100;
   counter-increment: myCount;
   position: relative;
-  padding: 0 0 0 75px;
+  padding: 0 0 0 40px;
   display: inline-block;
+  font-size: 14px;
 }
 
 .accent-block__list--item:before {
   content: counter(myCount) ".";
   position: absolute;
-  top: 50%;
+  top: -3px;
   left: 5px;
-  font-size: 48px;
-  transform: translateY(-50%);
+  font-size: 36px;
+  font-family: $font-light;
+  line-height: 1;
 }
 
 .accent-block__list--item b {
-  font-weight: 700;
+  font-family: $font-bold;
 }
 
 
 .main-shares {
   position: relative;
-  height: 340px;
+  height: 335px;
   text-align: center;
-  padding-top: 72px;
+  display: flex;
+  align-items: center;
 
   &__title {
     font-family: $font-heavy;
     font-size: 32px;
+    line-height: 1.3;
+    padding: 0 70px;
+    margin-bottom: 20px;
+    height: 82px;
+    overflow: hidden;
   }
   &__subtitle {
     font-size: 18px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    max-height: 63px;
+    overflow: hidden;
+  }
+
+  &__apps {
+    &--item {
+      display: inline-block;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
   }
 }
 

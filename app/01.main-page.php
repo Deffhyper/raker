@@ -39,7 +39,7 @@
                         <p>245 грн <span>(300 г)</span></p>
                     </div>
                     <div class="goods__link">
-                        <a href="#" class="btn btn__accent--hover btn__border btn__border--black">За покупками</a>
+                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
                     </div>
                     <div class="goods__info"><span>Только Киев</span></div>
                     <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
@@ -61,7 +61,7 @@
                         <p>245 грн <span>(300 г)</span></p>
                     </div>
                     <div class="goods__link">
-                        <a href="#" class="btn btn__accent--hover btn__border btn__border--black">За покупками</a>
+                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
                     </div>
                     <div class="goods__info"><span>Только Киев</span></div>
                     <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
@@ -83,7 +83,7 @@
                         <p>245 грн <span>(300 г)</span></p>
                     </div>
                     <div class="goods__link">
-                        <a href="#" class="btn btn__accent--hover btn__border btn__border--black">За покупками</a>
+                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
                     </div>
                     <div class="goods__info"><span>Только Киев</span></div>
                     <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
@@ -101,7 +101,7 @@
                    выигрывай ящик раков!</p>
 
                 <p class="main-shares__subtitle">Футбольная акция от Raker.</p>
-                <a href="#" class="main-shares__link btn btn__border btn__accent--hover">Участвовать!</a>
+                <a href="#" class="main-shares__link btn btn__border btn__border--black-hover">Участвовать!</a>
 
             </div>
         </div>
@@ -113,7 +113,7 @@
         <ul class="accent-block__list">
             <li class="accent-block__list--item">
                 <p><b>Всегда свежие</b> <br>
-                    раки и улитки.</p>
+                    продукты</p>
             </li>
             <li class="accent-block__list--item">
                 <p><b>Приготовление</b> каждого <br>
@@ -121,7 +121,7 @@
             </li>
             <li class="accent-block__list--item">
                 <p><b>Оперативная доставка</b><br>
-                    в 5 мегаполисов</p>
+                    за 90 минут</p>
             </li>
             <li class="accent-block__list--item">
                 <p>С уважением <b><br>
@@ -135,12 +135,85 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 push-lg-4">
-                <p class="main-shares__title">Raker-party вечеринка с доставкой</p>
+                <p class="main-shares__title">Raker-party <br> вечеринка с доставкой</p>
 
                 <p class="main-shares__subtitle">Долой обыденность и надоевшие скучные закуски! Горячие раки уместны в любой компании. Отдыхайте вкусно с Raker.</p>
-                <a href="#" class="main-shares__link btn btn__border btn__accent--hover">Детальнее</a>
+                <a href="#" class="main-shares__link btn btn__border btn__border--black-hover">Детальнее</a>
             </div>
         </div>
+    </div>
+</div>
+<div class="main-shares" style="background: #f7f7f7 url('img/jpeg_files/gray-block.png') no-repeat center / cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 push-lg-4">
+                <p class="main-shares__title">Приложение Raker для iPhone и Android</p>
+                <p class="main-shares__subtitle">Закажи раков всего за несколько нажатий!</p>
+                <ul class="main-shares__apps">
+                    <li class="main-shares__apps--item">
+                        <a href="#">
+                            <img src="img/jpeg_files/app.png" alt="">
+                        </a>
+                    </li>
+                    <li class="main-shares__apps--item">
+                        <a href="#">
+                            <img src="img/jpeg_files/GooglePlay.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="seo-text">
+    <div class="container">
+        <br><br>
+        <p>
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+            стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+            создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+            Lorem
+            Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный
+            дизайн.
+            Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х
+            годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+            которых
+            используется Lorem Ipsum.
+        </p>
+        <br>
+
+        <h2>H2: Откуда он появился?</h2>
+
+        <p>
+            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+            Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий
+            назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
+            самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской
+            литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33
+            книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году
+            н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem
+            Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
+        </p>
+
+        <p>
+            Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и
+            1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914
+            год.
+        </p>
+        <br>
+        <h2>Откуда он появился?</h2>
+
+        <p>
+            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
+            Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
+            также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+            "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
+            редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым
+            словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего
+            рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по
+            ошибке, некоторые - намеренно (например, юмористические варианты).
+        </p>
     </div>
 </div>
 
