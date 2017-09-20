@@ -62,12 +62,12 @@
 .right-sidebar-list {
   padding-bottom: 35px;
   &__title {
-    font-family: $font-medium;
     font-size: 16px;
     padding: 8px 0;
     display: block;
     &.open {
       color: $accent;
+      font-family: $font-medium;
     }
   }
   &__sublist {
@@ -97,7 +97,7 @@
         height: 1px;
         position: absolute;
         top: 8px;
-        left: -12px;
+        left: -19px;
       }
       &:before {
         content: '';
@@ -109,9 +109,53 @@
         transform: rotateZ(45deg);
         position: absolute;
         top: 6px;
-        left: -9px;
+        left: -16px;
       }
     }
   }
 }
+
+#fb-icon-circle, #inst-icon-circle {
+  transition: stroke .3s ease;
+}
+
+#fb-icon-stroke, #inst-icon-stroke {
+  transition: fill .3s ease;
+}
+
+#googleplay-border {
+  transition: stroke .3s ease;
+}
+
+#googleplay-body {
+  transition: fill .3s ease;
+}
+
+#appstore-border {
+  transition: stroke .3s ease;
+}
+
+#appstore-body {
+  transition: fill .3s ease;
+}
+
+.social-item a:hover #fb-icon-circle,
+.social-item a:hover #inst-icon-circle {
+  stroke: #fff;
+}
+.social-item a:hover #fb-icon-stroke,
+.social-item a:hover #inst-icon-stroke {
+  fill: #fff;
+}
+
+.site-footer-apps__item a:hover #googleplay-border,
+.site-footer-apps__item a:hover #appstore-border {
+  stroke: #fff;
+}
+
+.site-footer-apps__item a:hover #googleplay-body,
+.site-footer-apps__item a:hover #appstore-body {
+  fill: #fff;
+}
+
 

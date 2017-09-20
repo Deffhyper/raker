@@ -333,7 +333,8 @@ img {
       background-color: #fff;
       position: absolute;
       top: 3px;
-      right: -21px; }
+      right: -21px;
+      opacity: .5; }
 
 .page-header-cart {
   position: relative;
@@ -461,22 +462,32 @@ img {
   display: inline-block; }
   .page-header-bottom-nav__item {
     padding: 6px 0;
-    margin-right: 25px; }
-    .page-header-bottom-nav__item a:hover {
-      color: #e95b44; }
+    margin-right: 28px; }
+    .page-header-bottom-nav__item a {
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+      .page-header-bottom-nav__item a:hover {
+        color: #e95b44; }
+        .page-header-bottom-nav__item a:hover .iconmoon {
+          color: #e95b44; }
     .page-header-bottom-nav__item .iconmoon {
       position: relative;
-      margin-right: 15px;
-      top: 4px; }
+      top: 4px;
+      color: #666;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
     .page-header-bottom-nav__item .icon-rak {
-      font-size: 24px; }
+      font-size: 23px;
+      margin-right: 15px; }
     .page-header-bottom-nav__item .icon-dishes {
-      font-size: 21px;
-      margin-right: 14px; }
+      font-size: 18px;
+      margin-right: 9px; }
     .page-header-bottom-nav__item .icon-house {
-      font-size: 21px; }
+      font-size: 20px;
+      margin-right: 11px; }
     .page-header-bottom-nav__item .icon-electro {
-      font-size: 24px; }
+      font-size: 23px;
+      margin-right: 10px; }
 
 .page-header-bottom-fresh {
   background-color: #231f20;
@@ -491,8 +502,8 @@ img {
     .page-header-bottom-fresh__prop > img {
       max-width: 12px; }
     .page-header-bottom-fresh__prop .country {
-      font-size: 8px;
-      margin-right: 10px; }
+      font-size: 10px;
+      margin-right: 5px; }
   .page-header-bottom-fresh:hover .page-header-bottom-fresh__dropdown {
     z-index: 3;
     opacity: 1;
@@ -501,7 +512,7 @@ img {
     position: absolute;
     top: 100%;
     right: -9999px;
-    background-color: #fff;
+    background-color: #fafafa;
     color: #231f20;
     width: 263px;
     text-align: left;
@@ -538,13 +549,13 @@ img {
       left: 10px;
       top: 15px; }
     .page-header-bottom-fresh__dropdown--property > span:first-child {
-      font-size: 10px;
-      margin-bottom: 10px;
+      font-size: 11px;
+      margin-bottom: 11px;
       display: block;
       font-family: "Roboto-Medium", sans-serif; }
     .page-header-bottom-fresh__dropdown--property > span:last-child {
       color: #888888;
-      font-size: 9px;
+      font-size: 10px;
       display: block; }
       .page-header-bottom-fresh__dropdown--property > span:last-child.color-accent {
         color: #e95b44; }
@@ -1031,12 +1042,12 @@ body:after {
 .right-sidebar-list {
   padding-bottom: 35px; }
   .right-sidebar-list__title {
-    font-family: "Roboto-Medium", sans-serif;
     font-size: 16px;
     padding: 8px 0;
     display: block; }
     .right-sidebar-list__title.open {
-      color: #e95b44; }
+      color: #e95b44;
+      font-family: "Roboto-Medium", sans-serif; }
   .right-sidebar-list__sublist {
     display: none;
     padding-left: 20px;
@@ -1060,7 +1071,7 @@ body:after {
         height: 1px;
         position: absolute;
         top: 8px;
-        left: -12px; }
+        left: -19px; }
       .right-sidebar-list__sublist a:before {
         content: '';
         display: block;
@@ -1073,7 +1084,47 @@ body:after {
                 transform: rotateZ(45deg);
         position: absolute;
         top: 6px;
-        left: -9px; }
+        left: -16px; }
+
+#fb-icon-circle, #inst-icon-circle {
+  -webkit-transition: stroke .3s ease;
+  transition: stroke .3s ease; }
+
+#fb-icon-stroke, #inst-icon-stroke {
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease; }
+
+#googleplay-border {
+  -webkit-transition: stroke .3s ease;
+  transition: stroke .3s ease; }
+
+#googleplay-body {
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease; }
+
+#appstore-border {
+  -webkit-transition: stroke .3s ease;
+  transition: stroke .3s ease; }
+
+#appstore-body {
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease; }
+
+.social-item a:hover #fb-icon-circle,
+.social-item a:hover #inst-icon-circle {
+  stroke: #fff; }
+
+.social-item a:hover #fb-icon-stroke,
+.social-item a:hover #inst-icon-stroke {
+  fill: #fff; }
+
+.site-footer-apps__item a:hover #googleplay-border,
+.site-footer-apps__item a:hover #appstore-border {
+  stroke: #fff; }
+
+.site-footer-apps__item a:hover #googleplay-body,
+.site-footer-apps__item a:hover #appstore-body {
+  fill: #fff; }
 
 @media (max-width: 1279px) {
   .breadcrumbs-block {

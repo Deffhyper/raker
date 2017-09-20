@@ -50,6 +50,7 @@
       position: absolute;
       top: 3px;
       right: -21px;
+      opacity: .5;
     }
 
   }
@@ -209,30 +210,38 @@
 
   &__item {
     padding: 6px 0;
-    margin-right: 25px;
+    margin-right: 28px;
     a {
+      transition: .3s ease;
       &:hover {
         color: $accent;
+        .iconmoon {
+          color: $accent;
+        }
       }
     }
 
     .iconmoon {
       position: relative;
-      margin-right: 15px;
       top: 4px;
+      color: #666;
+      transition: .3s ease;
     }
     .icon-rak {
-      font-size: 24px;
+      font-size: 23px;
+      margin-right: 15px;
     }
     .icon-dishes {
-      font-size: 21px;
-      margin-right: 14px;
+      font-size: 18px;
+      margin-right: 9px;
     }
     .icon-house {
-      font-size: 21px;
+      font-size: 20px;
+      margin-right: 11px;
     }
     .icon-electro {
-      font-size: 24px;
+      font-size: 23px;
+      margin-right: 10px;
     }
   }
 }
@@ -254,8 +263,8 @@
     }
 
     .country {
-      font-size: 8px;
-      margin-right: 10px;
+      font-size: 10px;
+      margin-right: 5px;
     }
   }
 
@@ -271,7 +280,7 @@
     position: absolute;
     top: 100%;
     right: -9999px;
-    background-color: #fff;
+    background-color: #fafafa;
     color: $text-color;
     width: 263px;
     text-align: left;
@@ -316,14 +325,14 @@
     &--property {
 
       &>span:first-child {
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 11px;
+        margin-bottom: 11px;
         display: block;
         font-family: $font-medium;
       }
       &>span:last-child {
         color: #888888;
-        font-size: 9px;
+        font-size: 10px;
         display: block;
         &.color-accent {
           color: $accent;
