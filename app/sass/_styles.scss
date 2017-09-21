@@ -1,3 +1,122 @@
+.pagination {
+  color: #008bcc;
+  font-family: $font-helvetica;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+
+  span {
+    color: #666666;
+    display: block;
+    width: 35px;
+  }
+
+  .active {
+    a {
+      background-color: #f4f4f4;
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+  .disabled {
+
+  }
+
+  &__item {
+    display: inline-block;
+    a {
+      text-decoration: underline;
+      padding: 8px 12px;
+      display: block;
+      border-radius: 3px;
+      &:hover {
+        text-decoration: none;
+        span {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &--right {
+      float: right;
+      span {
+        color: #008bcc;
+        margin-right: 30px;
+        display: inline-block;
+        position: relative;
+        text-decoration: underline;
+        width: auto;
+        font-family: $font-medium;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 1px;
+          background-color: #008bcc;
+          position: absolute;
+          top: 8px;
+          right: -20px;
+          transition: .3s ease;
+        }
+        &:after {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-top: 1px solid #008bcc;
+          border-right: 1px solid #008bcc;
+          transform: rotateZ(45deg);
+          position: absolute;
+          top: 6px;
+          right: -21px;
+          transition: .3s ease;
+        }
+      }
+    }
+    &--left {
+      float: left;
+      span {
+        color: #008bcc;
+        margin-left: 30px;
+        display: inline-block;
+        position: relative;
+        text-decoration: underline;
+        width: auto;
+        font-family: $font-medium;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 1px;
+          background-color: #008bcc;
+          position: absolute;
+          top: 8px;
+          left: -20px;
+          transition: .3s ease;
+        }
+        &:after {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-top: 1px solid #008bcc;
+          border-right: 1px solid #008bcc;
+          transform: rotateZ(-135deg);
+          position: absolute;
+          top: 6px;
+          left: -21px;
+          transition: .3s ease;
+        }
+
+      }
+    }
+  }
+}
+
 
 .breadcrumbs-block {
   padding: 60px 0 15px;
@@ -156,5 +275,58 @@
 .site-footer-apps__item a:hover #appstore-body {
   fill: #fff;
 }
+
+
+.nav {
+  text-align: center;
+  &__list {
+    padding: 20px 0;
+
+    &--item {
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.nav-button {
+  position: relative;
+  background-color: #f7f7f7;
+  height: 49px;
+  padding: 0 20px 0 50px;
+  border-radius: 5px;
+  display: block;
+  transition: .3s ease;
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+
+  &__icon {
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+    left: 19px;
+  }
+
+  &__text {
+    font-family: $font-helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 3.6;
+    white-space: nowrap;
+  }
+}
+
+.block-list {
+
+  &__item {
+    margin-bottom: 20px;
+  }
+}
+
 
 

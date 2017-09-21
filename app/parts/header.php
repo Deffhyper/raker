@@ -117,7 +117,7 @@
                         <li class="page-header-bottom-nav__item">
                             <a href="#">
                                 <i class="iconmoon icon-electro"></i>
-                                <span>Активноaсти</span>
+                                <span>Активности</span>
                             </a>
                         </li>
                     </ul>

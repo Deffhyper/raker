@@ -42,8 +42,9 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
 		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
 		'app/libs/tether/dist/js/tether.min.js', // connect popper
-		'app/libs/bootstrap/dist/js/bootstrap.min.js'
-		
+		'app/libs/bootstrap/dist/js/bootstrap.min.js', // Bootstrap 4
+		'app/libs/TimeCircles/inc/TimeCircles.js' // time circle
+
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл

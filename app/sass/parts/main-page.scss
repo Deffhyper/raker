@@ -1,10 +1,60 @@
 .top-banner {
-  height: 525px;
 }
+
+.top-banner-slider {
+  &__item {
+    height: 525px;
+  }
+
+  .slick-dots {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 56px;
+    width: 100%;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      &.slick-active {
+        button {
+          border-color: $accent;
+          opacity: 1;
+          background-color: $accent;
+        }
+      }
+      button {
+        line-height: 0;
+        font-size: 0;
+        color: transparent;
+        padding: 0;
+        border: 2px solid #000;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        opacity: .6;
+        transition: .3s ease;
+        &:hover {
+          border-color: $accent;
+        }
+
+      }
+    }
+  }
+
+}
+
 .top-banner-container {
   height: 525px;
   text-align: center;
 }
+
+.top-banner-timer {
+  max-width: 300px;
+  margin: auto;
+  height: 100px;
+}
+
 .top-banner-text {
   color: #fff;
   background-color: rgba(35, 31, 32, .902);
@@ -31,6 +81,17 @@
   
   &__title {
     font-size: 30px;
+
+    &.big {
+      font-size: 48px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 20px;
+      max-width: 360px;
+      margin: 0 auto 30px;
+      b {
+        font-size: 57px;
+      }
+    }
   }
 
   &__subtitle {
@@ -138,3 +199,198 @@
   }
 }
 
+.main-goods-list {
+  .slick-arrow {
+    background-color: #231f20;
+    color: transparent;
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    border: 0;
+    z-index: 6;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      position: absolute;
+      top: 19px;
+    }
+    &.slick-prev {
+      left: 0;
+      &:after {
+        transform: rotateZ(-135deg);
+        left: 13px;
+      }
+
+    }
+    &.slick-next {
+      right: 0;
+      &:after {
+        transform: rotateZ(45deg);
+        right: 14px;
+      }
+    }
+  }
+}
+
+@media ($desktop) {
+
+  .main-goods-list__item {
+    margin-right: 3px;
+  }
+
+  .main-shares__title {
+    font-size: 28px;
+    height: 73px;
+  }
+
+  .main-shares__subtitle {
+    font-size: 16px;
+  }
+
+  .main-goods-list__item {
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: 32px;
+    width: 31%;
+  }
+}
+
+@media ($tablet) {
+  .main-shares {
+    background: #fafafa !important;
+  }
+
+  .top-banner-text__title {
+    font-size: 28px;
+  }
+  .main-goods-list__item {
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: 3px;
+    width: 33%;
+  }
+}
+
+@media ($mobile) {
+
+  .main-goods-list__item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    margin-bottom: 10px;
+  }
+
+  .top-banner-text__title.big {
+    font-size: 30px;
+    padding-bottom: 15px;
+    margin: 0 auto 20px;
+  }
+
+  .top-banner-text__title.big b {
+    font-size: 40px;
+  }
+
+  .main-goods-list__item:nth-child(3n+3) {
+    margin-right: auto;
+  }
+
+  .main-goods-list {
+    margin-bottom: 30px;
+  }
+
+  .accent-block__list {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accent-block__list--item {
+    width: 260px;
+    margin-bottom: 20px;
+  }
+
+  .accent-block {
+    padding: 0;
+    height: auto;
+  }
+
+  .main-shares__title {
+    padding: 0;
+    font-size: 20px;
+    height: auto;
+  }
+
+  .main-shares {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .main-shares__apps--item {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .main-shares__subtitle {
+    font-size: 14px;
+    max-height: inherit;
+  }
+
+  .top-banner-text__title {
+    font-size: 20px;
+  }
+
+  .top-banner-text__subtitle {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .top-banner-text {
+    max-width: 300px;
+    padding: 15px 20px 0;
+    top: 32%;
+  }
+
+  .top-banner-container {
+    height: 460px;
+  }
+
+  .top-banner-text:after {
+
+    border-left-width: 150px;
+    border-right-width: 150px;
+    border-top-width: 20px;
+    bottom: -19px;
+  }
+
+  .top-banner-text__button {
+    bottom: -50px;
+  }
+
+  .top-banner {
+    height: 390px;
+  }
+
+  .top-banner-slider__item {
+    height: 390px;
+  }
+
+  .main-goods-list.slick-initialized {
+    .main-goods-list__item {
+      .goods {
+        max-width: 240px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+}

@@ -2,23 +2,68 @@
 <body>
 <?php include_once "parts/header.php" ?>
 
-<div class="top-banner" style="background: url('img/jpeg_files/top-banner.jpg') no-repeat 50% 50% / cover">
-    <div class="container top-banner-container">
-        <div class="top-banner-text">
-            <p class="top-banner-text__title">
-                Следующий <br>
-                свежий улов через
-            </p>
-            <p class="top-banner__timer">
-                <img src="img/jpeg_files/timer.png" alt="">
-            </p>
-            <p class="top-banner-text__subtitle">
-                Дары Финляндии – королевский краб,
-                креветки, осетровые
-            </p>
-            <a href="#" class="top-banner-text__button btn btn__accent btn__arrow"><span>Заказать</span></a>
+<div class="top-banner">
+    <div class="top-banner-slider">
+        <div>
+            <div class="top-banner-slider__item" style="background: url('img/jpeg_files/top-banner.jpg') no-repeat 50% 50% / cover">
+                <div class="container top-banner-container">
+                    <div class="top-banner-text">
+                        <p class="top-banner-text__title">
+                            Следующий <br>
+                            свежий улов через
+                        </p>
+                        <div class="top-banner-timer">
+                            <div class="DateCountdown" data-date="2017-10-17 00:00:00" style="width: 100%;"></div>
+                        </div>
+                        <p class="top-banner-text__subtitle">
+                            Дары Финляндии – королевский краб,
+                            креветки, осетровые
+                        </p>
+                        <a href="#" class="top-banner-text__button btn btn__accent btn__accent--hover btn__arrow"><span>Заказать</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="top-banner-slider__item" style="background: url('img/jpeg_files/top-banner-2.jpg') no-repeat 50% 50% / cover">
+                <div class="container top-banner-container">
+                    <div class="top-banner-text">
+                        <p class="top-banner-text__title big">
+                            У нас есть<br>
+                            <b>156</b> кг раков
+                        </p>
+
+                        <p class="top-banner-text__subtitle">
+                            Дары Финляндии – королевский краб,
+                            креветки, осетровые
+                        </p>
+                        <a href="#" class="top-banner-text__button btn btn__white btn__arrow btn__white--hover"><span>Заказать</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="top-banner-slider__item" style="background: url('img/jpeg_files/top-banner-3.jpg') no-repeat 50% 50% / cover">
+                <div class="container top-banner-container">
+                    <div class="top-banner-text">
+                        <p class="top-banner-text__title">
+                            Следующий <br>
+                            свежий улов через
+                        </p>
+                        <div class="top-banner-timer">
+                            <div class="DateCountdown"  data-date="2017-10-20 00:00:00" style="width: 100%;"></div>
+                        </div>
+                        <p class="top-banner-text__subtitle">
+                            Дары Финляндии – королевский краб,
+                            креветки, осетровые
+                        </p>
+                        <a href="#" class="top-banner-text__button btn btn__accent btn__accent--hover btn__arrow"><span>Заказать</span></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 </div>
 <div class="main-goods">
     <div class="container">
@@ -39,7 +84,7 @@
                         <p>245 грн <span>(300 г)</span></p>
                     </div>
                     <div class="goods__link">
-                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
+                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">В корзину</a>
                     </div>
                     <div class="goods__info"><span>Только Киев</span></div>
                     <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
@@ -61,7 +106,7 @@
                         <p>245 грн <span>(300 г)</span></p>
                     </div>
                     <div class="goods__link">
-                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
+                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">В корзину</a>
                     </div>
                     <div class="goods__info"><span>Только Киев</span></div>
                     <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
@@ -83,7 +128,7 @@
                         <p>245 грн <span>(300 г)</span></p>
                     </div>
                     <div class="goods__link">
-                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
+                        <a href="#" class="btn btn__border--hover btn__border btn__border--black">В корзину</a>
                     </div>
                     <div class="goods__info"><span>Только Киев</span></div>
                     <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>

@@ -14,8 +14,22 @@
   display: inline-block;
   color: $black-background;
   border-radius: 4px;
-  background-color: #fff;
   transition: .3s ease;
+
+  &.btn__regular {
+    font-family: $font-medium;
+  }
+
+  &__underline {
+    span {
+      text-decoration: underline;
+    }
+    &:hover {
+      span {
+        text-decoration: none;
+      }
+    }
+  }
 
   &__arrow {
     span {
@@ -29,7 +43,7 @@
         height: 1px;
         background-color: $black-background;
         position: absolute;
-        top: 9px;
+        top: 10px;
         right: 0;
         transition: .3s ease;
       }
@@ -42,7 +56,7 @@
         border-right: 1px solid $black-background;
         transform: rotateZ(45deg);
         position: absolute;
-        top: 7px;
+        top: 8px;
         right: 0;
         transition: .3s ease;
       }
@@ -50,7 +64,6 @@
   }
 
   &__accent {
-
     color: #fff;
     background-color: $accent;
 
@@ -62,8 +75,32 @@
         background-color: #fff;
       }
     }
+    &--hover {
+      &:hover {
+        background-color: #E95B44;
+        box-shadow: inset 0 -2px 0 0 rgba(136, 49, 35, 0.61)
+      }
+    }
+  }
 
+  &__white {
+    color: $text-color;
+    background-color: #fff;
+    &--hover {
+      &:hover {
+        color: #fff;
+        background-color: $accent;
 
+        span {
+          &:after {
+            border-color: #fff;
+          }
+          &:before {
+            background-color: #fff;
+          }
+        }
+      }
+    }
   }
 
   &__border {
@@ -172,7 +209,7 @@
 
 @media ($desktop) {
   .goods__img {
-    height: 140px;
+    height: 180px;
     margin-bottom: 10px;
   }
 
@@ -185,7 +222,152 @@
     height: 18px;
   }
 
+}
+
+@media ($tablet) {
+  .goods__img {
+    height: 140px;
+    margin-bottom: 10px;
+  }
+}
+
+///////////////////////////////////////// goods horizontal /////////////////////
+
+.goods-hrz {
+  height: 340px;
+  position: relative;
+  background-color: #fff;
+
+  &__mobile {
+    display: none;
+  }
+
+
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      max-width: none;
+    }
+
+
+  }
+
+  &__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px;
+    background-color: rgba(255, 255, 255, .8);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 27px;
+
+    &--data {
+      font-size: 12px;
+      display: block;
+      margin-bottom: 10px;
+      height: 14px;
+      overflow: hidden;
+    }
+
+    &--title {
+      font-family: $font-heavy;
+      display: block;
+      font-size: 20px;
+      height: 50px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+    &--text {
+      font-family: $font-medium;
+      font-size: 14px;
+      height: 170px;
+      overflow: hidden;
+      line-height: 1.22;
+    }
+    &--link {
+      text-align: center;
+    }
+  }
+
+}
+
+@media ($mobile) {
+
+  .goods-hrz__back {
+    display: none;
+  }
+
+  .goods-hrz__right {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .goods-hrz__right--title {
+    height: auto;
+    overflow: visible;
+  }
+
+  .goods-hrz__right--text {
+    height: auto;
+    overflow: visible;
+    margin-bottom: 20px;
+  }
+
+  .goods-hrz__mobile {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .goods-hrz {
+    height: auto;
+  }
+
 
 
 }
 
+
+
+/////////////////////////////// circle timer ///////////////////////////////////
+
+.time_circles>div>h4 {
+  text-transform: none;
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px !important;
+  font-family: $font-light;
+  color: #fff;
+}
+
+.time_circles>div>span {
+  font-size: 24px !important;
+  margin-top: 5px;
+  font-weight: normal;
+  font-family:$font-bold;
+}
+
+@media ($mobile) {
+
+  .time_circles > div > h4 {
+    font-size: 10px !important;
+  }
+
+}

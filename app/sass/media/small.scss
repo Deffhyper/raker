@@ -36,90 +36,57 @@
     width: 140px;
   }
 
-
-  .main-goods-list__item {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 230px;
-    margin-bottom: 10px;
+  .pagination__item a {
+    padding: 8px 12px;
   }
 
-  .main-goods-list__item:nth-child(3n+3) {
-    margin-right: auto;
+  .pagination__item.pagination__item--left a span {
+    font-size: 0;
+    line-height: 22px;
+  }
+  .pagination__item.pagination__item--left a  {
+    padding: 8px 0;
   }
 
-  .main-goods-list {
-    margin-bottom: 30px;
+  .pagination__item.pagination__item--right a span {
+    font-size: 0;
+    line-height: 22px;
   }
 
-  .accent-block__list {
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
+  .pagination__item.pagination__item--right a  {
+    padding: 8px 0;
   }
 
-  .accent-block__list--item {
-    width: 260px;
-    margin-bottom: 20px;
+  .pagination span {
+    width: 15px;
   }
 
-  .accent-block {
-    padding: 0;
-    height: auto;
+  .nav-button__text {
+    font-size: 12px;
+    line-height: 50px;
+    white-space: normal;
   }
 
-  .main-shares__title {
-    padding: 0;
-    font-size: 20px;
-    height: auto;
+  .nav-button {
+    height: 49px;
+    padding: 0 6px 0 28px;
   }
 
-  .main-shares {
-    height: auto;
-    padding: 30px 0;
+  .nav-button__icon {
+    font-size: 17px;
+    top: 18px;
+    left: 8px;
   }
 
-  .main-shares__apps--item {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
+  .nav__list {
+    padding: 10px 0;
   }
 
-  .main-shares__subtitle {
-    font-size: 14px;
-    max-height: inherit;
+  .nav__list--item {
+    margin-right: 3px;
   }
 
-  .top-banner-text__title {
-    font-size: 20px;
-  }
 
-  .top-banner-text__subtitle {
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-
-  .top-banner-text {
-    max-width: 300px;
-    padding: 15px 20px 0;
-  }
-
-  .top-banner-text:after {
-
-    border-left-width: 150px;
-    border-right-width: 150px;
-    border-top-width: 20px;
-    bottom: -19px;
-  }
-
-  .top-banner-text__button {
-    bottom: -50px;
-  }
-
-  .top-banner {
-    height: 440px;
-  }
 
 
 

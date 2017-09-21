@@ -88,4 +88,73 @@ $(function() {
 
 
 
+
+    ////////////////////////////////// countdown //////////////////////////
+
+    $(".DateCountdown").TimeCircles({
+        "animation": "ticks",
+        "bg_width": 0.9,
+        "fg_width": 0.056666666666666664,
+        "circle_bg_color": "rgba(0,0,0, .4)",
+        "time": {
+            "Days": {
+                "text": "Дней",
+                "color": "#ffffff",
+                "show": true
+            },
+            "Hours": {
+                "text": "Часов",
+                "color": "#ffffff",
+                "show": true
+            },
+            "Minutes": {
+                "text": "Минут",
+                "color": "#ffffff",
+                "show": true
+            },
+            "Seconds": {
+                "text": "Секунд",
+                "color": "#FF9999",
+                "show": false
+            }
+        }
+    });
+
+    /////////////////////////////// top banner slider /////////////////////
+
+    $('.top-banner-slider').slick({
+        arrows: false,
+        slideToShow: 1,
+        slideToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000
+    });
+
+    ////////////////////////////////// responsive goods slider main page //////////////////
+
+    function toggleGoodsSidebar(windowWidth) {
+
+        var $goodsSlider = $('.main-goods-list');
+
+        if (windowWidth < 768) {
+            if(!$goodsSlider.hasClass('slick-initialized')) {
+                $goodsSlider.slick({
+                    arrows: true,
+                    slideToShow: 1,
+                    slideToScroll: 1,
+                    dots: false
+                });
+            }
+        } else {
+            $goodsSlider.slick('unslick');
+        }
+    }
+
+    $(window).ready(toggleGoodsSidebar(windowWidth)).resize(function () {
+        toggleGoodsSidebar(window.innerWidth);
+    });
+
+
+
 });
