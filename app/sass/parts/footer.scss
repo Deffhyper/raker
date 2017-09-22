@@ -96,6 +96,50 @@ body:after {
   }
 }
 
+#fb-icon-circle, #inst-icon-circle {
+  transition: stroke .3s ease;
+}
+
+#fb-icon-stroke, #inst-icon-stroke {
+  transition: fill .3s ease;
+}
+
+#googleplay-border {
+  transition: stroke .3s ease;
+}
+
+#googleplay-body {
+  transition: fill .3s ease;
+}
+
+#appstore-border {
+  transition: stroke .3s ease;
+}
+
+#appstore-body {
+  transition: fill .3s ease;
+}
+
+.social-item a:hover #fb-icon-circle,
+.social-item a:hover #inst-icon-circle {
+  stroke: #fff;
+}
+.social-item a:hover #fb-icon-stroke,
+.social-item a:hover #inst-icon-stroke {
+  fill: #fff;
+}
+
+.site-footer-apps__item a:hover #googleplay-border,
+.site-footer-apps__item a:hover #appstore-border {
+  stroke: #fff;
+}
+
+.site-footer-apps__item a:hover #googleplay-body,
+.site-footer-apps__item a:hover #appstore-body {
+  fill: #fff;
+}
+
+
 @media ($desktop) {
   .site-footer {
     height: 300px;

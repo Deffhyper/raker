@@ -155,6 +155,36 @@ $(function() {
         toggleGoodsSidebar(window.innerWidth);
     });
 
+    //////////////////////////////////////// activity slider //////////////////////
+
+    $('.activity-slider__top').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        infinite: false,
+        asNavFor: '.activity-slider__nav'
+    });
+
+    $('.activity-slider__nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.activity-slider__top',
+        dots: false,
+        arrows: false,
+        infinite: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
 
 
 });

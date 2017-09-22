@@ -291,6 +291,9 @@ img {
 .color-accent {
   color: #e95b44; }
 
+.margin-top {
+  margin-top: 20px; }
+
 .list-inline > * {
   display: inline-block; }
 
@@ -548,6 +551,40 @@ img {
 @media (max-width: 767px) {
   .time_circles > div > h4 {
     font-size: 10px !important; } }
+
+.slick-arrow {
+  background-color: #231f20;
+  color: transparent;
+  width: 35px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  border: 0;
+  z-index: 6; }
+  .slick-arrow:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: absolute;
+    top: 19px; }
+  .slick-arrow.slick-prev {
+    left: 0; }
+    .slick-arrow.slick-prev:after {
+      -webkit-transform: rotateZ(-135deg);
+          -ms-transform: rotate(-135deg);
+              transform: rotateZ(-135deg);
+      left: 13px; }
+  .slick-arrow.slick-next {
+    right: 0; }
+    .slick-arrow.slick-next:after {
+      -webkit-transform: rotateZ(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotateZ(45deg);
+      right: 14px; }
 
 .page-header-top {
   background-color: #e95b44;
@@ -1082,7 +1119,9 @@ img {
     padding: 0; }
   .page-header-mobile-tel .icon-phone {
     font-size: 27px;
-    margin-top: 3px; } }
+    margin-top: 3px; }
+  .page-header-bottom-nav__item {
+    padding: 0; } }
 
 @media (max-width: 767px) {
   .page-header-bottom-nav__item {
@@ -1177,6 +1216,46 @@ body:after {
   .site-footer-apps__item a {
     display: block;
     height: 100%; }
+
+#fb-icon-circle, #inst-icon-circle {
+  -webkit-transition: stroke .3s ease;
+  transition: stroke .3s ease; }
+
+#fb-icon-stroke, #inst-icon-stroke {
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease; }
+
+#googleplay-border {
+  -webkit-transition: stroke .3s ease;
+  transition: stroke .3s ease; }
+
+#googleplay-body {
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease; }
+
+#appstore-border {
+  -webkit-transition: stroke .3s ease;
+  transition: stroke .3s ease; }
+
+#appstore-body {
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease; }
+
+.social-item a:hover #fb-icon-circle,
+.social-item a:hover #inst-icon-circle {
+  stroke: #fff; }
+
+.social-item a:hover #fb-icon-stroke,
+.social-item a:hover #inst-icon-stroke {
+  fill: #fff; }
+
+.site-footer-apps__item a:hover #googleplay-border,
+.site-footer-apps__item a:hover #appstore-border {
+  stroke: #fff; }
+
+.site-footer-apps__item a:hover #googleplay-body,
+.site-footer-apps__item a:hover #appstore-body {
+  fill: #fff; }
 
 @media (max-width: 1279px) {
   .site-footer {
@@ -1429,40 +1508,6 @@ body:after {
     .main-shares__apps--item:last-child {
       margin-right: 0; }
 
-.main-goods-list .slick-arrow {
-  background-color: #231f20;
-  color: transparent;
-  width: 35px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  margin-top: -30px;
-  border: 0;
-  z-index: 6; }
-  .main-goods-list .slick-arrow:after {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    position: absolute;
-    top: 19px; }
-  .main-goods-list .slick-arrow.slick-prev {
-    left: 0; }
-    .main-goods-list .slick-arrow.slick-prev:after {
-      -webkit-transform: rotateZ(-135deg);
-          -ms-transform: rotate(-135deg);
-              transform: rotateZ(-135deg);
-      left: 13px; }
-  .main-goods-list .slick-arrow.slick-next {
-    right: 0; }
-    .main-goods-list .slick-arrow.slick-next:after {
-      -webkit-transform: rotateZ(45deg);
-          -ms-transform: rotate(45deg);
-              transform: rotateZ(45deg);
-      right: 14px; }
-
 @media (max-width: 1279px) {
   .main-goods-list__item {
     margin-right: 3px; }
@@ -1695,8 +1740,13 @@ body:after {
 
 .page-title {
   font-family: "Andrijtype", sans-serif;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   margin-top: 10px; }
+
+.left-container {
+  padding-right: 20px; }
+  .left-container img[align="center"] {
+    margin-bottom: 25px; }
 
 .right-sidebar {
   padding-left: 20px;
@@ -1715,7 +1765,11 @@ body:after {
   .right-sidebar-list__title {
     font-size: 16px;
     padding: 8px 0;
-    display: block; }
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
     .right-sidebar-list__title.open {
       color: #e95b44;
       font-family: "Roboto-Medium", sans-serif; }
@@ -1757,45 +1811,70 @@ body:after {
         top: 6px;
         left: -16px; }
 
-#fb-icon-circle, #inst-icon-circle {
-  -webkit-transition: stroke .3s ease;
-  transition: stroke .3s ease; }
+.activity-data {
+  font-size: 14px;
+  color: #666666; }
 
-#fb-icon-stroke, #inst-icon-stroke {
-  -webkit-transition: fill .3s ease;
-  transition: fill .3s ease; }
+.activity-slider {
+  margin: auto; }
 
-#googleplay-border {
-  -webkit-transition: stroke .3s ease;
-  transition: stroke .3s ease; }
+.activity-slider__top {
+  margin-bottom: 10px; }
+  .activity-slider__top .slick-arrow {
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: .4;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+    .activity-slider__top .slick-arrow:hover {
+      opacity: 1; }
+    .activity-slider__top .slick-arrow:after {
+      border-color: #9e9a99; }
+    .activity-slider__top .slick-arrow.slick-prev {
+      left: 10px; }
+    .activity-slider__top .slick-arrow.slick-next {
+      right: 10px; }
+  .activity-slider__top--item {
+    height: 360px;
+    position: relative;
+    overflow: hidden; }
+    .activity-slider__top--item img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto; }
 
-#googleplay-body {
-  -webkit-transition: fill .3s ease;
-  transition: fill .3s ease; }
-
-#appstore-border {
-  -webkit-transition: stroke .3s ease;
-  transition: stroke .3s ease; }
-
-#appstore-body {
-  -webkit-transition: fill .3s ease;
-  transition: fill .3s ease; }
-
-.social-item a:hover #fb-icon-circle,
-.social-item a:hover #inst-icon-circle {
-  stroke: #fff; }
-
-.social-item a:hover #fb-icon-stroke,
-.social-item a:hover #inst-icon-stroke {
-  fill: #fff; }
-
-.site-footer-apps__item a:hover #googleplay-border,
-.site-footer-apps__item a:hover #appstore-border {
-  stroke: #fff; }
-
-.site-footer-apps__item a:hover #googleplay-body,
-.site-footer-apps__item a:hover #appstore-body {
-  fill: #fff; }
+.activity-slider__nav {
+  margin-bottom: 20px; }
+  .activity-slider__nav .slick-slide .activity-slider__nav--item:after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4; }
+  .activity-slider__nav .slick-slide.slick-current .activity-slider__nav--item:after {
+    opacity: 0; }
+  .activity-slider__nav--item {
+    height: 75px;
+    max-width: 115px;
+    position: relative;
+    overflow: hidden; }
+    .activity-slider__nav--item img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto; }
 
 .nav {
   text-align: center; }
@@ -1845,7 +1924,9 @@ body:after {
   .right-sidebar {
     padding-left: 20px; }
   .site-footer-apps__item a {
-    width: 100px; } }
+    width: 100px; }
+  .left-container {
+    padding-right: 0; } }
 
 @media (max-width: 991px) {
   a, a:after, a:before, button, input {
@@ -1890,7 +1971,10 @@ body:after {
       top: 7px;
       right: 8px;
       -webkit-transition: .3s ease;
-      transition: .3s ease; } }
+      transition: .3s ease; }
+  .activity-data {
+    font-size: 12px;
+    margin-bottom: 10px; } }
 
 @media (max-width: 767px) {
   .mob-hide {
@@ -1941,4 +2025,9 @@ body:after {
   .nav__list {
     padding: 10px 0; }
   .nav__list--item {
-    margin-right: 3px; } }
+    margin-right: 3px; }
+  .activity-slider__top--item {
+    height: 52vw; }
+  .activity-slider__nav--item {
+    height: 13vw;
+    max-width: 20vw; } }

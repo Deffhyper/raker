@@ -100,7 +100,72 @@
             <div class="left-container">
                 <div class="activity-data margin-top"><span>12 апреля 2017, 16:43</span></div>
                 <h1 class="page-title">Заголовок страницы</h1>
-                <img src="img/jpeg_files/detail.jpg" align="center" alt="detail" width="600" height="202">
+                <div class="activity-slider">
+                    <div class="activity-slider__top">
+                        <div>
+                            <div class="activity-slider__top--item">
+                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__top--item">
+                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__top--item">
+                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__top--item">
+                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__top--item">
+                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__top--item">
+                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-slider__nav">
+                        <div>
+                            <div class="activity-slider__nav--item">
+                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__nav--item">
+                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__nav--item">
+                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__nav--item">
+                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__nav--item">
+                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="activity-slider__nav--item">
+                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>
                     Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                     стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник

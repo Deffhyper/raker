@@ -8,10 +8,10 @@
     <div class="row flex-lg-row-reverse no-gutters">
         <div class="col-lg-4 col-md-12">
             <div class="right-sidebar">
-                <p class="right-sidebar-title">Raker</p>
+                <p class="right-sidebar-title">Активности</p>
                 <ul class="right-sidebar-list">
                     <li>
-                        <a href="javascript:void(0);" class="right-sidebar-list__title">О Raker</a>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Активность номер 2 с названием в две строки...</a>
                         <ul class="right-sidebar-list__sublist">
                             <li><a href="#">Якорь 1</a></li>
                             <li><a href="#">Якорь 2</a></li>
@@ -19,7 +19,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="right-sidebar-list__title">Вопросы и ответы</a>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Активность номер 3</a>
                         <ul class="right-sidebar-list__sublist">
                             <li><a href="#">Якорь 1</a></li>
                             <li><a href="#">Якорь 2</a></li>
@@ -27,7 +27,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="right-sidebar-list__title">Вакансии</a>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Активность номер 4 </a>
                         <ul class="right-sidebar-list__sublist">
                             <li><a href="#">Якорь 1</a></li>
                             <li><a href="#">Якорь 2</a></li>
@@ -35,18 +35,21 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="right-sidebar-list__title">Контакты</a>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Активность номер 5 </a>
                         <ul class="right-sidebar-list__sublist">
                             <li><a href="#">Якорь 1</a></li>
                             <li><a href="#">Якорь 2</a></li>
                             <li><a href="#">Якорь 3</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn__arrow right-sidebar-list__title"><span>Ахрив активностей </span></a>
                     </li>
                 </ul>
-                <p class="right-sidebar-title">Покупки</p>
+                <p class="right-sidebar-title">Ракер на выезде</p>
                 <ul class="right-sidebar-list">
                     <li>
-                        <a href="javascript:void(0);" class="right-sidebar-list__title">Оплата</a>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Выезд номер 1</a>
                         <ul class="right-sidebar-list__sublist">
                             <li><a href="#">Якорь 1</a></li>
                             <li><a href="#">Якорь 2</a></li>
@@ -54,30 +57,50 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="right-sidebar-list__title">Доставка</a>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Выезд номер 2</a>
                         <ul class="right-sidebar-list__sublist">
                             <li><a href="#">Якорь 1</a></li>
                             <li><a href="#">Якорь 2</a></li>
                             <li><a href="#">Якорь 3</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Выезд номер 3 с названием в две строки...</a>
+                        <ul class="right-sidebar-list__sublist">
+                            <li><a href="#">Якорь 1</a></li>
+                            <li><a href="#">Якорь 2</a></li>
+                            <li><a href="#">Якорь 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="right-sidebar-list__title">Выезд номер 4</a>
+                        <ul class="right-sidebar-list__sublist">
+                            <li><a href="#">Якорь 1</a></li>
+                            <li><a href="#">Якорь 2</a></li>
+                            <li><a href="#">Якорь 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn__arrow right-sidebar-list__title"><span>Ахрив раздела</span></a>
                     </li>
                 </ul>
-                <p class="right-sidebar-title">Информация</p>
+                <p class="right-sidebar-title">Ракер блог</p>
                 <ul class="right-sidebar-list">
-                    <li><a href="#" class="right-sidebar-list__title">Бонусная программа</a></li>
-                    <li><a href="#" class="right-sidebar-list__title">Подарочные сертификаты</a></li>
-                    <li><a href="#" class="right-sidebar-list__title">Авторские права</a></li>
-                    <li><a href="#" class="right-sidebar-list__title">Политика конфиденциальности</a></li>
-                    <li><a href="#" class="right-sidebar-list__title">Обработка персональных данных</a></li>
-                    <li><a href="#" class="right-sidebar-list__title">Положения о сайте</a></li>
-                    <li><a href="#" class="right-sidebar-list__title">Положение о сотрудничестве</a></li>
+                    <li><a href="#" class="right-sidebar-list__title">Статья номер 1</a></li>
+                    <li><a href="#" class="right-sidebar-list__title">Статья номер 2</a></li>
+                    <li><a href="#" class="right-sidebar-list__title">Статья номер 3</a></li>
+                    <li>
+                        <a href="#" class="btn btn__arrow right-sidebar-list__title"><span>Все статьи блога</span></a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="col-lg-8 col-md-12">
             <div class="left-container">
+                <div class="activity-data margin-top"><span>12 апреля 2017, 16:43</span></div>
                 <h1 class="page-title">Заголовок страницы</h1>
+                <img src="img/jpeg_files/detail.jpg" align="center" alt="detail" width="600" height="202">
                 <p>
                     Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                     стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник

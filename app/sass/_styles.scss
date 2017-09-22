@@ -158,8 +158,16 @@
 
 .page-title {
   font-family: $font-heavy;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   margin-top: 10px;
+}
+
+.left-container {
+  padding-right: 20px;
+
+  img[align="center"] {
+    margin-bottom: 25px;
+  }
 }
 
 .right-sidebar {
@@ -183,6 +191,10 @@
     font-size: 16px;
     padding: 8px 0;
     display: block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     &.open {
       color: $accent;
       font-family: $font-medium;
@@ -233,47 +245,87 @@
   }
 }
 
-#fb-icon-circle, #inst-icon-circle {
-  transition: stroke .3s ease;
+.activity-data {
+  font-size: 14px;
+  color: #666666;
+}
+.activity-slider {
+  margin: auto;
 }
 
-#fb-icon-stroke, #inst-icon-stroke {
-  transition: fill .3s ease;
+.activity-slider__top {
+  margin-bottom: 10px;
+  .slick-arrow {
+    background-color: rgba(255, 255, 255, .8);
+    opacity: .4;
+    transition: .3s ease;
+    &:hover {
+      opacity: 1;
+    }
+    &:after {
+      border-color: #9e9a99;
+    }
+    &.slick-prev {
+      left: 10px;
+    }
+    &.slick-next {
+      right: 10px;
+    }
+  }
+  &--item {
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
-#googleplay-border {
-  transition: stroke .3s ease;
-}
+.activity-slider__nav {
+  margin-bottom: 20px;
 
-#googleplay-body {
-  transition: fill .3s ease;
-}
-
-#appstore-border {
-  transition: stroke .3s ease;
-}
-
-#appstore-body {
-  transition: fill .3s ease;
-}
-
-.social-item a:hover #fb-icon-circle,
-.social-item a:hover #inst-icon-circle {
-  stroke: #fff;
-}
-.social-item a:hover #fb-icon-stroke,
-.social-item a:hover #inst-icon-stroke {
-  fill: #fff;
-}
-
-.site-footer-apps__item a:hover #googleplay-border,
-.site-footer-apps__item a:hover #appstore-border {
-  stroke: #fff;
-}
-
-.site-footer-apps__item a:hover #googleplay-body,
-.site-footer-apps__item a:hover #appstore-body {
-  fill: #fff;
+  .slick-slide {
+    .activity-slider__nav--item {
+      &:after {
+        content: '';
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .4;
+      }
+    }
+  }
+  .slick-slide.slick-current {
+    .activity-slider__nav--item {
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+  &--item {
+    height: 75px;
+    max-width: 115px;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 
@@ -291,6 +343,9 @@
     }
   }
 }
+
+
+
 
 .nav-button {
   position: relative;

@@ -200,43 +200,7 @@
 }
 
 .main-goods-list {
-  .slick-arrow {
-    background-color: #231f20;
-    color: transparent;
-    width: 35px;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;
-    border: 0;
-    z-index: 6;
 
-    &:after {
-      content: '';
-      display: block;
-      width: 15px;
-      height: 15px;
-      border-top: 2px solid #fff;
-      border-right: 2px solid #fff;
-      position: absolute;
-      top: 19px;
-    }
-    &.slick-prev {
-      left: 0;
-      &:after {
-        transform: rotateZ(-135deg);
-        left: 13px;
-      }
-
-    }
-    &.slick-next {
-      right: 0;
-      &:after {
-        transform: rotateZ(45deg);
-        right: 14px;
-      }
-    }
-  }
 }
 
 @media ($desktop) {
