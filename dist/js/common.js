@@ -126,9 +126,9 @@ $(function() {
         arrows: false,
         slideToShow: 1,
         slideToScroll: 1,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 5000
+        dots: true
+        // autoplay: true,
+        // autoplaySpeed: 5000
     });
 
     ////////////////////////////////// responsive goods slider main page //////////////////
@@ -183,6 +183,37 @@ $(function() {
                 }
             }
         ]
+    });
+
+
+    ///////////////////////////////////////////////// nav mobile /////////////////////////////////////
+
+    function bindJsOnFilterSelectTablet(windowWidth) {
+        var nav = $('.nav.nav-goods').find('.init');
+        var allOptions = $('.nav__list');
+
+        if (windowWidth < 992) {
+            nav.unbind('click').on("click", function(e) {
+                allOptions.slideToggle();
+                $(this).toggleClass('open');
+            });
+
+            allOptions.on("click", 'li', function(e) {
+                e.preventDefault();
+                allOptions.removeClass('selected');
+                $(this).addClass('selected');
+                nav.children('a').html($(this).find('.nav-button__text').html());
+                allOptions.slideToggle();
+                nav.removeClass('open');
+            });
+        } else {
+            nav.unbind('click');
+            allOptions.find('li').removeAttr('style');
+        }
+    }
+
+    $(window).ready(bindJsOnFilterSelectTablet(windowWidth)).resize(function () {
+        bindJsOnFilterSelectTablet(window.innerWidth);
     });
 
 

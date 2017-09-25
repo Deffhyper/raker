@@ -711,6 +711,31 @@
 }
 
 @media ($mobile) {
+
+  .burger-button span {
+    width: 25px;
+  }
+  .burger-button span:first-child {
+    top: 13px;
+  }
+  .burger-button span:nth-child(2) {
+    top: 21px;
+  }
+  .burger-button span:last-child {
+    top: 29px;
+  }
+
+  .page-header-mobile-tel .icon-phone {
+    font-size: 23px;
+    margin-top: 7px;
+  }
+
+  .page-header-cart .icon-cart {
+    font-size: 25px;
+    top: 5px;
+    position: relative;
+  }
+
   .page-header-bottom-nav__item {
     font-size: 10px;
   }

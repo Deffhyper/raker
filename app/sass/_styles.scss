@@ -331,6 +331,9 @@
 
 .nav {
   text-align: center;
+  .init {
+    display: none;
+  }
   &__list {
     padding: 20px 0;
 
@@ -383,5 +386,18 @@
   }
 }
 
+
+.three-item-list {
+  &__item {
+    display: inline-block;
+    margin-left: -2px;
+    width: 32.9%;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
 
 

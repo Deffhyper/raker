@@ -138,7 +138,9 @@
     </div>
 </div>
 
-<div class="main-shares" style="background: url('img/jpeg_files/sh-1.png') no-repeat left / cover">
+<div class="main-shares">
+    <div class="main-shares__bg-1" style="background: url('img/jpeg_files/sh-bg-1.png') no-repeat center / cover"></div>
+    <div class="main-shares__bg-2" style="background: url('img/jpeg_files/sh-1.png') no-repeat left / contain"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 push-lg-4">
@@ -176,7 +178,9 @@
     </div>
 </div>
 
-<div class="main-shares" style="background: url('img/jpeg_files/sh-2.png') no-repeat left / cover">
+<div class="main-shares">
+    <div class="main-shares__bg-1" style="background: url('img/jpeg_files/sh-bg-1.png') no-repeat center / cover"></div>
+    <div class="main-shares__bg-2" style="background: url('img/jpeg_files/sh-2.png') no-repeat left / contain"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 push-lg-4">
@@ -211,9 +215,8 @@
     </div>
 </div>
 
-<div class="seo-text">
-    <div class="container">
-        <br><br>
+<div class="container">
+    <div class="seo-text">
         <p>
             Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
             стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник

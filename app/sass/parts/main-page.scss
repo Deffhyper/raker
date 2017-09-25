@@ -75,7 +75,7 @@
     border-top: 50px solid rgba(35, 31, 32, .902);
     position: absolute;
     left: 0;
-    bottom: -50px;
+    bottom: -49px;
   }
 
   
@@ -85,9 +85,9 @@
     &.big {
       font-size: 48px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       max-width: 360px;
-      margin: 0 auto 30px;
+      margin: 0 auto 20px;
       b {
         font-size: 57px;
       }
@@ -165,10 +165,17 @@
 
 .main-shares {
   position: relative;
-  height: 335px;
+  height: 370px;
   text-align: center;
   display: flex;
   align-items: center;
+  &__bg-1, &__bg-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
   &__title {
     font-family: $font-heavy;
@@ -199,8 +206,13 @@
   }
 }
 
-.main-goods-list {
 
+.seo-text {
+  column-count: 2;
+  column-gap: 40px;
+  color: #333333;
+  font-size: 13px;
+  margin-top: 40px;
 }
 
 @media ($desktop) {
@@ -229,6 +241,18 @@
 @media ($tablet) {
   .main-shares {
     background: #fafafa !important;
+    display: block;
+    height: auto;
+    .container {
+      padding: 50px 15px;
+    }
+  }
+
+  .main-shares__bg-2 {
+    position: relative;
+    height: 265px;
+    width: 100%;
+    background-size: cover !important;
   }
 
   .top-banner-text__title {
@@ -240,6 +264,12 @@
     margin-right: 3px;
     width: 33%;
   }
+
+  .accent-block__list {
+    padding-top: 35px;
+  }
+
+
 }
 
 @media ($mobile) {
@@ -294,7 +324,7 @@
 
   .main-shares {
     height: auto;
-    padding: 30px 0;
+    //padding: 30px 0;
   }
 
   .main-shares__apps--item {
@@ -355,6 +385,13 @@
         margin-left: auto;
       }
     }
+  }
+
+  .seo-text {
+    column-count: 1;
+    column-gap: 0;
+    font-size: 13px;
+    margin-top: 20px;
   }
 
 }
