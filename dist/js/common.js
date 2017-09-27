@@ -120,6 +120,10 @@ $(function() {
         }
     });
 
+    $(window).resize(function(){
+        $(".DateCountdown").TimeCircles().rebuild();
+    });
+
     /////////////////////////////// top banner slider /////////////////////
 
     $('.top-banner-slider').slick({
@@ -147,7 +151,10 @@ $(function() {
                 });
             }
         } else {
-            $goodsSlider.slick('unslick');
+            if($goodsSlider.hasClass('slick-initialized')){
+                $goodsSlider.slick('unslick');
+            }
+
         }
     }
 
