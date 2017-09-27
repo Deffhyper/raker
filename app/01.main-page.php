@@ -192,7 +192,7 @@
         </div>
     </div>
 </div>
-<div class="main-shares" style="background: #f7f7f7 url('img/jpeg_files/gray-block.png') no-repeat center / cover">
+<div class="main-shares">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 push-lg-4">
@@ -213,6 +213,9 @@
             </div>
         </div>
     </div>
+
+    <div class="main-shares__bg-1" style="background: url('img/jpeg_files/sh-bg-1.png') no-repeat center / cover"></div>
+    <div class="main-shares__bg-2" style="background: url('img/jpeg_files/sh-2.png') no-repeat left / contain"></div>
 </div>
 
 <div class="container">
