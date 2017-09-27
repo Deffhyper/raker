@@ -140,7 +140,7 @@
 
 <div class="main-shares">
     <div class="main-shares__bg-1" style="background: url('img/jpeg_files/sh-bg-1.png') no-repeat center / cover"></div>
-    <div class="main-shares__bg-2" style="background: url('img/jpeg_files/sh-1.png') no-repeat left / contain"></div>
+    <div class="main-shares__bg-2" style="background: url('img/jpeg_files/bg_raker.png') no-repeat left / contain"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 push-lg-4">
