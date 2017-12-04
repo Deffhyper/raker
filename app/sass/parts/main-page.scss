@@ -126,7 +126,7 @@
 }
 
 .accent-block {
-  background-color: #e95b43;
+  background-color: $accent-second;
   padding: 0 50px;
   color: #ffffff;
   height: 115px;
@@ -210,9 +210,8 @@
 .seo-text {
   column-count: 2;
   column-gap: 40px;
-  color: #333333;
+  color: #727272;
   font-size: 13px;
-  margin-top: 40px;
 }
 
 @media ($desktop) {

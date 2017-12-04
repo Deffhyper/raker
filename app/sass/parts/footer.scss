@@ -4,12 +4,11 @@ body:after {
   content: '';
   height: 315px;
   display: block;
-  margin-top: 40px;
 }
 
 .site-footer {
-  background-color: $black-background;
-  color: #9b9b9b;
+  background-color: $footer-bg;
+  color: #fffefe;
   height: 315px;
   position: absolute;
   bottom: 0;
@@ -23,15 +22,17 @@ body:after {
 .site-footer-top {
   padding: 0 0 53px;
   min-height: 205px;
-  border-bottom: 1px dashed #9b9b9b;
+  border-bottom: 1px dashed #fffefe;
 }
 
 .site-footer-title {
   font-size: 16px;
   margin-bottom: 15px;
+  font-family: $font-comforta-bold;
 }
 
 .site-footer-list {
+  font-family: $font-light;
 
   li {
     margin-bottom:7px;
@@ -122,21 +123,21 @@ body:after {
 
 .social-item a:hover #fb-icon-circle,
 .social-item a:hover #inst-icon-circle {
-  stroke: #fff;
+  stroke: $accent;
 }
 .social-item a:hover #fb-icon-stroke,
 .social-item a:hover #inst-icon-stroke {
-  fill: #fff;
+  fill: $accent;
 }
 
 .site-footer-apps__item a:hover #googleplay-border,
 .site-footer-apps__item a:hover #appstore-border {
-  stroke: #fff;
+  stroke: $accent;
 }
 
 .site-footer-apps__item a:hover #googleplay-body,
 .site-footer-apps__item a:hover #appstore-body {
-  fill: #fff;
+  fill: $accent;
 }
 
 
@@ -177,7 +178,6 @@ body:after {
     height: auto !important;
     padding-top: 20px;
     position: relative;
-    margin-top: 30px;
   }
 
   .site-footer-top {
@@ -195,7 +195,7 @@ body:after {
   }
 
   .site-footer-title {
-    border-bottom: 1px dashed #9b9b9b;
+    border-bottom: 1px dashed #fffefe;
     padding-bottom: 16px;
     margin-bottom: 15px;
     position: relative;
@@ -256,6 +256,10 @@ body:after {
 
   .site-footer-tel {
     margin-bottom: 15px;
+  }
+
+  .social-block li {
+    max-width: 30px;
   }
 
 
