@@ -1,3 +1,5 @@
+<?php //echo file_get_contents("img/svg_sprite/svg/symbols.svg")?>
+
 <header class="page-header">
     <div class="page-header-top">
         <div class="container">

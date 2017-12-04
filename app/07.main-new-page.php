@@ -18,11 +18,13 @@
                     </div>
 
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis distinctio doloremque
-                        dolores error ex hic, ipsum minima nihil nostrum porro quae quo ratione repellendus repudiandae
-                        ut veniam? Beatae, ratione!
-                    </p>
+                    <div class="input-group date">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-th"></i>
+                        </span>
+                    </div>
+
                     <p class="goods-hrz__right--link">
                         <a href="#" class="btn btn__arrow btn__underline btn__regular "><span>Детальнее</span></a>
                     </p>

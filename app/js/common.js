@@ -224,5 +224,13 @@ $(function() {
     });
 
 
+    ////////////////////////////////////// date picker ///////////////////////////////////
+
+    $('.date').datepicker({
+        language: 'ru',
+        autoclose: true
+    });
+
+
 
 });
