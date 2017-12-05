@@ -63,32 +63,20 @@
                     <ul class="page-header-bottom-nav list-inline">
                         <li class="page-header-bottom-nav__item">
                             <a href="#">
-                                <i class="iconmoon icon-rak"></i>
-                                <span>Раки</span>
-                            </a>
-                        </li>
-                        <li class="page-header-bottom-nav__item for-small-devices">
-                            <a href="#">
-                                <i class="iconmoon icon-anchor"></i>
-                                <span>Свежий улов</span>
+                                <span class="iconmoon icon-fish"></span>
+                                <span>Fresh Catch</span>
                             </a>
                         </li>
                         <li class="page-header-bottom-nav__item">
                             <a href="#">
-                                <i class="iconmoon icon-dishes"></i>
-                                <span>Блюда</span>
-                            </a>
-                        </li>
-                        <li class="page-header-bottom-nav__item">
-                            <a href="#">
-                                <i class="iconmoon icon-house"></i>
+                                <span class="iconmoon icon-house"></span>
                                 <span>Магазин</span>
                             </a>
                         </li>
                         <li class="page-header-bottom-nav__item">
                             <a href="#">
-                                <i class="iconmoon icon-electro"></i>
-                                <span>Активности</span>
+                                <span class="iconmoon icon-fishing-rod"></span>
+                                <span>Поставщики</span>
                             </a>
                         </li>
                     </ul>

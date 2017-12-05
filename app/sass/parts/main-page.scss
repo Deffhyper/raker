@@ -143,19 +143,16 @@
   color: inherit;
   counter-increment: myCount;
   position: relative;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 55px;
   display: inline-block;
   font-size: 14px;
-}
 
-.accent-block__list--item:before {
-  content: counter(myCount) ".";
-  position: absolute;
-  top: -3px;
-  left: 5px;
-  font-size: 36px;
-  font-family: $font-light;
-  line-height: 1;
+  .iconmoon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+  }
 }
 
 .accent-block__list--item b {

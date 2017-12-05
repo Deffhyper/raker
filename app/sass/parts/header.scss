@@ -1,3 +1,7 @@
+.page-header {
+  margin-bottom: 25px;
+}
+
 .page-header-top {
   background-color: $accent;
   height: 50px;
@@ -219,7 +223,7 @@
   display: inline-block;
 
   &__item {
-    padding: 6px 0;
+    padding: 8px 0;
     margin-right: 28px;
     a {
       transition: .3s ease;
@@ -241,6 +245,10 @@
       font-size: 23px;
       margin-right: 15px;
     }
+    .icon-fish {
+      font-size: 19px;
+      margin-right: 6px;
+    }
     .icon-dishes {
       font-size: 18px;
       margin-right: 9px;
@@ -253,6 +261,11 @@
     .icon-electro {
       font-size: 23px;
       margin-right: 7px;
+    }
+
+    .icon-fishing-rod {
+      font-size: 18px;
+      margin-right: 5px;
     }
   }
 }
@@ -281,7 +294,7 @@
 
   &:hover {
     .page-header-bottom-fresh__dropdown {
-      z-index: 3;
+      z-index: 5;
       opacity: 1;
       right: 0;
     }
@@ -542,6 +555,11 @@
 }
 
 @media ($desktop) {
+
+  .mob-menu .page-header-bottom-nav {
+    display: block;
+  }
+
   .mob-menu-blur {
     position: fixed;
     top: 0;
@@ -640,7 +658,8 @@
 
   .page-header-bottom-nav {
     margin-left: 0;
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   .page-header-bottom {
@@ -748,6 +767,10 @@
     font-size: 25px;
     top: 5px;
     position: relative;
+  }
+
+  .page-header-bottom-nav {
+    justify-content: space-around;
   }
 
   .page-header-bottom-nav__item {

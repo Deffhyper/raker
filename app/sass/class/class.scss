@@ -14,11 +14,12 @@
 
 .btn {
   font-family: $font;
-  font-size: 15px;
+  font-size: 16px;
   display: inline-block;
   color: $black-background;
   border-radius: 4px;
   transition: .3s ease;
+  text-align: center;
 
   &.btn__regular {
     font-family: $font-medium;
@@ -108,8 +109,7 @@
   }
 
   &__border {
-    font-family: $font-medium !important;
-    font-size: 14px;
+    font-family: $font-comforta-bold !important;
     border: 3px solid $black-background;
     width: 175px;
     padding: 10px 0 9px;
@@ -138,6 +138,7 @@
   }
 }
 
+
 /////////////////////////////////////////// goods //////////////////////////////
 
 .goods {
@@ -157,7 +158,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 1;
     }
 
     a {
@@ -169,7 +169,7 @@
       position: absolute;
       top: 4px;
       right: 4px;
-      z-index: 2;
+
     }
   }
 
@@ -235,6 +235,13 @@
   }
 }
 
+@media ($mobile) {
+  .goods__link .btn {
+    width: 100%;
+  }
+}
+
+
 ///////////////////////////////////////// goods horizontal /////////////////////
 
 .goods-hrz {
@@ -260,8 +267,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 100%;
-      max-width: none;
+      max-width: 100%;
     }
 
 
@@ -278,34 +284,160 @@
     border-top-right-radius: 10px;
     padding: 20px 27px;
 
-    &--data {
-      font-size: 12px;
-      display: block;
-      margin-bottom: 10px;
-      height: 14px;
-      overflow: hidden;
+  }
+
+  &--inverse {
+    .goods-hrz__right {
+      background-color: rgba(0, 0, 0, .8);
+      color: #fff;
     }
 
-    &--title {
-      font-family: $font-heavy;
-      display: block;
-      font-size: 20px;
-      height: 50px;
-      overflow: hidden;
-      margin-bottom: 15px;
+    .goods-hrz-prop-locate,
+    .goods-hrz-prop-date,
+    .custom-date{
+      svg {
+        path {
+          stroke: #fff !important;
+        }
+      }
     }
-    &--text {
-      font-family: $font-medium;
-      font-size: 14px;
-      height: 170px;
-      overflow: hidden;
-      line-height: 1.22;
-    }
-    &--link {
-      text-align: center;
+
+    .btn.btn__border {
+      border-color: #fff;
+      color: #fff;
     }
   }
 
+}
+
+.goods-hrz-prop-locate {
+  display: inline-block;
+  width: 20px;
+}
+
+.goods-hrz-prop-manufacturer {
+  font-size: 19px;
+  margin-left: 6px;
+
+}
+
+.goods-hrz-prop-date,
+.custom-date {
+  width: 18px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin-left: 7px;
+
+}
+
+.goods-hrz-title {
+  font-size: 27px;
+  font-family: $font-comforta-bold;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  &__link {
+    display: inline-block;
+    width: calc(100% - 40px);
+    line-height: 1.1;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .country-flag {
+    height: 100%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+
+.goods-hrz-prop {
+  margin-bottom: 10px;
+  height: 68px;
+  overflow: hidden;
+
+  &__cut {
+    display: inline-block;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__item {
+    font-weight: bold;
+  }
+}
+
+.goods-hrz-icons {
+  margin-bottom: 5px;
+
+  &__item {
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &>a {
+      display: block;
+      height: 100%;
+      position: relative;
+      padding: 5px;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .iconmoon {
+      line-height: .5;
+    }
+
+    .icon-fish {
+      font-size: 22px;
+    }
+
+    .icon-fish-2 {
+      font-size: 34px;
+    }
+
+    .icon-fish-3 {
+      font-size: 30px;
+    }
+
+  }
+}
+
+.goods-hrz-icon {
+  max-width: 45px;
+  max-height: 45px;
+}
+
+.goods-hrz-short-description {
+  font-weight: bold;
+  height: 33px;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+}
+
+@media ($tablet) {
+  .goods-hrz__back img {
+    max-width: none;
+  }
 }
 
 @media ($mobile) {
@@ -320,17 +452,9 @@
     right: 0;
     width: 100%;
     padding: 10px;
-  }
-
-  .goods-hrz__right--title {
-    height: auto;
-    overflow: visible;
-  }
-
-  .goods-hrz__right--text {
-    height: auto;
-    overflow: visible;
-    margin-bottom: 20px;
+    box-shadow: 0 0 15px 1px rgba(0,0,0, .4);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
   .goods-hrz__mobile {
@@ -340,6 +464,23 @@
 
   .goods-hrz {
     height: auto;
+  }
+
+  .goods-hrz__back img {
+    max-width: 100%;
+  }
+
+  .goods-hrz-title {
+    font-size: 20px;
+    padding: 10px 0px;
+  }
+
+  .goods-hrz-title__link {
+    height: auto;
+  }
+
+  .goods-hrz-title .country-flag {
+    margin-top: 5px;
   }
 
 
@@ -426,3 +567,167 @@
     background-color: #f1f1f1;
   }
 }
+
+
+////////////////////////////////////////// datepicker /////////////////////////////////////
+
+.custom-date {
+  &__icon {
+    width: 18px;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+///////////////////////////////////////// icon tool tip //////////////////////////////////
+
+.icon-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+ background-color: #fff;
+  z-index: 2;
+  padding: 15px 15px 5px 76px;
+  border-radius: 7px;
+  width: 295px;
+  font-size: 12px;
+  box-shadow: 0 0 12px 1px rgba(0,0,0,.4);
+  color: $text-color;
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+  }
+
+  &__title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    max-width: 165px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    line-height: 1;
+
+    &:after{
+      content: '✖';
+      font-size: 20px;
+    }
+  }
+
+
+  &__img {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+    }
+  }
+}
+
+
+//////////////////////////////////////// three item slider ////////////////////////////////////
+
+.three-item-slider {
+  margin-bottom: 45px;
+
+  &__item {
+    margin: 0 5px;
+  }
+
+
+  .slick-arrow {
+    top: -17px;
+    border: 2px solid $text-color;
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: .3s ease;
+
+    &:hover {
+      background-color: $text-color;
+      &:after {
+        border-color: #fff;
+      }
+    }
+
+    &:after {
+      border-color: $text-color;
+      top: 10px;
+      width: 9px;
+      height: 9px;
+    }
+
+    &.slick-prev {
+      right: 40px;
+      left: inherit;
+      &:after {
+        left: 11px;
+      }
+    }
+
+    &.slick-next {
+      &:after {
+        left: 9px;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+
+  .three-item-slider .goods__img img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .three-item-slider .goods__img {
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,7 +15,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
 gulp.task('sass', function(){ // Создаем таск Sass
 	return gulp.src('app/sass/*.+(scss|sass)') // Берем источник
 		.pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-		.pipe(autoprefixer(['last 15 versions', '> 1%'], { cascade: true })) // Создаем префиксы
+		.pipe(autoprefixer(['last 5 versions'], { cascade: true })) // Создаем префиксы
 		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
 		.pipe(browserSync.reload({stream: true}));// Обновляем CSS на странице при изменении
 });
