@@ -1,0 +1,236 @@
+.icon {
+    font-size: 16px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 37.2049375em 344.4375em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.icon-1_min:before {
+      background-position: 0em 0em;
+      width: 3.75em;
+      height: 3.75em;
+  }
+
+
+
+
+  .icon.icon-2_min:before {
+      background-position: 0em -3.75em;
+      width: 3.75em;
+      height: 3.75em;
+  }
+
+
+
+
+  .icon.icon-Seadora_logo:before {
+      background-position: 0em -7.5em;
+      width: 0em;
+      height: 0em;
+  }
+
+
+
+
+  .icon.icon-anchor:before {
+      background-position: 0em -7.5em;
+      width: 30.0625em;
+      height: 36.625em;
+  }
+
+
+
+
+  .icon.icon-arrow_f4:before {
+      background-position: 0em -44.125em;
+      width: 8.0625em;
+      height: 8.0625em;
+  }
+
+
+
+
+  .icon.icon-cart:before {
+      background-position: 0em -52.1875em;
+      width: 9.566875em;
+      height: 9.96875em;
+  }
+
+
+
+
+  .icon.icon-crab:before {
+      background-position: 0em -62.1875em;
+      width: 37.2049375em;
+      height: 37.3125em;
+  }
+
+
+
+
+  .icon.icon-dish:before {
+      background-position: 0em -99.5em;
+      width: 8.625em;
+      height: 5.1770625em;
+  }
+
+
+
+
+  .icon.icon-dishes:before {
+      background-position: 0em -104.6875em;
+      width: 8.15em;
+      height: 4.9625em;
+  }
+
+
+
+
+  .icon.icon-dishes_icon:before {
+      background-position: 0em -109.6875em;
+      width: 8.15em;
+      height: 4.9625em;
+  }
+
+
+
+
+  .icon.icon-electro:before {
+      background-position: 0em -114.6875em;
+      width: 37.2049375em;
+      height: 28.5625em;
+  }
+
+
+
+
+  .icon.icon-electro-2:before {
+      background-position: 0em -143.25em;
+      width: 1em;
+      height: 1.5625em;
+  }
+
+
+
+
+  .icon.icon-fish:before {
+      background-position: 0em -144.8125em;
+      width: 37.2049375em;
+      height: 30.25em;
+  }
+
+
+
+
+  .icon.icon-fishing-rod:before {
+      background-position: 0em -175.0625em;
+      width: 8.8125em;
+      height: 32em;
+  }
+
+
+
+
+  .icon.icon-house:before {
+      background-position: 0em -207.0625em;
+      width: 3.75em;
+      height: 3.75em;
+  }
+
+
+
+
+  .icon.icon-in_time:before {
+      background-position: 0em -210.8125em;
+      width: 3.75em;
+      height: 3.75em;
+  }
+
+
+
+
+  .icon.icon-label_discount:before {
+      background-position: 0em -214.5625em;
+      width: 32em;
+      height: 32em;
+  }
+
+
+
+
+  .icon.icon-list:before {
+      background-position: 0em -246.5625em;
+      width: 3.5625em;
+      height: 3.5625em;
+  }
+
+
+
+
+  .icon.icon-logo:before {
+      background-position: 0em -250.125em;
+      width: 15.75em;
+      height: 16.1875em;
+  }
+
+
+
+
+  .icon.icon-phone:before {
+      background-position: 0em -266.3125em;
+      width: 29.612875em;
+      height: 29.612875em;
+  }
+
+
+
+
+  .icon.icon-rak:before {
+      background-position: 0em -295.9375em;
+      width: 4.6524375em;
+      height: 5.469em;
+  }
+
+
+
+
+  .icon.icon-roket:before {
+      background-position: 0em -301.4375em;
+      width: 1.5625em;
+      height: 1.5625em;
+  }
+
+
+
+
+  .icon.icon-shrimp:before {
+      background-position: 0em -303em;
+      width: 12.2778125em;
+      height: 38em;
+  }
+
+
+
+
+  .icon.icon-user:before {
+      background-position: 0em -341em;
+      width: 3.4375em;
+      height: 3.4375em;
+  }
+
+
+
+
+

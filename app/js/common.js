@@ -236,11 +236,14 @@ $(function() {
     function closeTooltip() {
         $('.icon-tooltip').removeClass('open').fadeOut();
         $('.icon-tooltip-trigger').removeClass('opened');
+        $('.icon-tooltip-trigger').parent().removeClass('open');
     }
 
     $('.icon-tooltip-trigger').on('click', function (e) {
         e.preventDefault();
         closeTooltip();
+
+        $(this).parent().toggleClass('open');
 
         $(this).parent().siblings().find('.icon-tooltip').removeClass('open').fadeOut();
         if($(this).hasClass('opened')){
@@ -290,6 +293,14 @@ $(function() {
     });
 
 
+    ///////////////////////////////////// one item slider ////////////////////////////
+
+    $('.one-item-slider').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: true,
+        infinite: true
+    });
 
 
 });

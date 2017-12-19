@@ -81,7 +81,7 @@
         </div>
         <div class="row no-gutters justify-content-between site-footer-bottom">
             <div class="col-md-12">
-                <div class="site-footer-copyright"><span>2016-2017 ©  Raker.ua</span></div>
+                <div class="site-footer-copyright"><span>2017 © Seadora</span></div>
                 <ul class="site-footer-list site-footer-nav list-inline">
                     <li><a href="#">Карта сайта</a></li>
                     <li><a href="#">Обработка персональных данных</a></li>

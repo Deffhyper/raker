@@ -224,5 +224,83 @@ $(function() {
     });
 
 
+    ////////////////////////////////////// date picker ///////////////////////////////////
+
+    $('.custom-date').datepicker({
+        language: 'ru',
+        autoclose: true
+    });
+
+
+    ///////////////////////////////////// tooltip trigger ////////////////////////////////
+    function closeTooltip() {
+        $('.icon-tooltip').removeClass('open').fadeOut();
+        $('.icon-tooltip-trigger').removeClass('opened');
+        $('.icon-tooltip-trigger').parent().removeClass('open');
+    }
+
+    $('.icon-tooltip-trigger').on('click', function (e) {
+        e.preventDefault();
+        closeTooltip();
+
+        $(this).parent().toggleClass('open');
+
+        $(this).parent().siblings().find('.icon-tooltip').removeClass('open').fadeOut();
+        if($(this).hasClass('opened')){
+            $(this).next('.icon-tooltip').removeClass('open').fadeOut();
+            $(this).removeClass('opened');
+        } else {
+            $(this).next('.icon-tooltip').addClass('open').fadeIn();
+        }
+    });
+
+    $('.icon-tooltip__close').on('click', function(){
+        closeTooltip();
+    });
+
+    $(document).on('click', function (e) {
+        var $target = $(e.target);
+        if(!$target.closest('.icon-tooltip').length && !$target.closest('.icon-tooltip-trigger').length) {
+            closeTooltip();
+        }
+    });
+
+
+    ///////////////////////////////////// three item slider ////////////////////////////
+
+    $('.three-item-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
+    ///////////////////////////////////// one item slider ////////////////////////////
+
+    $('.one-item-slider').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: true,
+        infinite: true
+    });
+
 
 });

@@ -46,7 +46,8 @@ gulp.task('scripts', function() {
 		'app/libs/bootstrap/dist/js/bootstrap.min.js', // Bootstrap 4
 		'app/libs/TimeCircles/inc/TimeCircles.js', // time circle
 		'app/libs/datepicker/js/bootstrap-datepicker.min.js', // datepicker
-		'app/libs/datepicker/locales/bootstrap-datepicker.ru.min.js' // datepicker locale
+		'app/libs/datepicker/locales/bootstrap-datepicker.ru.min.js', // datepicker locale
+		'app/libs/jquery.rateit/scripts/jquery.rateit.js' // rating stars
 
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

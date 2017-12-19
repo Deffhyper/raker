@@ -141,7 +141,6 @@
 
 .accent-block__list--item {
   color: inherit;
-  counter-increment: myCount;
   position: relative;
   padding: 0 0 0 55px;
   display: inline-block;
@@ -149,14 +148,18 @@
 
   .iconmoon {
     position: absolute;
-    top: 0;
+    top: -4px;
     left: 0;
     font-size: 40px;
   }
 }
 
+.accent-block__list--item p {
+  font-family: $font-comforta-light;
+}
+
 .accent-block__list--item b {
-  font-family: $font-bold;
+  font-family: $font-comforta-bold;
 }
 
 
@@ -236,7 +239,6 @@
 
 @media ($tablet) {
   .main-shares {
-    background: #fafafa !important;
     display: block;
     height: auto;
     .container {
@@ -321,6 +323,7 @@
   .main-shares {
     height: auto;
     //padding: 30px 0;
+    background: url("../img/jpeg_files/small-banner.jpg") no-repeat center/cover !important;
   }
 
   .main-shares__apps--item {
@@ -388,6 +391,38 @@
     column-gap: 0;
     font-size: 13px;
     margin-top: 20px;
+  }
+
+}
+
+.reviews-block {
+  padding-top: 15px;
+
+  &__item {
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 15px;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+}
+
+.reviews-block-body > p{
+  overflow: hidden;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+.reviews-block-header {
+  margin-bottom: 10px;
+}
+
+.review-user-name {
+  font-size: 15px;
+  margin-right: 10px;
+  b {
+    margin-right: 5px;
   }
 
 }

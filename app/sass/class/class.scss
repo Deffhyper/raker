@@ -19,7 +19,6 @@
   color: $black-background;
   border-radius: 4px;
   transition: .3s ease;
-  text-align: center;
 
   &.btn__regular {
     font-family: $font-medium;
@@ -380,9 +379,21 @@
     vertical-align: middle;
     margin-right: 5px;
     position: relative;
+    animation: swim ease-in-out 3s infinite;
+    transition: .3s ;
+    &:hover {
+      animation: none;
+      z-index: 5;
+    }
+
+    &.open {
+      animation: none;
+      z-index: 5;
+    }
 
     &:last-child {
       margin-right: 0;
+
     }
     &>a {
       display: block;
@@ -418,6 +429,32 @@
       font-size: 30px;
     }
 
+  }
+}
+
+@for $i from 1 through 10 {
+  .goods-hrz-icons__item:nth-child(#{$i}) {
+    animation-delay: #{$i/2}s;
+  }
+}
+
+@keyframes swim {
+  0%   {
+    transform: translate(0, 0);
+  }
+  25%  {
+    transform: translateY(2px);
+    color: $accent-second;
+  }
+  50%  {
+    transform: translateY(-2px);
+  }
+  75%  {
+    transform: translateY(2px);
+    color: inherit;
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -586,8 +623,8 @@
   position: absolute;
   top: 100%;
   left: 0;
- background-color: #fff;
-  z-index: 2;
+  background-color: #fff;
+  z-index: 5;
   padding: 15px 15px 5px 76px;
   border-radius: 7px;
   width: 295px;
@@ -713,9 +750,32 @@
   }
 }
 
+///////////////////////////////////////////// one item slider //////////////////////
+
+.one-item-slider {
+  @extend .three-item-slider;
+}
 
 
+//////////////////////////////////// rate it //////////////////////////////////
 
+.rateit .rateit-preset,
+.rateit .rateit-hover,
+.rateit .rateit-selected {
+  background: none;
+  overflow: hidden;
+  cursor: default;
+}
+
+.rateit .rateit-hover,
+.rateit .rateit-selected {
+  color: $accent-second;
+}
+
+.rateit-font {
+  font-size: 15px;
+  line-height: 1;
+}
 
 
 
