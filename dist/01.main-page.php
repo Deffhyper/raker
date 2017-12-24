@@ -159,20 +159,24 @@
     <div class="container">
         <ul class="accent-block__list">
             <li class="accent-block__list--item">
-                <p><b>Всегда свежие</b> <br>
-                    продукты</p>
+                <span class="iconmoon icon-big-fish"></span>
+                <p><b>Всегда свежая</b> <br>
+                    рыба с Европы</p>
             </li>
             <li class="accent-block__list--item">
-                <p><b>Приготовление</b> каждого <br>
-                    рецепта <b>с душой</b></p>
+                <span class="iconmoon icon-fishing"></span>
+                <p><b>Только проверенные</b><br>
+                    поставщики</p>
             </li>
             <li class="accent-block__list--item">
-                <p><b>Оперативная доставка</b><br>
-                    за 90 минут</p>
+                <span class="iconmoon icon-aeroplane"></span>
+                <p><b>Оперативная</b><br>
+                    <b>доставка</b>до 2 дней</p>
             </li>
             <li class="accent-block__list--item">
-                <p>С уважением <b><br>
-                        к каждому клиенту</b></p>
+                <span class="iconmoon icon-handshake"></span>
+                <p>С уважением <br>
+                    к <b>каждому клиенту</b></p>
             </li>
         </ul>
     </div>
@@ -192,31 +196,7 @@
         </div>
     </div>
 </div>
-<!--<div class="main-shares">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 push-lg-4">
-                <p class="main-shares__title">Приложение Raker для iPhone и Android</p>
-                <p class="main-shares__subtitle">Закажи раков всего за несколько нажатий!</p>
-                <ul class="main-shares__apps">
-                    <li class="main-shares__apps--item">
-                        <a href="#">
-                            <img src="img/jpeg_files/app.png" alt="">
-                        </a>
-                    </li>
-                    <li class="main-shares__apps--item">
-                        <a href="#">
-                            <img src="img/jpeg_files/GooglePlay.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="main-shares__bg-1" style="background: url('img/jpeg_files/sh-bg-1.png') no-repeat center / cover"></div>
-    <div class="main-shares__bg-2" style="background: url('img/jpeg_files/sh-2.png') no-repeat left / contain"></div>
-</div>-->
 
 <section class="section section--grayBack">
     <div class="container container--grayBack">

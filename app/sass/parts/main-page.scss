@@ -1,4 +1,5 @@
 .top-banner {
+  margin-top: -70px;
 }
 
 .top-banner-slider {
@@ -214,6 +215,39 @@
   font-size: 13px;
 }
 
+
+.reviews-block {
+  padding-top: 15px;
+
+  &__item {
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 15px;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+}
+
+.reviews-block-body > p{
+  overflow: hidden;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+.reviews-block-header {
+  margin-bottom: 10px;
+}
+
+.review-user-name {
+  font-size: 15px;
+  margin-right: 10px;
+  b {
+    margin-right: 5px;
+  }
+
+}
+
 @media ($desktop) {
 
   .main-goods-list__item {
@@ -265,6 +299,10 @@
 
   .accent-block__list {
     padding-top: 35px;
+  }
+
+  .top-banner {
+    margin-top: -65px;
   }
 
 
@@ -393,36 +431,10 @@
     margin-top: 20px;
   }
 
-}
-
-.reviews-block {
-  padding-top: 15px;
-
-  &__item {
-    border-bottom: 1px solid #d3d3d3;
-    margin-bottom: 15px;
-    &:last-child {
-      border-bottom: 0;
-    }
+  .top-banner {
+    margin-top: 0;
   }
 
 }
 
-.reviews-block-body > p{
-  overflow: hidden;
-  height: 35px;
-  margin-bottom: 15px;
-}
 
-.reviews-block-header {
-  margin-bottom: 10px;
-}
-
-.review-user-name {
-  font-size: 15px;
-  margin-right: 10px;
-  b {
-    margin-right: 5px;
-  }
-
-}
