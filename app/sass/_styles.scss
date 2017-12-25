@@ -666,3 +666,30 @@
 .product-left {
   margin-bottom: 25px;
 }
+
+.goods-banner {
+  height: 360px;
+  position: relative;
+  &__right {
+    position: relative;
+    height: 360px;
+    &:after {
+      content: "";
+      width: 9999px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .goods-hrz__right {
+      border-radius: 0;
+    }
+
+    .goods-hrz-short-description {
+      height: 98px;
+    }
+  }
+}

@@ -11,7 +11,7 @@
                 <div class="row no-gutters">
                     <div class="product-left col-lg-6 col-md-12">
 
-                        <p class="product__title hidden-sm-up">Лосось, свежий улов только из Греции</p>
+                        <p class="product__title hidden-lg-up">Лосось, свежий улов только из Греции</p>
 
                         <div class="activity-slider">
                             <div class="activity-slider__top">
@@ -126,7 +126,7 @@
                     <div class="product-right col-lg-6 col-md-12">
                         <div class="product-right-block">
                             <div class="border-bottom-block">
-                                <h1 class="product__title hidden-sm-down">Лосось, свежий улов только из Греции</h1>
+                                <h1 class="product__title hidden-md-down">Лосось, свежий улов только из Греции</h1>
                             </div>
 
                             <div class="border-bottom-block">

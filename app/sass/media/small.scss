@@ -255,4 +255,20 @@
     font-weight: bold;
   }
 
+  .goods-banner__right:after {
+    content: none;
+  }
+
+  .goods-banner__right {
+    position: relative;
+    height: auto;
+  }
+
+  .goods-banner {
+    height: 100%;
+  }
+
+  .goods-banner__right .goods-hrz-short-description {
+    height: auto;
+  }
 }
