@@ -693,3 +693,54 @@
     }
   }
 }
+
+.lk-header {
+  padding: 25px;
+}
+
+.lk-user-block {
+  position: relative;
+  padding-left: 110px;
+  min-height: 100px;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__img-link {
+    display: block;
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .social-label {
+    background-color: #e5e5e5;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-family: $font-bold;
+    margin-bottom: 10px;
+  }
+  &__tel {
+    display: block;
+    font-size: 12px;
+  }
+  &__mail {
+    @extend .lk-user-block__tel;
+  }
+}

@@ -28,7 +28,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('svg_sprites', function () {
-	return gulp.src('app/img/svg/**/*.svg')
+	return gulp.src('app/img/svg_icon/**/*.svg')
 		.pipe(svgSprite({
 			mode: "symbols",
 			baseSize: 16,
@@ -67,7 +67,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'svg_sprites'], funct
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/**/*.php', browserSync.reload); // Наблюдение за php файлами в корне проекта
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
-	gulp.watch('app/img/svg/**/*.svg', ['svg_sprites'], browserSync.reload);   // Наблюдение за png файлами в папке icon
+	gulp.watch('app/img/svg/**/*.svg', ['svg_sprites'], browserSync.reload);   // Наблюдение за svg файлами в папке svg
 });
 
 gulp.task('clean', function() {
