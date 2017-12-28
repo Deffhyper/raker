@@ -13,6 +13,7 @@
             <div class="round-border-dotted">
                 <div class="lk-header">
                     <div class="lk-user-block">
+
                         <div class="lk-user-block__img">
 
                             <a href="#" class="lk-user-block__img-link">
@@ -26,8 +27,8 @@
                         </div>
 
                         <p class="lk-user-block__name">Александр</p>
-                        <a href="tel:+380932255587" class="lk-user-block__tel">+38 (093) 225-55-87</a>
-                        <a href="mailto:email@gmail.com" class="lk-user-block__mail">email@gmail.com</a>
+                        <a href="tel:+380932255587" class="lk-user-block__prop">+38 (093) 225-55-87</a>
+                        <a href="mailto:email@gmail.com" class="lk-user-block__prop">email@gmail.com</a>
 
                     </div>
 
@@ -42,10 +43,38 @@
                         <div class="lk-user-block__rating-label">Съедено - 13 кг</div>
                     </div>
                 </div>
-                <span class="iconmoon icon-user"></span>
-                <span class="iconmoon icon-settings"></span>
-                <span class="iconmoon icon-list"></span>
-                <span class="iconmoon icon-logout"></span>
+
+                <ul class="lk-body">
+                    <li class="lk-body__item">
+                        <a href="#" class="lk-body__link">
+                            <span class="iconmoon icon-user"></span>
+                            <span class="lk-body__text">Личный кабинет</span>
+                        </a>
+                    </li>
+                    <li class="lk-body__item">
+                        <a href="#" class="lk-body__link">
+                            <span class="iconmoon icon-settings"></span>
+                            <span class="lk-body__text">Настроить профиль</span>
+                        </a>
+                    </li>
+                    <li class="lk-body__item active">
+                        <a href="#" class="lk-body__link">
+                            <span class="iconmoon icon-list"></span>
+                            <span class="lk-body__text">Заказы</span>
+                        </a>
+                        <ul class="lk-body__list">
+                            <li><a href="#">Выполняются</a></li>
+                            <li><a href="#">Доставлены</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="lk-body__item">
+                        <a href="#" class="lk-body__link">
+                            <span class="iconmoon icon-logout"></span>
+                            <span class="lk-body__text">Выйти</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
         </div>

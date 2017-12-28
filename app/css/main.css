@@ -1004,6 +1004,42 @@ img {
   -webkit-border-radius: 25px;
           border-radius: 25px; }
 
+.border-bottom-dotted {
+  border-bottom: 1px dashed #d6d3e9;
+  padding: 23px; }
+
+.close-btn {
+  height: 21px;
+  width: 21px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .close-btn:before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 20px;
+    background-color: #231f20;
+    -webkit-transform: rotateZ(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotateZ(-45deg);
+    position: absolute;
+    top: 10px;
+    left: 0; }
+  .close-btn:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 20px;
+    background-color: #231f20;
+    -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotateZ(45deg);
+    position: absolute;
+    top: 10px;
+    left: 0; }
+
 .page-header {
   margin-bottom: 20px; }
 
@@ -2691,12 +2727,14 @@ body:after {
       height: 98px; }
 
 .lk-header {
-  padding: 25px; }
+  padding: 25px;
+  border-bottom: 1px dashed #d6d3e9; }
 
 .lk-user-block {
   position: relative;
   padding-left: 110px;
-  min-height: 100px; }
+  min-height: 110px;
+  padding-top: 12px; }
   .lk-user-block__img {
     position: absolute;
     top: 0;
@@ -2736,9 +2774,114 @@ body:after {
     font-size: 20px;
     font-family: "Roboto-Bold", sans-serif;
     margin-bottom: 10px; }
-  .lk-user-block__tel, .lk-user-block__mail {
+  .lk-user-block__prop {
     display: block;
-    font-size: 12px; }
+    font-weight: bold; }
+  .lk-user-block__rating {
+    text-align: center; }
+    .lk-user-block__rating .rateit-font {
+      font-size: 32px;
+      margin-bottom: 20px; }
+    .lk-user-block__rating .rateit .rateit-hover, .lk-user-block__rating .rateit .rateit-selected {
+      color: #feb21f; }
+    .lk-user-block__rating-label {
+      font-family: "Roboto-Bold", sans-serif;
+      font-size: 17px; }
+
+.lk-body__item {
+  border-bottom: 1px dashed #d6d3e9; }
+  .lk-body__item:last-child {
+    border-bottom: 0; }
+  .lk-body__item.active .lk-body__link {
+    color: #8bd0c0; }
+
+.lk-body__link {
+  padding: 23px 20px 23px 73px;
+  position: relative;
+  display: block;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out; }
+  .lk-body__link:hover {
+    color: #8bd0c0; }
+  .lk-body__link .iconmoon {
+    position: absolute; }
+  .lk-body__link .icon-user {
+    top: 17px;
+    left: 22px;
+    font-size: 33px; }
+  .lk-body__link .icon-settings {
+    top: 17px;
+    left: 22px;
+    font-size: 33px; }
+  .lk-body__link .icon-list {
+    top: 20px;
+    left: 25px;
+    font-size: 23px; }
+  .lk-body__link .icon-logout {
+    top: 20px;
+    left: 25px;
+    font-size: 25px;
+    -webkit-transform: rotateZ(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotateZ(-180deg); }
+
+.lk-body__list {
+  padding: 0 30px 20px 70px; }
+  .lk-body__list li {
+    margin-bottom: 20px; }
+  .lk-body__list a {
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease; }
+    .lk-body__list a:before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background-color: #231f20;
+      margin-bottom: 4px;
+      margin-right: 8px;
+      -webkit-transition: background-color .3s ease;
+      transition: background-color .3s ease; }
+    .lk-body__list a:hover {
+      color: #8bd0c0; }
+      .lk-body__list a:hover:before {
+        background-color: #8bd0c0; }
+
+.lk-body__text {
+  font-size: 18px;
+  font-family: "Roboto-Medium", sans-serif; }
+
+.order-item .border-bottom-dotted:last-child {
+  border-bottom: 0 !important; }
+
+.order-item__title {
+  font-size: 20px;
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: bold;
+  padding-right: 30px;
+  margin-bottom: 0; }
+
+.order-item-header {
+  position: relative; }
+
+.order-item-prop {
+  position: relative;
+  min-height: 80px;
+  padding-left: 100px; }
+  .order-item-prop__img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .order-item-prop__title {
+    font-family: "Roboto-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 16px; }
+  .order-item-prop__list {
+    font-size: 14px;
+    color: #818181; }
 
 @media (max-width: 1279px) {
   .breadcrumbs-block {

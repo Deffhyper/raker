@@ -696,12 +696,14 @@
 
 .lk-header {
   padding: 25px;
+  border-bottom : 1px dashed #d6d3e9;
 }
 
 .lk-user-block {
   position: relative;
   padding-left: 110px;
-  min-height: 100px;
+  min-height: 110px;
+  padding-top: 12px;
 
   &__img {
     position: absolute;
@@ -736,11 +738,174 @@
     font-family: $font-bold;
     margin-bottom: 10px;
   }
-  &__tel {
+  &__prop {
     display: block;
-    font-size: 12px;
+    font-weight: bold;
   }
-  &__mail {
-    @extend .lk-user-block__tel;
+
+  &__rating {
+    text-align: center;
+
+    .rateit-font {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .rateit .rateit-hover, .rateit .rateit-selected {
+      color: #feb21f;
+    }
+
+    &-sub-label {
+
+    }
+    &-label {
+      font-family: $font-bold;
+      font-size: 17px;
+    }
   }
 }
+
+.lk-body {
+
+  &__item {
+    border-bottom : 1px dashed #d6d3e9;
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &.active {
+      .lk-body__link {
+        color: $accent-second;
+      }
+    }
+  }
+
+  &__link {
+    padding: 23px 20px 23px 73px;
+    position: relative;
+    display: block;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: $accent-second;
+    }
+
+
+
+    .iconmoon {
+      position: absolute;
+    }
+    .icon-user {
+      top: 17px;
+      left: 22px;
+      font-size: 33px;
+    }
+    .icon-settings {
+      top: 17px;
+      left: 22px;
+      font-size: 33px;
+    }
+    .icon-list {
+      top: 20px;
+      left: 25px;
+      font-size: 23px;
+    }
+
+    .icon-logout {
+      top: 20px;
+      left: 25px;
+      font-size: 25px;
+      transform: rotateZ(-180deg);
+    }
+  }
+
+  &__list {
+    padding: 0 30px 20px 70px;
+    li {
+      margin-bottom: 20px;
+    }
+    a {
+      transition: color .3s ease;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        background-color: $text-color;
+        margin-bottom: 4px;
+        margin-right: 8px;
+        transition: background-color .3s ease;
+
+      }
+      &:hover {
+        &:before {
+          background-color: $accent-second;
+        }
+        color: $accent-second;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-family: $font-medium;
+  }
+
+}
+
+.order-item {
+  .border-bottom-dotted:last-child {
+    border-bottom: 0 !important;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family:$font-bold;
+    font-weight: bold;
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+
+}
+
+.order-item-header {
+  position: relative;
+}
+
+.order-item-prop {
+  position: relative;
+  min-height: 80px;
+  padding-left: 100px;
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__title {
+    font-family: $font-bold;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &__list {
+    font-size: 14px;
+    color: #818181;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
