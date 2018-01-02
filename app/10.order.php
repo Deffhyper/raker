@@ -13,9 +13,33 @@
         <div class="col-lg-7 col-md-12">
             <div class="lk-container">
                 <ul class="lk-steps">
-                    <li class="lk-steps-item">
+                    <li class="lk-steps-item active">
                         <b class="lk-label lk-title--normal">1</b>
                         <p class="lk-title lk-title--normal">Ваши данные</p>
+                        <div class="lk-steps-item__form">
+                            <form action="#">
+                                <div class="container-fluid">
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-lg-4 d-flex align-items-center">
+                                            <label for="" class="custom-input-label">Фамилия:</label>
+                                        </div>
+                                        <div class="col-lg-8 d-flex align-items-center">
+                                            <input type="text" class="custom-input" value="Петров">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-lg-4 d-flex align-items-center">
+                                            <label for="" class="custom-input-label">Фамилия:</label>
+                                        </div>
+                                        <div class="col-lg-8 d-flex align-items-center">
+                                            <input type="text" class="custom-input" value="Петров">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </li>
                     <li class="lk-steps-item">
                         <b class="lk-label lk-title--normal">2</b>
