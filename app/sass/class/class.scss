@@ -823,6 +823,9 @@
 .border-bottom-dotted {
   border-bottom: 1px dashed #d6d3e9;
   padding: 23px;
+  &.border-bottom-dotted--sm {
+    padding: 15px 23px;
+  }
 }
 
 /////////////////////////////////////// close button /////////////////////////
@@ -858,7 +861,13 @@
   }
 }
 
+//////////////////////////////////////// input //////////////////////////////////
 
+.custom-input {
+  border: 1px solid #d4d4d4;
+  height: 35px;
+  width: 100%;
+}
 
 
 

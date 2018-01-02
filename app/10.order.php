@@ -5,112 +5,223 @@
 <?php include_once "parts/breadcrumbs.php" ?>
 
 
-
 <div class="container">
     <div class="row">
+        <div class="col-12">
+            <h1 class="lk-title lk-title--big text-lg-right">Оформление заказа</h1>
+        </div>
         <div class="col-lg-7 col-md-12">
             <div class="lk-container">
-                <h1 class="page-title">Заголовок страницы</h1>
-                <p>
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                    стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                    создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-                    Lorem
-                    Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный
-                    дизайн.
-                    Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х
-                    годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах
-                    которых
-                    используется Lorem Ipsum.
-                </p>
-                <br>
+                <ul class="lk-steps">
+                    <li class="lk-steps-item">
+                        <b class="lk-label lk-title--normal">1</b>
+                        <p class="lk-title lk-title--normal">Ваши данные</p>
+                    </li>
+                    <li class="lk-steps-item">
+                        <b class="lk-label lk-title--normal">2</b>
+                        <p class="lk-title lk-title--normal">Способ доставки</p>
+                    </li>
+                    <li class="lk-steps-item">
+                        <b class="lk-label lk-title--normal">3</b>
+                        <p class="lk-title lk-title--normal">Способ оплаты</p>
+                    </li>
+                </ul>
 
-                <h2>H2: Откуда он появился?</h2>
 
-                <p>
-                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
-                    Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий
-                    назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
-                    самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской
-                    литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33
-                    книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году
-                    н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem
-                    Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
-                </p>
-
-                <p>
-                    Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и
-                    1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914
-                    год.
-                </p>
-                <br>
-                <h2>Откуда он появился?</h2>
-
-                <p>
-                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
-                    Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а
-                    также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации
-                    "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
-                    редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым
-                    словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего
-                    рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по
-                    ошибке, некоторые - намеренно (например, юмористические варианты).
-                </p>
             </div>
         </div>
+
         <div class="col-lg-5 col-md-12">
 
-            <div class="round-border-dotted">
-                <div class="order-item">
-
-                    <div class="border-bottom-dotted">
-                        <div class="order-item-header">
-                            <p class="order-item__title">Заказ №1</p>
-                            <a href="#" class="close-btn"></a>
-                        </div>
+            <div class="round-border-dotted order-item">
+                <div class="border-bottom-dotted">
+                    <div class="order-item-header">
+                        <p class="order-item__title">Заказ №1</p>
+                        <a href="#" class="close-btn"></a>
                     </div>
+                </div>
+                <div class="border-bottom-dotted">
+                    <div class="order-item-prop">
 
-                    <div class="border-bottom-dotted">
-                        <div class="order-item-prop">
-
-                            <div class="order-item-prop__img">
-                                <img src="img/jpeg_files/order-img.jpg" alt="order" width="80" height="80">
-                            </div>
-
-                            <div class="order-item-prop__title">Свежий фреш-кетч из Финляндии</div>
-
-                            <ul class="order-item-prop__list">
-                                <li>Размер поставки — XL</li>
-                                <li>Количество — 15 кг</li>
-                            </ul>
+                        <div class="order-item-prop__img">
+                            <img src="img/jpeg_files/order-img.jpg" alt="order" width="80" height="80">
                         </div>
-                    </div>
 
-                    <div class="border-bottom-dotted">
-                        <span>Дата доставки: 2.03 – 4.03</span>
-                    </div>
+                        <div class="order-item-prop__title">Свежий фреш-кетч из Финляндии</div>
 
-                    <div class="border-bottom-dotted">
-                        <table class="order-item-table">
-                            <tbody>
-                            <tr>
-                                <td>Стоимость товаров в заказе:</td>
-                                <td><b>1 356 грн</b></td>
-                            </tr>
-                            <tr>
-                                <td>Скидка по промокоду:</td>
-                                <td><b>0 грн</b></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div class="order-item-promo">
-                            <form action="">
-                                <input type="text" placeholder="Введите промокод">
-                            </form>
-                        </div>
+                        <ul class="order-item-prop__list">
+                            <li>Размер поставки — XL</li>
+                            <li>Количество — 15 кг</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom-dotted border-bottom-dotted--sm">
+                    <div class="order-item-date">
+                            <span class="order-item-date__icon">
+                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55 55" x="0px" y="0px"
+                                      style="width: 100%; height: auto;" preserveAspectRatio="none">
+                                <g>
+                                    <path stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M48.469,3.402h-8.956V0.851C39.513,0.38,39.134,0,38.663,0
+                                        h-2.949c-0.47,0-0.851,0.38-0.851,0.851v2.551H16.156V0.851C16.156,0.38,15.776,0,15.306,0h-2.951c-0.47,0-0.85,0.38-0.85,0.851
+                                        v2.551H2.551c-0.47,0-0.85,0.38-0.85,0.851v9.354v36.563c0,0.471,0.38,0.851,0.85,0.851h45.918c0.471,0,0.85-0.38,0.85-0.851
+                                        V13.606V4.252C49.318,3.782,48.939,3.402,48.469,3.402z M3.401,5.102h8.103v2.552c0,0.47,0.38,0.85,0.85,0.85h2.951
+                                        c0.47,0,0.851-0.38,0.851-0.85V5.102h18.707v2.552c0,0.47,0.381,0.85,0.851,0.85h2.949c0.471,0,0.85-0.38,0.85-0.85V5.102h8.106
+                                        v10.655H3.401V5.102z M3.401,49.32V17.457h44.217V49.32H3.401z"></path>
+                                </g>
+                                <g>
+                                    <rect x="11.114" y="25.198" width="3.813" height="3.813"></rect>
+                                    <path d="M13.926,26.198v1.813h-1.813v-1.813H13.926 M15.926,24.198h-5.813v5.813h5.813V24.198L15.926,24.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="22.739" y="25.198" width="3.812" height="3.813"></rect>
+                                    <path d="M25.551,26.198v1.813h-1.812v-1.813H25.551 M27.551,24.198h-5.812v5.813h5.812V24.198L27.551,24.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="34.385" y="25.198" width="3.813" height="3.813"></rect>
+                                    <path d="M37.197,26.198v1.813h-1.813v-1.813H37.197 M39.197,24.198h-5.813v5.813h5.813V24.198L39.197,24.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="11.114" y="36.198" width="3.813" height="3.813"></rect>
+                                    <path d="M13.926,37.198v1.813h-1.813v-1.813H13.926 M15.926,35.198h-5.813v5.813h5.813V35.198L15.926,35.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="22.739" y="36.198" width="3.812" height="3.813"></rect>
+                                    <path d="M25.551,37.198v1.813h-1.813v-1.813H25.551 M27.551,35.198h-5.812v5.813h5.812V35.198L27.551,35.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="34.385" y="36.198" width="3.813" height="3.813"></rect>
+                                    <path d="M37.197,37.198v1.813h-1.813v-1.813H37.197 M39.197,35.198h-5.813v5.813h5.813V35.198L39.197,35.198z"></path>
+                                </g>
+                            </svg>
+                            </span>
+                        <span class="order-item-date__text">Дата доставки: 2.03 – 4.03</span>
+                    </div>
+                </div>
+                <div class="border-bottom-dotted">
+                    <table class="order-item-table">
+                        <tbody>
+                        <tr>
+                            <td>Стоимость товаров в заказе:</td>
+                            <td><b>1 356 грн</b></td>
+                        </tr>
+                        <tr>
+                            <td>Скидка по промокоду:</td>
+                            <td><b>0 грн</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="order-item-promo">
+                        <form action="">
+                            <input type="text"
+                                   class="order-item-promo__input custom-input"
+                                   placeholder="Введите промокод">
+                        </form>
+                    </div>
+                </div>
+                <div class="border-bottom-dotted">
+                    <div class="order-item-total">
+                        <span class="order-item-total__label">Сумма</span>
+                        <span class="order-item-total__prop">1 356 грн</span>
                     </div>
                 </div>
             </div>
+
+            <div class="round-border-dotted order-item">
+                <div class="border-bottom-dotted">
+                    <div class="order-item-header">
+                        <p class="order-item__title">Заказ №1</p>
+                        <a href="#" class="close-btn"></a>
+                    </div>
+                </div>
+                <div class="border-bottom-dotted">
+                    <div class="order-item-prop">
+
+                        <div class="order-item-prop__img">
+                            <img src="img/jpeg_files/goods-1.jpg" alt="goods" height="193" width="288">
+                        </div>
+
+                        <div class="order-item-prop__title">Свежий фреш-кетч из Финляндии</div>
+
+                        <ul class="order-item-prop__list">
+                            <li>Размер поставки — XL</li>
+                            <li>Количество — 15 кг</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-bottom-dotted border-bottom-dotted--sm">
+                    <div class="order-item-date">
+                            <span class="order-item-date__icon">
+                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55 55" x="0px" y="0px"
+                                      style="width: 100%; height: auto;" preserveAspectRatio="none">
+                                <g>
+                                    <path stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M48.469,3.402h-8.956V0.851C39.513,0.38,39.134,0,38.663,0
+                                        h-2.949c-0.47,0-0.851,0.38-0.851,0.851v2.551H16.156V0.851C16.156,0.38,15.776,0,15.306,0h-2.951c-0.47,0-0.85,0.38-0.85,0.851
+                                        v2.551H2.551c-0.47,0-0.85,0.38-0.85,0.851v9.354v36.563c0,0.471,0.38,0.851,0.85,0.851h45.918c0.471,0,0.85-0.38,0.85-0.851
+                                        V13.606V4.252C49.318,3.782,48.939,3.402,48.469,3.402z M3.401,5.102h8.103v2.552c0,0.47,0.38,0.85,0.85,0.85h2.951
+                                        c0.47,0,0.851-0.38,0.851-0.85V5.102h18.707v2.552c0,0.47,0.381,0.85,0.851,0.85h2.949c0.471,0,0.85-0.38,0.85-0.85V5.102h8.106
+                                        v10.655H3.401V5.102z M3.401,49.32V17.457h44.217V49.32H3.401z"></path>
+                                </g>
+                                <g>
+                                    <rect x="11.114" y="25.198" width="3.813" height="3.813"></rect>
+                                    <path d="M13.926,26.198v1.813h-1.813v-1.813H13.926 M15.926,24.198h-5.813v5.813h5.813V24.198L15.926,24.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="22.739" y="25.198" width="3.812" height="3.813"></rect>
+                                    <path d="M25.551,26.198v1.813h-1.812v-1.813H25.551 M27.551,24.198h-5.812v5.813h5.812V24.198L27.551,24.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="34.385" y="25.198" width="3.813" height="3.813"></rect>
+                                    <path d="M37.197,26.198v1.813h-1.813v-1.813H37.197 M39.197,24.198h-5.813v5.813h5.813V24.198L39.197,24.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="11.114" y="36.198" width="3.813" height="3.813"></rect>
+                                    <path d="M13.926,37.198v1.813h-1.813v-1.813H13.926 M15.926,35.198h-5.813v5.813h5.813V35.198L15.926,35.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="22.739" y="36.198" width="3.812" height="3.813"></rect>
+                                    <path d="M25.551,37.198v1.813h-1.813v-1.813H25.551 M27.551,35.198h-5.812v5.813h5.812V35.198L27.551,35.198z"></path>
+                                </g>
+                                <g>
+                                    <rect x="34.385" y="36.198" width="3.813" height="3.813"></rect>
+                                    <path d="M37.197,37.198v1.813h-1.813v-1.813H37.197 M39.197,35.198h-5.813v5.813h5.813V35.198L39.197,35.198z"></path>
+                                </g>
+                            </svg>
+                            </span>
+                        <span class="order-item-date__text">Дата доставки: 2.03 – 4.03</span>
+                    </div>
+                </div>
+                <div class="border-bottom-dotted">
+                    <table class="order-item-table">
+                        <tbody>
+                        <tr>
+                            <td>Стоимость товаров в заказе:</td>
+                            <td><b>1 356 грн</b></td>
+                        </tr>
+                        <tr>
+                            <td>Скидка по промокоду:</td>
+                            <td><b>0 грн</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="order-item-promo">
+                        <form action="">
+                            <input type="text"
+                                   class="order-item-promo__input custom-input"
+                                   placeholder="Введите промокод">
+                        </form>
+                    </div>
+                </div>
+                <div class="border-bottom-dotted">
+                    <div class="order-item-total">
+                        <span class="order-item-total__label">Сумма</span>
+                        <span class="order-item-total__prop">1 356 грн</span>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </div>
