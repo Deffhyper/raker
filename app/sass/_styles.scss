@@ -449,6 +449,10 @@
 
 }
 
+.product-list {
+  margin-bottom: 40px;
+}
+
 .border-bottom-block {
   border-bottom: 4px solid #eeeeee;
   margin-bottom: 20px;
@@ -670,6 +674,7 @@
 .goods-banner {
   height: 360px;
   position: relative;
+  margin-bottom: 50px;
   &__right {
     position: relative;
     height: 360px;

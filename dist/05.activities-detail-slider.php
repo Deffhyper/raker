@@ -104,64 +104,64 @@
                     <div class="activity-slider__top">
                         <div>
                             <div class="activity-slider__top--item">
-                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__top--item">
-                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-2.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__top--item">
-                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-3.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__top--item">
-                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-4.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__top--item">
-                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-6.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__top--item">
-                                <img src="img/jpeg_files/slide-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-5.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                     </div>
                     <div class="activity-slider__nav">
                         <div>
                             <div class="activity-slider__nav--item">
-                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__nav--item">
-                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-2.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__nav--item">
-                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-3.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__nav--item">
-                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-4.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__nav--item">
-                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-6.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                         <div>
                             <div class="activity-slider__nav--item">
-                                <img src="img/jpeg_files/slide-sm-1.png" alt="dfs" width="" height="">
+                                <img src="img/jpeg_files/product-img-5.jpg" alt="dfs" width="" height="">
                             </div>
                         </div>
                     </div>

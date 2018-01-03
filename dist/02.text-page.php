@@ -5,6 +5,14 @@
 <?php include_once "parts/breadcrumbs.php" ?>
 
 <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="lk-title lk-title--big">Текстовая страница</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
     <div class="row flex-lg-row-reverse no-gutters">
         <div class="col-lg-4 col-md-12">
             <div class="right-sidebar">
@@ -75,9 +83,9 @@
             </div>
         </div>
 
-        <div class="col-lg-8 col-md-12">
+        <div class="col-lg-8 col-md-12 mb-5">
             <div class="left-container">
-                <h1 class="page-title">Заголовок страницы</h1>
+                <img src="img/jpeg_files/top-banner.jpg" align="center" alt="item">
                 <p>
                     Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                     стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
@@ -90,6 +98,10 @@
                     которых
                     используется Lorem Ipsum.
                 </p>
+                <br>
+
+                <img src="img/jpeg_files/top-banner-3.jpg" align="center" alt="item">
+
                 <br>
 
                 <h2>H2: Откуда он появился?</h2>
@@ -110,6 +122,10 @@
                     1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914
                     год.
                 </p>
+                <br>
+
+                <img src="img/jpeg_files/top-banner-2.jpg" align="center" alt="item">
+
                 <br>
                 <h2>Откуда он появился?</h2>
 

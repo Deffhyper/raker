@@ -147,32 +147,20 @@
         <ul class="page-header-bottom-nav ">
             <li class="page-header-bottom-nav__item">
                 <a href="#">
-                    <i class="iconmoon icon-rak"></i>
-                    <span>Раки</span>
+                    <span class="iconmoon icon-fish"></span>
+                    <span>Fresh Catch</span>
                 </a>
             </li>
             <li class="page-header-bottom-nav__item">
                 <a href="#">
-                    <i class="iconmoon icon-anchor"></i>
-                    <span>Свежий улов</span>
-                </a>
-            </li>
-            <li class="page-header-bottom-nav__item">
-                <a href="#">
-                    <i class="iconmoon icon-dishes"></i>
-                    <span>Блюда</span>
-                </a>
-            </li>
-            <li class="page-header-bottom-nav__item">
-                <a href="#">
-                    <i class="iconmoon icon-house"></i>
+                    <span class="iconmoon icon-house"></span>
                     <span>Магазин</span>
                 </a>
             </li>
             <li class="page-header-bottom-nav__item">
                 <a href="#">
-                    <i class="iconmoon icon-electro"></i>
-                    <span>Активноaсти</span>
+                    <span class="iconmoon icon-fishing-rod"></span>
+                    <span>Поставщики</span>
                 </a>
             </li>
         </ul>

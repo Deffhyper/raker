@@ -143,7 +143,7 @@
         <li class="block-list__item goods-hrz--inverse">
             <div class="goods-hrz">
                 <div class="goods-hrz__back">
-                    <img src="img/jpeg_files/top-banner.jpg" alt="alter" width="" height="">
+                    <img src="img/jpeg_files/top-banner-2.jpg" alt="alter" width="" height="">
                 </div>
                 <div class="goods-hrz__right">
                     <div class="goods-hrz-title">
@@ -152,7 +152,7 @@
                     </div>
 
                     <div class="goods-hrz__mobile">
-                        <img src="img/jpeg_files/top-banner.jpg" alt="alter" width="" height="">
+                        <img src="img/jpeg_files/top-banner-2.jpg" alt="alter" width="" height="">
                     </div>
 
                     <ul class="goods-hrz-prop">
@@ -279,7 +279,7 @@
         <li class="block-list__item ">
             <div class="goods-hrz">
                 <div class="goods-hrz__back">
-                    <img src="img/jpeg_files/top-banner.jpg" alt="alter" width="" height="">
+                    <img src="img/jpeg_files/top-banner-3.jpg" alt="alter" width="" height="">
                 </div>
                 <div class="goods-hrz__right">
                     <div class="goods-hrz-title">
@@ -288,7 +288,7 @@
                     </div>
 
                     <div class="goods-hrz__mobile">
-                        <img src="img/jpeg_files/top-banner.jpg" alt="alter" width="" height="">
+                        <img src="img/jpeg_files/top-banner-3.jpg" alt="alter" width="" height="">
                     </div>
 
                     <ul class="goods-hrz-prop">
