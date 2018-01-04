@@ -18,41 +18,265 @@
         <div class="col-lg-7 col-md-12">
             <div class="lk-container">
                 <ul class="lk-steps">
-                    <li class="lk-steps-item active">
+                    <li class="lk-steps-item lk-step-one active">
                         <b class="lk-label lk-title--normal">1</b>
-                        <p class="lk-title lk-title--normal">Ваши данные</p>
-                        <div class="lk-steps-item__form">
+                        <p class="lk-title lk-title--normal">Ваши данные <a href="#" class="gray-dashed-link">Изменить</a></p>
+                        <div class="lk-output"></div>
+                        <div class="lk-steps-item__form lk-steps-content">
                             <form action="#">
-                                <div class="container-fluid">
-                                    
-                                    <div class="row mb-4">
-                                        <div class="col-lg-4 d-flex align-items-center">
-                                            <label for="" class="custom-input-label">Фамилия:</label>
-                                        </div>
-                                        <div class="col-lg-8 d-flex align-items-center">
-                                            <input type="text" class="custom-input" value="Петров">
-                                        </div>
+                                <div class="row form-input-horizontal">
+                                    <div class="col-lg-5 d-flex align-items-center">
+                                        <label for="" class="custom-input-label">Фамилия:</label>
                                     </div>
-                                    
-                                    <div class="row mb-4">
-                                        <div class="col-lg-4 d-flex align-items-center">
-                                            <label for="" class="custom-input-label">Фамилия:</label>
-                                        </div>
-                                        <div class="col-lg-8 d-flex align-items-center">
-                                            <input type="text" class="custom-input" value="Петров">
-                                        </div>
+                                    <div class="col-lg-7 d-flex align-items-center">
+                                        <input type="text" class="custom-input" value="Петров">
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal">
+                                    <div class="col-lg-5 d-flex align-items-center">
+                                        <label for="" class="custom-input-label">Имя:</label>
+                                    </div>
+                                    <div class="col-lg-7 d-flex align-items-center">
+                                        <input type="text" class="custom-input" value="Евгений">
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal">
+                                    <div class="col-lg-5 d-flex align-items-center">
+                                        <label for="" class="custom-input-label">Отчество:</label>
+                                    </div>
+                                    <div class="col-lg-7 d-flex align-items-center">
+                                        <input type="text" class="custom-input" value="Сергеевич">
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal">
+                                    <div class="col-lg-5 d-flex align-items-center">
+                                        <label for="" class="custom-input-label">Телефон:</label>
+                                    </div>
+                                    <div class="col-lg-7 d-flex align-items-center">
+                                        <input type="tel" class="custom-input" value="+38 (000) 000-00-00">
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal">
+                                    <div class="col-lg-5 d-flex align-items-center">
+                                        <label for="" class="custom-input-label mb-3">Город получателя:</label>
+                                    </div>
+                                    <div class="col-lg-7 d-flex flex-column">
+                                        <input type="text" class="custom-input" value="Киев">
+                                        <ul class="list-inline form-location-tip">
+                                            <li class="decor"><img src="img/jpeg_files/arrow.png" alt="arrow"></li>
+                                            <li><a href="#">Киев</a></li>
+                                            <li><a href="#">Днепр</a></li>
+                                            <li><a href="#">Одесса</a></li>
+                                            <li><a href="#">Харьков</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal mt-4">
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn__accent-second btn--md">Далее</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </li>
-                    <li class="lk-steps-item">
+                    <li class="lk-steps-item lk-step-two">
                         <b class="lk-label lk-title--normal">2</b>
-                        <p class="lk-title lk-title--normal">Способ доставки</p>
+                        <p class="lk-title lk-title--normal">Способ доставки  <a href="#" class="gray-dashed-link">Изменить</a></p>
+                        <div class="lk-output">
+                            <p>Самовывоз из “SeaDora”</p>
+                            <p>ул. Григория Сковороды, 1</p>
+                        </div>
+                        <div class="lk-tab lk-steps-content" style="display: none">
+                            <ul class="lk-tab__header list-inline">
+                                <li class="active">
+                                    <a href="#" role="button"> <span>Самовывоз</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" role="button"><span>Курьерская доставка</span></a>
+                                </li>
+                            </ul>
+                            <div class="lk-tab__body">
+                                <div class="lk-steps-item__form active">
+                                    <form action="">
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-lg-7 d-flex align-items-center">
+                                                <div class="custom-radio">
+                                                    <input type="radio" name="ve-1" id="re-1" class="custom-radio__input"
+                                                           checked>
+                                                    <label for="re-1" class="custom-radio__label">Самовывоз из “SeaDora”
+                                                        ул. Григория Сковороды, 1</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 d-flex align-items-center">
+                                                <a href="#">
+                                                    <span class="goods-hrz-prop-locate">
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             viewBox="0 0 50 50" x="0px" y="0px"
+                                                             style="width: 100%; height: auto;"
+                                                             preserveAspectRatio="none">
+                                    <g>
+                                        <path style="stroke:#000000;stroke-width:2;stroke-miterlimit:10;" d="M25.676,11.181c-3.596,0-6.522,2.927-6.522,6.522
+                                            s2.927,6.522,6.522,6.522c3.595,0,6.522-2.927,6.522-6.522S29.271,11.181,25.676,11.181z M25.676,22.363
+                                            c-2.569,0-4.659-2.09-4.659-4.659c0-2.568,2.09-4.658,4.659-4.658c2.569,0,4.659,2.09,4.659,4.658
+                                            C30.335,20.273,28.245,22.363,25.676,22.363z"></path>
+                                        <path style="stroke:#000000;stroke-width:2;stroke-miterlimit:10;" d="M36.672,6.257c-3.114-3.115-7.257-4.831-11.662-4.831
+                                            c-4.406,0-8.547,1.715-11.662,4.831c-5.765,5.764-6.482,16.609-1.552,23.18L25.01,48.52l13.193-19.056
+                                            C43.154,22.867,42.437,12.022,36.672,6.257z M36.809,28.459L25.01,45.497L13.192,28.432c-4.471-5.962-3.83-15.756,1.373-20.959
+                                            c2.79-2.79,6.499-4.327,10.445-4.327s7.655,1.537,10.446,4.327C40.659,12.676,41.3,22.47,36.809,28.459z"></path>
+                                    </g>
+                                </svg>
+                                                    </span>
+                                                    <span class="gray-dashed-link">Link to map</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-12">
+                                                <div class="custom-radio">
+                                                    <input type="radio" name="ve-1" id="re-2" class="custom-radio__input">
+                                                    <label for="re-2" class="custom-radio__label">Отделение и почтоматы
+                                                        “Нова Пошта”</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-12">
+                                                <div class="custom-radio">
+                                                    <input type="radio" name="ve-1" id="re-3" class="custom-radio__input">
+                                                    <label for="re-3" class="custom-radio__label">Почтомат
+                                                        “Приватбанк”</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-12">
+                                                <div class="custom-radio">
+                                                    <input type="radio" name="ve-1" id="re-4" class="custom-radio__input">
+                                                    <label for="re-4" class="custom-radio__label">“Укрпошта
+                                                        Експрес”</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal mt-4">
+                                            <div class="col-12 text-center">
+                                                <button class="btn btn__accent-second btn--md">Далее</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="lk-steps-item__form">
+                                    <form action="">
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-lg-5 d-flex align-items-center">
+                                                <label for="" class="custom-input-label">Почта:</label>
+                                            </div>
+                                            <div class="col-lg-7 d-flex align-items-center">
+                                                <input type="text" class="custom-input" placeholder="Выбрать почту">
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-lg-5 d-flex align-items-center">
+                                                <label for="" class="custom-input-label">Отделение:</label>
+                                            </div>
+                                            <div class="col-lg-7 d-flex align-items-center">
+                                                <input type="text" class="custom-input" placeholder="Выбрать отделение">
+                                            </div>
+                                        </div>
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-12">
+                                                <div class="custom-radio">
+                                                    <input type="radio" name="va-1" id="ra-2" class="custom-radio__input">
+                                                    <label for="ra-2" class="custom-radio__label">Отделение и почтоматы
+                                                        “Нова Пошта”</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-12">
+                                                <div class="custom-radio">
+                                                    <input type="radio" name="va-1" id="ra-3" class="custom-radio__input" checked>
+                                                    <label for="ra-3" class="custom-radio__label">Почтомат
+                                                        “Приватбанк”</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal">
+                                            <div class="col-12">
+                                                <div class="custom-radio">
+                                                    <input type="radio" name="va-1" id="ra-4" class="custom-radio__input">
+                                                    <label for="ra-4" class="custom-radio__label">“Укрпошта
+                                                        Експрес”</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-input-horizontal mt-4">
+                                            <div class="col-12 text-center">
+                                                <button class="btn btn__accent-second btn--md">Далее</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="lk-steps-item">
                         <b class="lk-label lk-title--normal">3</b>
                         <p class="lk-title lk-title--normal">Способ оплаты</p>
+
+                        <div class="lk-steps-item__form lk-steps-content" style="display: none;">
+                            <form action="">
+
+
+                                <div class="row form-input-horizontal">
+                                    <div class="col-12">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="vq-1" id="rq-2" class="custom-radio__input">
+                                            <label for="rq-2" class="custom-radio__label">Наличными при получении</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal">
+                                    <div class="col-12">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="vq-1" id="rq-3" class="custom-radio__input" checked>
+                                            <label for="rq-3" class="custom-radio__label">Картой Visa/Mastercard</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal">
+                                    <div class="col-12">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="vq-1" id="rq-4" class="custom-radio__input">
+                                            <label for="rq-4" class="custom-radio__label">Masterpass</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row form-input-horizontal mt-4">
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn__accent-second btn--md">Заказать</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
                     </li>
                 </ul>
 
@@ -249,7 +473,6 @@
                     </div>
                 </div>
             </div>
-
 
 
         </div>

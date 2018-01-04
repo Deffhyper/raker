@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function () {
 
     var windowWidth = $(document).width();
 
@@ -336,6 +336,103 @@ $(function() {
         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
             e.preventDefault();
         }
+    });
+
+    ///////////////////////////////////// location-tip//////////////////////////////////////
+
+    $('.form-location-tip').on('click', function (e) {
+        e.preventDefault();
+        var $target = $(e.target);
+        $(this).prev('.custom-input').val($target.text());
+    });
+
+    ////////////////////////////////////// tab lk /////////////////////////////////////////
+
+    $('.lk-tab__header li a').on('click', function (e) {
+        e.preventDefault();
+        var parentElem = $(this).parent(),
+            indexElem = parentElem.index(),
+            grandParentElem = parentElem.closest('.lk-tab');
+
+        parentElem.addClass('active').siblings().removeClass('active');
+        grandParentElem.find('.lk-tab__body').children().eq(indexElem).addClass('active').siblings().removeClass('active');
+    });
+
+    /////////////////////////////////////////// lk steps /////////////////////////////////////////////
+
+    $('.lk-steps-item').on('click', function (e) {
+        var $target = $(e.target);
+
+        if($target.hasClass('gray-dashed-link')) {
+            e.preventDefault();
+
+            $(this).removeClass('activated');
+            $(this).addClass('active');
+            $(this).find('.lk-steps-content').slideDown('slow');
+
+            $(this).find('.lk-output').slideDown('slow').empty();
+
+            $(this).next().find('.lk-steps-content').slideUp('slow');
+            $(this).next().removeClass('active activated');
+        }
+
+
+
+    });
+
+    $('.lk-step-one').on('click', function (e) {
+        var $target = $(e.target),
+            str,
+            str2,
+            parent = $target.closest('.lk-steps-item'),
+            output = parent.find('.lk-output');
+
+        if ($target.hasClass('btn')){
+
+            $target.closest('form').find('input').each(function (index) {
+                if(index < 3) {
+                    str += $(this).val()+' ';
+                } else if(index == 3){
+                    str2+=$(this).val();
+                }
+
+            });
+
+            output.append('<p>'+ str.replace(/undefined/,'')+'</p>');
+            output.append('<p>'+ str2.replace(/undefined/,'')+'</p>');
+            parent.find('.lk-steps-content').slideUp('slow');
+            parent.removeClass('active');
+            parent.addClass('activated');
+            parent.next().find('.lk-steps-content').slideDown('slow');
+            parent.next().addClass('active');
+            output.slideDown();
+        }
+
+    });
+
+    $('.lk-step-two').on('click', function (e) {
+        var $target = $(e.target),
+            str,
+            parent = $target.closest('.lk-steps-item'),
+            output = parent.find('.lk-output');
+
+        if ($target.hasClass('btn')){
+
+            $target.closest('form').find('input').each(function () {
+                if($(this)+':checked') {
+                    str += $(this).next().text();
+                }
+
+            });
+            output.append('<p>'+ str.replace(/undefined/,'')+'</p>');
+            parent.find('.lk-steps-content').slideUp('slow');
+            parent.removeClass('active');
+            parent.addClass('activated');
+            parent.next().find('.lk-steps-content').slideDown('slow');
+            parent.next().addClass('active');
+            output.slideDown();
+        }
+
     });
 
 

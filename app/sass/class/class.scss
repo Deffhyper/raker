@@ -19,6 +19,15 @@
   color: $black-background;
   border-radius: 4px;
   transition: .3s ease;
+  border: 0;
+  max-width: 100%;
+
+  &.btn {
+    &--md {
+      padding: 10px 20px;
+      width: 180px;
+    }
+  }
 
   &.btn__regular {
     font-family: $font-medium;
@@ -95,6 +104,15 @@
     }
   }
 
+  &__accent-second {
+    color: #fff;
+    background-color: $accent-second;
+
+    &:hover {
+      background-color: $accent-second-hover;
+    }
+  }
+
   &__white {
     color: $text-color;
     background-color: #fff;
@@ -142,6 +160,19 @@
         background-color: $black-background;
       }
     }
+  }
+}
+
+////////////////////////////////////////// gray link dashed /////////////////////
+
+.gray-dashed-link {
+  font-size: 14px;
+  color: $gray;
+  display: inline-block;
+  border-bottom: 1px dashed #838282;
+  transition: border-color .3s ease;
+  &:hover {
+    border-color: transparent;
   }
 }
 
@@ -350,6 +381,7 @@
 .goods-hrz-prop-locate {
   display: inline-block;
   width: 20px;
+  vertical-align: bottom;
 }
 
 .goods-hrz-prop-manufacturer {
@@ -875,7 +907,58 @@
   margin-bottom: 0;
 }
 
+/////////////////////////////////////// custom radio //////////////////////////////
 
+.custom-radio {
+  position: relative;
+  padding-left: 35px;
+
+
+  &__label {
+    font-family: $font-medium;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1.4;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      border: 1px solid #d5d5d5;
+      border-radius: 50%;
+      position: absolute;
+      top: -3px;
+      left: 0;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 11px;
+      width: 11px;
+      background-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 3px;
+      left: 6px;
+      transition: background-color .3s ease-in-out;
+    }
+  }
+
+  &__input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:checked {
+      &+.custom-radio__label:after {
+        background-color: $text-color;
+      }
+    }
+  }
+}
 
 
 
