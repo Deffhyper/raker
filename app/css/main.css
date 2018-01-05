@@ -3061,8 +3061,6 @@ img[align="right"] {
       border: 1px solid transparent;
       background-color: #8bd0c0;
       color: #fff; }
-    .lk-steps-item.active .lk-steps-content {
-      display: block; }
     .lk-steps-item.activated .lk-label {
       border: 1px solid #8bd0c0;
       background-color: #fff;
@@ -3299,6 +3297,14 @@ img[align="right"] {
     font-size: 24px; }
   p {
     margin-bottom: 5px; }
+  .lk-title--big {
+    font-size: 24px; }
+  .lk-title--normal {
+    font-size: 20px; }
+  .custom-input {
+    font-size: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .right-sidebar-list__title {
     font-size: 14px; }
   .right-sidebar {
@@ -3446,4 +3452,7 @@ img[align="right"] {
   .goods-banner__right .goods-hrz-short-description {
     height: auto; }
   .section {
-    padding: 10px 0 20px; } }
+    padding: 10px 0 20px; }
+  .lk-steps-item {
+    padding-left: 55px;
+    margin-bottom: 30px; } }

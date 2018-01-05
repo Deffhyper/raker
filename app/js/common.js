@@ -361,78 +361,87 @@ $(document).ready(function () {
     /////////////////////////////////////////// lk steps /////////////////////////////////////////////
 
     $('.lk-steps-item').on('click', function (e) {
-        var $target = $(e.target);
+        var $target = $(e.target),
+            str = "",
+            str2 = "",
+            str3 = "",
+            str4 = "",
+            parent = $target.closest('.lk-steps-item'),
+            output = parent.find('.lk-output'),
+            that = $(this);
 
-        if($target.hasClass('gray-dashed-link')) {
-            e.preventDefault();
-
-            $(this).removeClass('activated');
-            $(this).addClass('active');
-            $(this).find('.lk-steps-content').slideDown('slow');
-
-            $(this).find('.lk-output').slideDown('slow').empty();
-
-            $(this).next().find('.lk-steps-content').slideUp('slow');
-            $(this).next().removeClass('active activated');
+        function switchStep() {
+            if(!parent.next().hasClass('activated')){
+                parent.next().find('.lk-steps-content').slideDown('slow');
+                parent.next().addClass('active');
+                parent.next().find('.lk-output').empty();
+                output.slideDown();
+            }
         }
 
+        function closeStep() {
+            parent.find('.lk-steps-content').slideUp('slow');
+            parent.removeClass('active');
+            parent.addClass('activated');
+        }
+
+        function reopenStep() {
+            that.find('.lk-steps-content').slideDown('slow');
+            that.find('.lk-output').slideDown('slow').empty();
+        }
+
+        // change input data link
+        if($target.hasClass('gray-dashed-link')) {
+            e.preventDefault();
+            reopenStep();
+            that.find('.btn').text('Изменить');
 
 
-    });
-
-    $('.lk-step-one').on('click', function (e) {
-        var $target = $(e.target),
-            str,
-            str2,
-            parent = $target.closest('.lk-steps-item'),
-            output = parent.find('.lk-output');
-
-        if ($target.hasClass('btn')){
-
+            // logyc for the first step
+        } else if ($target.hasClass('btn') && $(this).hasClass('lk-step-one')){
+            e.preventDefault();
             $target.closest('form').find('input').each(function (index) {
                 if(index < 3) {
                     str += $(this).val()+' ';
                 } else if(index == 3){
                     str2+=$(this).val();
+                } else if(index == 4){
+                    str4+=$(this).val();
                 }
-
             });
+            output.append('<p>'+str+'</p>');
+            output.append('<p>'+str2+'</p>');
+            output.append('<p> Город: '+str4+'</p>');
 
-            output.append('<p>'+ str.replace(/undefined/,'')+'</p>');
-            output.append('<p>'+ str2.replace(/undefined/,'')+'</p>');
-            parent.find('.lk-steps-content').slideUp('slow');
-            parent.removeClass('active');
-            parent.addClass('activated');
-            parent.next().find('.lk-steps-content').slideDown('slow');
-            parent.next().addClass('active');
-            output.slideDown();
+            closeStep();
+            switchStep();
+
+            // logyc for the second step
+        } else if ($target.hasClass('btn') && $(this).hasClass('lk-step-two')){
+            e.preventDefault();
+
+            $target.closest('form').parent('.active').find('input').each(function () {
+                if($(this).prop('checked')) {
+                    str3 += $(this).next().text();
+                }
+            });
+            output.append('<p>'+str3+'</p>');
+
+            closeStep();
+            switchStep();
+
         }
+
+        // logyc for the second step
 
     });
 
-    $('.lk-step-two').on('click', function (e) {
-        var $target = $(e.target),
-            str,
-            parent = $target.closest('.lk-steps-item'),
-            output = parent.find('.lk-output');
 
-        if ($target.hasClass('btn')){
+    /////////////////////////////////////// remove order from DOM ///////////////////////
 
-            $target.closest('form').find('input').each(function () {
-                if($(this)+':checked') {
-                    str += $(this).next().text();
-                }
-
-            });
-            output.append('<p>'+ str.replace(/undefined/,'')+'</p>');
-            parent.find('.lk-steps-content').slideUp('slow');
-            parent.removeClass('active');
-            parent.addClass('activated');
-            parent.next().find('.lk-steps-content').slideDown('slow');
-            parent.next().addClass('active');
-            output.slideDown();
-        }
-
+    $('.order-item-header').find('.close-btn').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.order-item').remove();
     });
 
 

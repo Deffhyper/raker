@@ -21,7 +21,7 @@
                     <li class="lk-steps-item lk-step-one active">
                         <b class="lk-label lk-title--normal">1</b>
                         <p class="lk-title lk-title--normal">Ваши данные <a href="#" class="gray-dashed-link">Изменить</a></p>
-                        <div class="lk-output"></div>
+                        <div class="lk-output"  style="display: none"></div>
                         <div class="lk-steps-item__form lk-steps-content">
                             <form action="#">
                                 <div class="row form-input-horizontal">
@@ -87,10 +87,7 @@
                     <li class="lk-steps-item lk-step-two">
                         <b class="lk-label lk-title--normal">2</b>
                         <p class="lk-title lk-title--normal">Способ доставки  <a href="#" class="gray-dashed-link">Изменить</a></p>
-                        <div class="lk-output">
-                            <p>Самовывоз из “SeaDora”</p>
-                            <p>ул. Григория Сковороды, 1</p>
-                        </div>
+                        <div class="lk-output" style="display: none"></div>
                         <div class="lk-tab lk-steps-content" style="display: none">
                             <ul class="lk-tab__header list-inline">
                                 <li class="active">
