@@ -390,14 +390,14 @@ $(document).ready(function () {
             that.find('.lk-output').slideDown('slow').empty();
         }
 
-        // change input data link
+        // change
         if($target.hasClass('gray-dashed-link')) {
             e.preventDefault();
             reopenStep();
             that.find('.btn').text('Изменить');
 
 
-            // logyc for the first step
+            // logic for the first step
         } else if ($target.hasClass('btn') && $(this).hasClass('lk-step-one')){
             e.preventDefault();
             $target.closest('form').find('input').each(function (index) {
@@ -416,7 +416,7 @@ $(document).ready(function () {
             closeStep();
             switchStep();
 
-            // logyc for the second step
+            // logic for the second step
         } else if ($target.hasClass('btn') && $(this).hasClass('lk-step-two')){
             e.preventDefault();
 
@@ -432,7 +432,7 @@ $(document).ready(function () {
 
         }
 
-        // logyc for the second step
+        // logic for the third step
 
     });
 

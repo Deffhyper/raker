@@ -850,6 +850,10 @@
 .round-border-dotted {
   border: 1px dashed #d6d3e9;
   border-radius: 25px;
+
+  .border-bottom-dotted:last-child {
+    border: 0;
+  }
 }
 
 .border-bottom-dotted {

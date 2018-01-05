@@ -231,7 +231,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="lk-steps-item">
+                    <li class="lk-steps-item lk-step-three">
                         <b class="lk-label lk-title--normal">3</b>
                         <p class="lk-title lk-title--normal">Способ оплаты</p>
 
@@ -282,7 +282,6 @@
         </div>
 
         <div class="col-lg-5 col-md-12">
-
             <div class="round-border-dotted order-item">
                 <div class="border-bottom-dotted">
                     <div class="order-item-header">
