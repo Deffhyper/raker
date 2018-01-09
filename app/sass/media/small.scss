@@ -294,8 +294,44 @@
     margin-bottom: 30px;
   }
 
+  .border-bottom-dotted {
+    padding: 20px;
+  }
 
+  .order-item__detail-info--item {
+    padding: 15px;
+  }
 
+  .order-item__detail-info--item .order-item-prop__list {
+    padding-right: 0;
+  }
 
+  .order-item-prop__list--total {
+    position: relative;
+    text-align: right;
+    padding-top: 15px;
+    display: block;
+  }
+
+  .order-item-table-delivery {
+    margin-bottom: 10px;
+  }
+
+  .order-item-outlay {
+    width: 100%;
+  }
+
+  .gray-desk--padding-md {
+    padding: 25px 10px;
+  }
+
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-item__detail-info--item .container-fluid {
+    padding: 0;
+  }
 
 }
