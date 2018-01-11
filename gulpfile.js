@@ -41,6 +41,7 @@ gulp.task('svg_sprites', function () {
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
+		'app/libs/masked-input/masked-input.js', // masked input
 		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
 		'app/libs/tether/dist/js/tether.min.js', // connect popper
 		'app/libs/bootstrap/dist/js/bootstrap.min.js', // Bootstrap 4

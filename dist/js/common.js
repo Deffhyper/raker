@@ -2,6 +2,14 @@ $(document).ready(function () {
 
     var windowWidth = $(document).width();
 
+    // media query
+
+    var screenTabletQuery = window.matchMedia("(max-width: 991px)");
+
+    //////////////////////////////////////////// masked tel input ////////////////
+
+    $('.tel-input').mask("+38(099)999-99-99", {autoclear: false});
+
     ////////////////////////////////// mobile footer ///////////////////////////////////////
 
     function bindJsOnMobile(windowWidth) {
@@ -443,6 +451,53 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).closest('.order-item').remove();
     });
+    
+    /////////////////////////// order list dropdown //////////////////////////////////////////////////
+    
+    $('.order-item-list').find('.order-item-header').on('click', function () {
+
+        var $prev = $(this).parent('.order-item'),
+            $prevSiblings = $prev.siblings();
+
+        $.when(
+            $(this).toggleClass('open').promise(),
+            $(this).find('.order-item__preview').slideToggle().promise(),
+            $(this).next('.order-item__detail-info').slideToggle().promise(),
+            $prevSiblings.find('.order-item-header').removeClass('open').promise(),
+            $prevSiblings.find('.order-item__preview').slideDown().promise(),
+            $prevSiblings.find('.order-item__detail-info').slideUp().promise()
+
+        ).done(function() {
+            var $offsetTop = $prev.offset().top - 5;
+
+            $('body,html').animate({
+                scrollTop: $offsetTop
+            }, 700);
+
+        });
+
+    });
+
+    /////////////////////////////////// lk mobile menu ///////////////////////////////////
+
+    if (matchMedia) {
+        screenTabletQuery.addListener(checkMediaLkMobile);
+        checkMediaLkMobile(screenTabletQuery);
+    }
+
+    function checkMediaLkMobile(e) {
+        if (e.matches) {
+            $('.lk-mob-navigate-trigger').on('click', function () {
+                $(this).toggleClass('open');
+                $('.lk-mob-navigate-items').slideToggle();
+            });
+        } else {
+            $('.lk-mob-navigate-items').removeAttr('style');
+            $('.lk-mob-navigate-trigger').unbind('click');
+        }
+    }
+
+
 
 
 });

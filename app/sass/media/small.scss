@@ -294,7 +294,8 @@
     margin-bottom: 30px;
   }
 
-  .border-bottom-dotted {
+  .border-bottom-dotted,
+  .border-bottom-dotted.border-bottom-dotted--lg {
     padding: 20px;
   }
 
@@ -333,5 +334,72 @@
   .order-item__detail-info--item .container-fluid {
     padding: 0;
   }
+
+  .lk-add-avatar .lk-user-block.lk-user-block--big .lk-user-block__img-link {
+    height: 120px;
+    width: 120px;
+  }
+
+  .lk-user-block__rating.lk-user-block__rating--big .rateit-font {
+    font-size: 30px;
+  }
+
+  .lk-description {
+    display: block;
+  }
+
+  .lk-user-block.lk-user-block--big .lk-user-block__img-link {
+    height: 90px;
+    width: 90px;
+  }
+
+  .lk-user-block.lk-user-block--big {
+    padding-left: 105px;
+    min-height: 110px;
+    padding-top: 0;
+  }
+
+  .lk-add-avatar .lk-user-block__img {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 15px;
+  }
+
+  .lk-add-avatar .lk-user-block {
+    min-height: inherit;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .lk-add-avatar .lk-user-block {
+    min-height: inherit;
+  }
+
+  .lk-user-form__bottom {
+    text-align: center;
+  }
+
+  .lk-user-form .link-forget-password {
+    display: table;
+    margin: 15px auto 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

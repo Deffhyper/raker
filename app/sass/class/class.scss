@@ -16,6 +16,21 @@
   }
 }
 
+.sm-gutters {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.sm-gutters>.col, .sm-gutters>[class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.text-lg {
+  font-size: 17px;
+}
+
+
 .btn {
   font-family: $font;
   font-size: 16px;
@@ -33,8 +48,17 @@
     }
   }
 
+  &.btn--wide {
+    width: 285px;
+    max-width: 100%;
+  }
+
   &.btn--padding-md{
     padding: 10px 20px;
+  }
+
+  &.btn--padding-lg{
+    padding: 14px 20px;
   }
 
   &.btn__regular {
@@ -189,6 +213,30 @@
   }
 }
 
+.link-underline {
+  text-decoration: underline;
+  &--gray {
+    color: $gray;
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &--sm {
+    font-size: 13px;
+  }
+}
+
+.link-underline-dashed {
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px dashed $text-color;
+  transition: border-color .3s ease;
+  &:hover {
+    border-color: transparent;
+  }
+}
+
 ////////////////////////////////////////// gray link dashed /////////////////////
 
 .gray-dashed-link {
@@ -198,6 +246,7 @@
   border-bottom: 1px dashed #838282;
   transition: border-color .3s ease;
   &:hover {
+    color: $gray;
     border-color: transparent;
   }
 }
@@ -888,6 +937,9 @@
   &.border-bottom-dotted--sm {
     padding: 15px 23px;
   }
+  &.border-bottom-dotted--lg {
+    padding: 30px 33px;
+  }
 }
 
 /////////////////////////////////////// close button /////////////////////////
@@ -929,12 +981,38 @@
   border: 1px solid #d4d4d4;
   height: 35px;
   width: 100%;
+  &.custom-input--lg {
+    height: 39px;
+  }
 }
 
 .custom-input-label {
   font-family: $font-medium;
   font-size: 16px;
   margin-bottom: 0;
+
+  &.custom-input-label--under {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+
+.input-block {
+  margin-bottom: 10px;
+}
+
+//////////////////////////////////// input date //////////////////////////////////////
+
+.input-date {
+  position: relative;
+
+  .custom-date-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
 }
 
 /////////////////////////////////////// custom radio //////////////////////////////

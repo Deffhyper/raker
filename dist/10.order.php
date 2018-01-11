@@ -282,7 +282,7 @@
         </div>
 
         <div class="col-lg-5 col-md-12">
-            <div class="round-border-dotted order-item">
+            <div class="round-border-dotted order-item mb-4">
                 <div class="border-bottom-dotted">
                     <div class="order-item-header">
                         <p class="order-item__title">Заказ №1</p>
@@ -375,8 +375,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="round-border-dotted order-item">
+            <div class="round-border-dotted order-item mb-4">
                 <div class="border-bottom-dotted">
                     <div class="order-item-header">
                         <p class="order-item__title">Заказ №1</p>
@@ -469,8 +468,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>

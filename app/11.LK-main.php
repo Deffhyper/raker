@@ -19,7 +19,7 @@
             <div class="round-border-dotted">
                 <span class="lk-mob-navigate-trigger">Меню</span>
                 <div class="lk-mob-navigate-items">
-                    <div class="lk-header">
+                    <div class="lk-add-avatar border-bottom-dotted">
                         <div class="lk-user-block">
 
                             <div class="lk-user-block__img">

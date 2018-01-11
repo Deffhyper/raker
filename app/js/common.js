@@ -6,6 +6,10 @@ $(document).ready(function () {
 
     var screenTabletQuery = window.matchMedia("(max-width: 991px)");
 
+    //////////////////////////////////////////// masked tel input ////////////////
+
+    $('.tel-input').mask("+38(099)999-99-99", {autoclear: false});
+
     ////////////////////////////////// mobile footer ///////////////////////////////////////
 
     function bindJsOnMobile(windowWidth) {
@@ -464,7 +468,7 @@ $(document).ready(function () {
             $prevSiblings.find('.order-item__detail-info').slideUp().promise()
 
         ).done(function() {
-            var $offsetTop = $prev.offset().top;
+            var $offsetTop = $prev.offset().top - 5;
 
             $('body,html').animate({
                 scrollTop: $offsetTop
