@@ -733,6 +733,7 @@ img[align="right"] {
     border-radius: 50%;
     border: 1px solid #ebebeb;
     position: relative;
+    z-index: 1;
 
     img {
       position: absolute;
@@ -760,6 +761,7 @@ img[align="right"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
 
   &__name {

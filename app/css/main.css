@@ -1338,24 +1338,24 @@ b {
 @-webkit-keyframes shake {
   from, 16%, to {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+            transform: translate3d(0, 0, 0); }
   1.6%, 4.8%, 8%, 11.2%, 14.4% {
     -webkit-transform: translate3d(-2px, 0, 0);
-    transform: translate3d(-2px, 0, 0); }
+            transform: translate3d(-2px, 0, 0); }
   3.2%, 6.4%, 9.6%, 12.8% {
     -webkit-transform: translate3d(2px, 0, 0);
-    transform: translate3d(2px, 0, 0); } }
+            transform: translate3d(2px, 0, 0); } }
 
 @keyframes shake {
   from, 16%, to {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+            transform: translate3d(0, 0, 0); }
   1.6%, 4.8%, 8%, 11.2%, 14.4% {
     -webkit-transform: translate3d(-2px, 0, 0);
-    transform: translate3d(-2px, 0, 0); }
+            transform: translate3d(-2px, 0, 0); }
   3.2%, 6.4%, 9.6%, 12.8% {
     -webkit-transform: translate3d(2px, 0, 0);
-    transform: translate3d(2px, 0, 0); } }
+            transform: translate3d(2px, 0, 0); } }
 
 .page-header-lang {
   margin-top: 7px;
@@ -2999,7 +2999,8 @@ img[align="right"] {
     -webkit-border-radius: 50%;
             border-radius: 50%;
     border: 1px solid #ebebeb;
-    position: relative; }
+    position: relative;
+    z-index: 1; }
     .lk-user-block__img-link img {
       position: absolute;
       top: 50%;
@@ -3035,7 +3036,8 @@ img[align="right"] {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    z-index: 1; }
   .lk-user-block__name {
     font-size: 20px;
     font-family: "Roboto-Bold", sans-serif;
