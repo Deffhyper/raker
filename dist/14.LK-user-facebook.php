@@ -23,15 +23,15 @@
                         <div class="lk-user-block lk-user-block--big">
                             <div class="lk-user-block__img">
                                 <a href="#" class="lk-user-block__img-link">
-                                    <img src="img/jpeg_files/user-photo.jpg" alt="user photo" width="90" height="90">
+                                    <img src="img/jpeg_files/user.png" alt="user photo" >
                                 </a>
                                 <div class="social-label">
                                     <span class="iconmoon icon-facebook-logo"></span>
                                 </div>
                             </div>
-                            <p class="lk-user-block__name">Александр</p>
-                            <p class="lk-user-block__prop">13 июнь 1987</p>
-                            <a href="tel:+380932255587" class="lk-user-block__prop">+38 (093) 225-55-87</a>
+                            <p class="lk-user-block__name">Игор Дубинскай</p>
+                            <p class="lk-user-block__prop">26 декабря 1994</p>
+                            <a href="tel:+380932255587" class="lk-user-block__prop">+38 (000) 000-00-00</a>
                             <a href="mailto:email@gmail.com" class="lk-user-block__prop">email@gmail.com</a>
                             <div class="mt-3">
                                 <a href="#" class="link-underline link-underline--sm link-underline--gray">Редактировать</a>
@@ -39,14 +39,15 @@
                         </div>
 
                         <div class="text-center mb-0 mt-4">
-                            <a href="#" class="btn btn__blue btn--padding-lg btn--wide">Привязать к facebook</a>
+                            <a href="#" class="btn btn__gray-unbind btn--padding-lg btn--wide">Отвязать от facebook</a>
                         </div>
                     </div>
                     <div class="lk-header">
                         <div class="lk-user-block__rating lk-user-block__rating--big">
                             <span class="rateit"
                                   data-rateit-mode="font"
-                                  data-rateit-value="2.5"
+                                  data-rateit-step="0.5"
+                                  data-rateit-value="2"
                                   data-rateit-ispreset="true"
                                   data-rateit-readonly="true"
                                   data-rateit-icon=""

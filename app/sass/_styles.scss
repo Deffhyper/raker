@@ -732,6 +732,19 @@ img[align="right"] {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #ebebeb;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      max-width: none;
+    }
   }
   .social-label {
     background-color: #e5e5e5;
@@ -765,13 +778,15 @@ img[align="right"] {
     &.lk-user-block__rating--big {
 
       .rateit-font {
-        font-size: 52px;
+        font-size: 40px;
+        letter-spacing: 5px;
       }
     }
 
     .rateit-font {
-      font-size: 32px;
+      font-size: 27px;
       margin-bottom: 20px;
+      letter-spacing: 3px;
     }
 
     .rateit .rateit-hover, .rateit .rateit-selected {
@@ -795,10 +810,6 @@ img[align="right"] {
     .lk-user-block__img-link {
       height: 124px;
       width: 124px;
-      img {
-        width: 100%;
-        height: auto;
-      }
     }
   }
 }
@@ -1391,6 +1402,9 @@ img[align="right"] {
 
   .custom-date {
     margin-left: 0;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
   }
 
   .link-forget-password {

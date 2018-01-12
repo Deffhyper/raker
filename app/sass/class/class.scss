@@ -115,6 +115,15 @@
       }
     }
   }
+
+  &__gray-unbind {
+    color: #969696;
+    background-color: #eaeaea;
+    &:hover {
+      color: #969696;
+      background-color: #dedede;
+    }
+  }
   
   &__gray {
     color: #fff;
@@ -1006,6 +1015,7 @@
 
 .input-date {
   position: relative;
+  background-color: #fff;
 
   .custom-date-icon {
     position: absolute;

@@ -425,9 +425,12 @@
                                 <span class="review-user-name"><b>Евгений</b>(Киев)</span>
                                 <span class="rateit"
                                       data-rateit-mode="font"
+                                      data-rateit-step="0.5"
                                       data-rateit-value="2.5"
                                       data-rateit-ispreset="true"
                                       data-rateit-readonly="true"
+                                      data-rateit-icon=""
+                                      style="font-family:fontawesome"
                                 ></span>
                             </div>
                             <div class="reviews-block-body">
@@ -441,9 +444,12 @@
                                 <span class="review-user-name"><b>Евгений</b>(Киев)</span>
                                 <span class="rateit"
                                       data-rateit-mode="font"
-                                      data-rateit-value="4.5"
+                                      data-rateit-step="0.5"
+                                      data-rateit-value="2"
                                       data-rateit-ispreset="true"
                                       data-rateit-readonly="true"
+                                      data-rateit-icon=""
+                                      style="font-family:fontawesome"
                                 ></span>
                             </div>
                             <div class="reviews-block-body">
@@ -457,9 +463,12 @@
                                 <span class="review-user-name"><b>Евгений</b>(Киев)</span>
                                 <span class="rateit"
                                       data-rateit-mode="font"
-                                      data-rateit-value="5"
+                                      data-rateit-step="0.5"
+                                      data-rateit-value="2"
                                       data-rateit-ispreset="true"
                                       data-rateit-readonly="true"
+                                      data-rateit-icon=""
+                                      style="font-family:fontawesome"
                                 ></span>
                             </div>
                             <div class="reviews-block-body">

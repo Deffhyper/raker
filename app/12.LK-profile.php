@@ -23,9 +23,12 @@
                         <div class="lk-user-block__rating">
                             <span class="rateit"
                                   data-rateit-mode="font"
+                                  data-rateit-step="0.5"
                                   data-rateit-value="2.5"
                                   data-rateit-ispreset="true"
                                   data-rateit-readonly="true"
+                                  data-rateit-icon=""
+                                  style="font-family:fontawesome"
                             ></span>
                             <div class="lk-user-block__rating-sub-label">Только распробовал</div>
                             <div class="lk-user-block__rating-label">Съедено - 13 кг</div>
@@ -67,7 +70,7 @@
 
         </div>
 
-        <div class="col-lg-8 col-md-12 mb-5">
+        <div class="col-lg-8 col-md-12 ">
             <div class="lk-container">
                 <div class="round-border-dotted ">
                     <div class="lk-add-avatar border-bottom-dotted">
@@ -163,6 +166,7 @@
                 </div>
             </div>
         </div>
+        <div class="col-12 pb-5"></div>
     </div>
 </div>
 <?php include_once "parts/footer.php" ?>

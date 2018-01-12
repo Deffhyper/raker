@@ -280,7 +280,6 @@
 
             </div>
         </div>
-
         <div class="col-lg-5 col-md-12">
             <div class="round-border-dotted order-item mb-4">
                 <div class="border-bottom-dotted">
@@ -469,6 +468,7 @@
                 </div>
             </div>
         </div>
+        <div class="col-12 pb-5"></div>
     </div>
 </div>
 <?php include_once "parts/footer.php" ?>

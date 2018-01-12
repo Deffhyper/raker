@@ -6,6 +6,8 @@ $(document).ready(function () {
 
     var screenTabletQuery = window.matchMedia("(max-width: 991px)");
 
+
+
     //////////////////////////////////////////// masked tel input ////////////////
 
     $('.tel-input').mask("+38(099)999-99-99", {autoclear: false});

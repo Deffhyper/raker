@@ -75,6 +75,13 @@
   position: relative;
   margin-top: 3px;
   padding: 0 13px;
+
+  &.active {
+    animation-name: shake;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
   &__label {
     display: block;
     padding: 2px 6px;
@@ -93,6 +100,21 @@
     font-size: 23px;
   }
 
+}
+
+@keyframes shake {
+  from, 16%, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  1.6%, 4.8%, 8%, 11.2%, 14.4% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
+  }
+  3.2%, 6.4%, 9.6%, 12.8% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
 }
 
 .page-header-lang {

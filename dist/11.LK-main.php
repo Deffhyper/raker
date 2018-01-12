@@ -19,7 +19,7 @@
             <div class="round-border-dotted">
                 <span class="lk-mob-navigate-trigger">Меню</span>
                 <div class="lk-mob-navigate-items">
-                    <div class="lk-header">
+                    <div class="lk-add-avatar border-bottom-dotted">
                         <div class="lk-user-block">
 
                             <div class="lk-user-block__img">
@@ -43,9 +43,12 @@
                         <div class="lk-user-block__rating">
                             <span class="rateit"
                                   data-rateit-mode="font"
-                                  data-rateit-value="2.5"
+                                  data-rateit-step="0.5"
+                                  data-rateit-value="2"
                                   data-rateit-ispreset="true"
                                   data-rateit-readonly="true"
+                                  data-rateit-icon=""
+                                  style="font-family:fontawesome"
                             ></span>
                             <div class="lk-user-block__rating-sub-label">Только распробовал</div>
                             <div class="lk-user-block__rating-label">Съедено - 13 кг</div>
@@ -87,14 +90,14 @@
 
         </div>
 
-        <div class="col-lg-8 col-md-12 mb-5">
+        <div class="col-lg-8 col-md-12">
             <div class="lk-container order-item-list">
                 <div class="round-border-dotted ">
                     <div class="order-item">
                         <div class="order-item-header border-bottom-dotted">
                             <div class="order-item-header__wrapper">
                                 <p class="order-item__title">Заказ №243236</p>
-                                <p class="mb-0">25 декабря 2017, 16:56 — Доставлено
+                                <p class="mb-0">25 декабря 2017, 16:56 — <span class="text-orange">Подтверждение</span>
                                 </p>
                             </div>
 
@@ -803,7 +806,7 @@
                         <div class="order-item-header border-bottom-dotted">
                             <div class="order-item-header__wrapper">
                                 <p class="order-item__title">Заказ №243236</p>
-                                <p class="mb-0">25 декабря 2017, 16:56 —  <span class="iconmoon icon-dislike"></span>
+                                <p class="mb-0">25 декабря 2017, 16:56 —  Доставлено
                                 </p>
                             </div>
 
@@ -985,6 +988,7 @@
                 </div>
             </div>
         </div>
+        <div class="col-12 pb-5"></div>
     </div>
 </div>
 <?php include_once "parts/footer.php" ?>

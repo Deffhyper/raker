@@ -44,7 +44,7 @@
                             </div>
                         </li>
                         <li class="page-header-right__item">
-                            <div class="page-header-cart">
+                            <div class="page-header-cart active">
                                 <a href="#">
                                     <i class="iconmoon icon-cart"></i>
                                     <span class="page-header-cart__label">2</span>

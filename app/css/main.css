@@ -453,6 +453,12 @@ b {
     color: #777777; }
     .btn__arrow--gray span:after, .btn__arrow--gray span:before {
       border-color: #777777; }
+  .btn__gray-unbind {
+    color: #969696;
+    background-color: #eaeaea; }
+    .btn__gray-unbind:hover {
+      color: #969696;
+      background-color: #dedede; }
   .btn__gray {
     color: #fff;
     background-color: #cbcbcb; }
@@ -1145,7 +1151,8 @@ b {
   margin-bottom: 10px; }
 
 .input-date {
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
   .input-date .custom-date-icon {
     position: absolute;
     top: 50%;
@@ -1306,6 +1313,13 @@ b {
   position: relative;
   margin-top: 3px;
   padding: 0 13px; }
+  .page-header-cart.active {
+    -webkit-animation-name: shake;
+            animation-name: shake;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite; }
   .page-header-cart__label {
     display: block;
     padding: 2px 6px;
@@ -1320,6 +1334,28 @@ b {
     right: 4px; }
   .page-header-cart .icon-cart {
     font-size: 23px; }
+
+@-webkit-keyframes shake {
+  from, 16%, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  1.6%, 4.8%, 8%, 11.2%, 14.4% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, 0, 0); }
+  3.2%, 6.4%, 9.6%, 12.8% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0); } }
+
+@keyframes shake {
+  from, 16%, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  1.6%, 4.8%, 8%, 11.2%, 14.4% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, 0, 0); }
+  3.2%, 6.4%, 9.6%, 12.8% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0); } }
 
 .page-header-lang {
   margin-top: 7px;
@@ -2962,7 +2998,20 @@ img[align="right"] {
     overflow: hidden;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    border: 1px solid #ebebeb; }
+    border: 1px solid #ebebeb;
+    position: relative; }
+    .lk-user-block__img-link img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      max-width: none; }
   .lk-user-block .social-label {
     background-color: #e5e5e5;
     border: 1px solid #fff;
@@ -2997,10 +3046,12 @@ img[align="right"] {
   .lk-user-block__rating {
     text-align: center; }
     .lk-user-block__rating.lk-user-block__rating--big .rateit-font {
-      font-size: 52px; }
+      font-size: 40px;
+      letter-spacing: 5px; }
     .lk-user-block__rating .rateit-font {
-      font-size: 32px;
-      margin-bottom: 20px; }
+      font-size: 27px;
+      margin-bottom: 20px;
+      letter-spacing: 3px; }
     .lk-user-block__rating .rateit .rateit-hover, .lk-user-block__rating .rateit .rateit-selected {
       color: #feb21f; }
     .lk-user-block__rating-label {
@@ -3013,9 +3064,6 @@ img[align="right"] {
     .lk-user-block.lk-user-block--big .lk-user-block__img-link {
       height: 124px;
       width: 124px; }
-      .lk-user-block.lk-user-block--big .lk-user-block__img-link img {
-        width: 100%;
-        height: auto; }
 
 .lk-body__item {
   border-bottom: 1px dashed #d6d3e9; }
@@ -3437,7 +3485,10 @@ img[align="right"] {
   .lk-user-form__wrapper {
     margin-bottom: 25px; }
   .lk-user-form .custom-date {
-    margin-left: 0; }
+    margin-left: 0;
+    position: relative;
+    background-color: transparent;
+    z-index: 1; }
   .lk-user-form .link-forget-password {
     margin-left: 20px;
     font-size: 12px; }
@@ -3835,4 +3886,6 @@ img[align="right"] {
     text-align: center; }
   .lk-user-form .link-forget-password {
     display: table;
-    margin: 15px auto 0; } }
+    margin: 15px auto 0; }
+  .lk-container {
+    margin-bottom: 15px; } }
