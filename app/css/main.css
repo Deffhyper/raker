@@ -742,7 +742,8 @@ b {
     font-weight: bold; }
 
 .goods-hrz-icons {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  height: 48px; }
   .goods-hrz-icons__item {
     vertical-align: middle;
     margin-right: 5px;
@@ -765,7 +766,8 @@ b {
       display: block;
       height: 100%;
       position: relative;
-      padding: 5px; }
+      padding: 5px;
+      width: 45px; }
       .goods-hrz-icons__item > a:after {
         content: '';
         display: block;

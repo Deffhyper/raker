@@ -93,7 +93,7 @@
                     <ul class="list-inline goods-hrz-icons">
                         <li class="goods-hrz-icons__item">
                             <a href="javascript:void(0);" role="button" class="icon-tooltip-trigger">
-                                <span class="iconmoon icon-fish"></span>
+                                <object type="image/svg+xml" data="img/svg_icon/fish-1.svg" class="logo"></object>
                             </a>
                             <div class="icon-tooltip">
                                 <a href="javascript:void(0);" role="button" class="icon-tooltip__close"></a>
@@ -110,7 +110,7 @@
                         </li>
                         <li class="goods-hrz-icons__item">
                             <a href="javascript:void(0);" role="button" class="icon-tooltip-trigger">
-                                <span class="iconmoon icon-fish-2"></span>
+                                <object type="image/svg+xml" data="img/svg_icon/fish-2.svg" class="logo"></object>
                             </a>
                             <div class="icon-tooltip">
                                 <a href="javascript:void(0);" role="button" class="icon-tooltip__close"></a>
@@ -126,6 +126,59 @@
                             </div>
                         </li>
 
+                        <li class="goods-hrz-icons__item">
+                            <a href="javascript:void(0);" role="button" class="icon-tooltip-trigger">
+                                <object type="image/svg+xml" data="img/svg_icon/fish-3.svg" class="logo"></object>
+                            </a>
+                            <div class="icon-tooltip">
+                                <a href="javascript:void(0);" role="button" class="icon-tooltip__close"></a>
+                                <div class="icon-tooltip__img">
+                                    <img src="img/jpeg_files/tooltip-1.jpg" alt="tool tip" width="50" height="50">
+                                </div>
+                                <p class="icon-tooltip__title">Лосось</p>
+                                <p class="icon-tooltip__text">Penaeus monodon (лат.) — вид десятиногих раков из
+                                    подотряда Dendrobranchiata. Распространён в тёплых водах Индийского и Тихого
+                                    океанов[2]. В развитии тигровых креветок присутствует планктонная личинка науплиус,
+                                    что делает представителей этого и некоторых родственных видов удобными объектами для
+                                    разведения.</p>
+                            </div>
+                        </li>
+
+                        <li class="goods-hrz-icons__item">
+                            <a href="javascript:void(0);" role="button" class="icon-tooltip-trigger">
+                                <object type="image/svg+xml" data="img/svg_icon/fish-2.svg" class="logo"></object>
+                            </a>
+                            <div class="icon-tooltip">
+                                <a href="javascript:void(0);" role="button" class="icon-tooltip__close"></a>
+                                <div class="icon-tooltip__img">
+                                    <img src="img/jpeg_files/tooltip-1.jpg" alt="tool tip" width="50" height="50">
+                                </div>
+                                <p class="icon-tooltip__title">Лосось</p>
+                                <p class="icon-tooltip__text">Penaeus monodon (лат.) — вид десятиногих раков из
+                                    подотряда Dendrobranchiata. Распространён в тёплых водах Индийского и Тихого
+                                    океанов[2]. В развитии тигровых креветок присутствует планктонная личинка науплиус,
+                                    что делает представителей этого и некоторых родственных видов удобными объектами для
+                                    разведения.</p>
+                            </div>
+                        </li>
+
+                        <li class="goods-hrz-icons__item">
+                            <a href="javascript:void(0);" role="button" class="icon-tooltip-trigger">
+                                <object type="image/svg+xml" data="img/svg_icon/fish-1.svg" class="logo"></object>
+                            </a>
+                            <div class="icon-tooltip">
+                                <a href="javascript:void(0);" role="button" class="icon-tooltip__close"></a>
+                                <div class="icon-tooltip__img">
+                                    <img src="img/jpeg_files/tooltip-1.jpg" alt="tool tip" width="50" height="50">
+                                </div>
+                                <p class="icon-tooltip__title">Лосось</p>
+                                <p class="icon-tooltip__text">Penaeus monodon (лат.) — вид десятиногих раков из
+                                    подотряда Dendrobranchiata. Распространён в тёплых водах Индийского и Тихого
+                                    океанов[2]. В развитии тигровых креветок присутствует планктонная личинка науплиус,
+                                    что делает представителей этого и некоторых родственных видов удобными объектами для
+                                    разведения.</p>
+                            </div>
+                        </li>
                     </ul>
 
                     <p class="goods-hrz-short-description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -229,7 +282,7 @@
                     <ul class="list-inline goods-hrz-icons">
                         <li class="goods-hrz-icons__item">
                             <a href="javascript:void(0);" role="button" class="icon-tooltip-trigger">
-                                <span class="iconmoon icon-fish"></span>
+                                <object type="image/svg+xml" data="img/svg_icon/fish-1-white.svg" class="logo"></object>
                             </a>
                             <div class="icon-tooltip">
                                 <a href="javascript:void(0);" role="button" class="icon-tooltip__close"></a>
@@ -246,7 +299,7 @@
                         </li>
                         <li class="goods-hrz-icons__item">
                             <a href="javascript:void(0);" role="button" class="icon-tooltip-trigger">
-                                <span class="iconmoon icon-fish-2"></span>
+                                <object type="image/svg+xml" data="img/svg_icon/fish-2-white.svg" class="logo"></object>
                             </a>
                             <div class="icon-tooltip">
                                 <a href="javascript:void(0);" role="button" class="icon-tooltip__close"></a>
