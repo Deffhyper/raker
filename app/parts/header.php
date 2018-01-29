@@ -17,13 +17,16 @@
                     <ul class="page-header-right">
                         <li class="page-header-right__item">
                             <div class="page-header-authorize">
-                                <a href="#" class="page-header-authorize__in">Вход</a>
-                                <a href="#" class="page-header-authorize__reg">Регистрация</a>
+                                <a href="#" class="page-header-authorize__in" data-toggle="modal"
+                                   data-target="#auth-modal">Вход</a>
+                                <a href="#" class="page-header-authorize__reg" data-toggle="modal"
+                                   data-target="#reg-modal">Регистрация</a>
                             </div>
                         </li>
                         <li class="page-header-right__item">
                             <div class="for-small-devices">
-                                <a href="tel:+380965550005" class="page-header-mobile-tel"><i class="iconmoon icon-phone"></i></a>
+                                <a href="tel:+380965550005" class="page-header-mobile-tel"><i
+                                        class="iconmoon icon-phone"></i></a>
                             </div>
                             <div class="page-header-info">
                                 <p class="page-header-info__time">Звоните с 8:00 до 23:00</p>
@@ -134,15 +137,17 @@
     </div>
 
 
-<!--    ///////////////////////////////////////////// mobile menu ///////////////////////////////////-->
+    <!--    ///////////////////////////////////////////// mobile menu ///////////////////////////////////-->
     <div class="mob-menu">
         <div class="mob-menu__header d-flex justify-content-between">
             <a href="#" class="mob-menu-close"></a>
             <span class="page-header-mob-menu-title">Raker.ua</span>
         </div>
         <div class="page-header-authorize">
-            <a href="#" class="page-header-authorize__in">Вход</a>
-            <a href="#" class="page-header-authorize__reg">Регистрация</a>
+            <a href="#" class="page-header-authorize__in" data-toggle="modal"
+               data-target="#auth-modal">Вход</a>
+            <a href="#" class="page-header-authorize__reg" data-toggle="modal"
+               data-target="#reg-modal">Регистрация</a>
         </div>
         <ul class="page-header-bottom-nav ">
             <li class="page-header-bottom-nav__item">
