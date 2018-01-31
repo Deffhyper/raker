@@ -699,8 +699,8 @@ b {
       color: #fff; }
   .goods-hrz .top-banner-timer {
     color: #231f20;
-    width: 270px;
-    height: 90px;
+    width: 200px;
+    height: 70px;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -721,15 +721,18 @@ b {
 
 .goods-hrz-prop-manufacturer {
   font-size: 19px;
-  margin-left: 6px; }
+  top: -3px; }
 
 .goods-hrz-prop-date,
 .custom-date {
   width: 18px;
   display: inline-block;
   cursor: pointer;
-  position: relative;
-  margin-left: 7px; }
+  position: relative; }
+
+.goods-hrz-prop__icon {
+  margin-right: 7px;
+  position: relative; }
 
 .goods-hrz-title {
   font-size: 27px;
@@ -765,7 +768,7 @@ b {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 270px; }
+    max-width: 255px; }
   .goods-hrz-prop__item {
     font-weight: bold; }
 
@@ -951,7 +954,9 @@ b {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 120px; } }
+    top: 120px; }
+  .goods-hrz-prop__icon {
+    margin-right: 0; } }
 
 .time_circles > div > h4 {
   text-transform: none;
@@ -1321,6 +1326,13 @@ b {
     text-align: center; }
     .two-btn .btn:last-child {
       float: right; }
+
+.modal-map .modal-dialog {
+  width: 1100px;
+  max-width: 95%; }
+  .modal-map .modal-dialog #map {
+    height: 70vh;
+    width: 100%; }
 
 @media (max-width: 767px) {
   .two-btn {

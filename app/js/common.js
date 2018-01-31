@@ -103,28 +103,28 @@ $(document).ready(function () {
 
     $(".DateCountdown").TimeCircles({
         "animation": "ticks",
-        "bg_width": 0.9,
-        "fg_width": 0.056666666666666664,
-        "circle_bg_color": "#8bd0c0",
+        "bg_width": 0,
+        "fg_width": 0,
+        "circle_bg_color": "transparent",
         "time": {
             "Days": {
                 "text": "Дней",
-                "color": "#6a2a83",
+                "color": "transparent",
                 "show": true
             },
             "Hours": {
                 "text": "Часов",
-                "color": "#6a2a83",
+                "color": "transparent",
                 "show": true
             },
             "Minutes": {
                 "text": "Минут",
-                "color": "#6a2a83",
+                "color": "transparent",
                 "show": true
             },
             "Seconds": {
                 "text": "Секунд",
-                "color": "#6a2a83",
+                "color": "transparent",
                 "show": false
             }
         }
@@ -502,22 +502,48 @@ $(document).ready(function () {
     /////////////////////////////////// auth modals /////////////////////////////////////////
     $('#toRegModal').on('click', function () {
         $('#auth-modal').modal('hide');
-        $('#auth-modal').on('hidden.bs.modal', function () {
-            $('body').addClass('modal-open');
-            $('body').css('padding-right', '17px');
-        })
-
-
     });
 
     $('.modal').on('hidden.bs.modal', function () {
         $('body').removeAttr('style');
         $('body').removeClass('modal-open');
-    })
-    
+    });
 
+    /////////////////////////////////////// map modal ////////////////////////////////////
 
+    var mapLt = null,
+        mapLg = null,
+        marker = null,
+        myLatlng = {lat: 0, lng: 0},
+        map;
 
+    $('.goods-hrz-prop-locate').on('click', function () {
+        mapLt = Number($(this).data('center-lt'));
+        mapLg = Number($(this).data('center-lg'));
+        myLatlng.lat = mapLt;
+        myLatlng.lng = mapLg;
+    });
 
+    function initialize() {
+        map = new google.maps.Map(document.getElementById('map'),{
+            center: myLatlng,
+            scrollwheel: false,
+            zoom: 12
+        });
+    }
+    initialize();
+
+    $('#map-modal').on('shown.bs.modal', function () {
+        google.maps.event.trigger(map, "resize");
+        marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map
+        });
+        map.panTo(myLatlng)
+    });
+
+    $('#map-modal').on('hidden.bs.modal', function () {
+        marker.setMap(null);
+    });
 
 });
