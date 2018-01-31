@@ -97,7 +97,7 @@
 
 
 <!--Authorize Modal -->
-<div class="modal fade" id="auth-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal modal-form fade" id="auth-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -120,7 +120,7 @@
                     <p class="pb-2 text-right"><a href="#" class="color-accent">Забыли пароль?</a></p>
 
                     <fieldset class="lk-user-form__bottom two-btn">
-                        <a href="#" class="btn btn__accent btn__accent--hover btn--padding-md" data-toggle="modal"
+                        <a href="#" id="toRegModal" class="btn btn__accent btn__accent--hover btn--padding-md" data-toggle="modal"
                            data-target="#reg-modal">Зарегистрироваться</a>
                         <input type="submit" value="Войти" class="btn btn__accent-second btn--padding-md">
                     </fieldset>
@@ -131,7 +131,7 @@
 </div>
 
 <!--Registration Modal -->
-<div class="modal fade" id="reg-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal modal-form fade" id="reg-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

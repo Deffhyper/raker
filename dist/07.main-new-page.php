@@ -21,7 +21,7 @@
 
                     <ul class="goods-hrz-prop">
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
+                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция провинция провинция </span>
                             <a href="#" class="goods-hrz-prop-locate">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
@@ -191,10 +191,13 @@
                         <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
                     </div>
                 </div>
+                <div class="top-banner-timer">
+                    <div class="DateCountdown" data-date="2018-02-17T00:00:00"></div>
+                </div>
             </div>
         </li>
-        <li class="block-list__item goods-hrz--inverse">
-            <div class="goods-hrz">
+        <li class="block-list__item">
+            <div class="goods-hrz goods-hrz--inverse">
                 <div class="goods-hrz__back">
                     <img src="img/jpeg_files/top-banner-2.jpg" alt="alter" width="" height="">
                 </div>
@@ -326,6 +329,9 @@
                         </div>
                         <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
                     </div>
+                </div>
+                <div class="top-banner-timer">
+                    <div class="DateCountdown" data-date="2018-02-17T00:00:00"></div>
                 </div>
             </div>
         </li>

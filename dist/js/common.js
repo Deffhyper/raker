@@ -105,26 +105,26 @@ $(document).ready(function () {
         "animation": "ticks",
         "bg_width": 0.9,
         "fg_width": 0.056666666666666664,
-        "circle_bg_color": "rgba(0,0,0, .4)",
+        "circle_bg_color": "#8bd0c0",
         "time": {
             "Days": {
                 "text": "Дней",
-                "color": "#ffffff",
+                "color": "#6a2a83",
                 "show": true
             },
             "Hours": {
                 "text": "Часов",
-                "color": "#ffffff",
+                "color": "#6a2a83",
                 "show": true
             },
             "Minutes": {
                 "text": "Минут",
-                "color": "#ffffff",
+                "color": "#6a2a83",
                 "show": true
             },
             "Seconds": {
                 "text": "Секунд",
-                "color": "#FF9999",
+                "color": "#6a2a83",
                 "show": false
             }
         }
@@ -498,6 +498,24 @@ $(document).ready(function () {
             $('.lk-mob-navigate-trigger').unbind('click');
         }
     }
+    
+    /////////////////////////////////// auth modals /////////////////////////////////////////
+    $('#toRegModal').on('click', function () {
+        $('#auth-modal').modal('hide');
+        $('#auth-modal').on('hidden.bs.modal', function () {
+            $('body').addClass('modal-open');
+            $('body').css('padding-right', '17px');
+        })
+
+
+    });
+
+    $('.modal').on('hidden.bs.modal', function () {
+        $('body').removeAttr('style');
+        $('body').removeClass('modal-open');
+    })
+    
+
 
 
 

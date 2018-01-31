@@ -1438,3 +1438,20 @@ img[align="right"] {
   }
 
 }
+
+////////////////////////////////////////// 404 //////////////////////////////////////////////////
+
+.forty-four {
+  padding: 20px 0;
+
+  &-title {
+    font-size: 250px;
+    font-family: $font-black;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  &-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
