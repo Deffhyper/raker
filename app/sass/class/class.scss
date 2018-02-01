@@ -502,9 +502,9 @@
   vertical-align: bottom;
 }
 
-.goods-hrz-prop-manufacturer {
+.goods-hrz-prop__icon.goods-hrz-prop-manufacturer {
   font-size: 19px;
-  top:-3px;
+  top:-1px;
 }
 
 .goods-hrz-prop-date,
@@ -518,6 +518,8 @@
 .goods-hrz-prop__icon {
   margin-right: 7px;
   position: relative;
+  vertical-align: bottom;
+  top: 2px;
 }
 
 .goods-hrz-title {
@@ -670,6 +672,14 @@
   .goods-hrz .top-banner-timer {
     left: 30px;
   }
+
+  .goods-hrz-prop__icon {
+    top: 0;
+  }
+
+  .goods-hrz-prop__icon.goods-hrz-prop-manufacturer {
+    top: -2px;
+  }
 }
 
 @media ($mobile) {
@@ -736,6 +746,10 @@
   .goods-hrz-prop__icon {
     margin-right: 0;
   }
+  .goods-hrz-prop__icon.goods-hrz-prop-manufacturer {
+    top: -3px;
+  }
+
 
 
 

@@ -719,9 +719,9 @@ b {
   width: 20px;
   vertical-align: bottom; }
 
-.goods-hrz-prop-manufacturer {
+.goods-hrz-prop__icon.goods-hrz-prop-manufacturer {
   font-size: 19px;
-  top: -3px; }
+  top: -1px; }
 
 .goods-hrz-prop-date,
 .custom-date {
@@ -732,7 +732,9 @@ b {
 
 .goods-hrz-prop__icon {
   margin-right: 7px;
-  position: relative; }
+  position: relative;
+  vertical-align: bottom;
+  top: 2px; }
 
 .goods-hrz-title {
   font-size: 27px;
@@ -906,7 +908,11 @@ b {
     max-width: none;
     max-height: 100%; }
   .goods-hrz .top-banner-timer {
-    left: 30px; } }
+    left: 30px; }
+  .goods-hrz-prop__icon {
+    top: 0; }
+  .goods-hrz-prop__icon.goods-hrz-prop-manufacturer {
+    top: -2px; } }
 
 @media (max-width: 767px) {
   .goods-hrz__back {
@@ -956,7 +962,9 @@ b {
             transform: translateX(-50%);
     top: 120px; }
   .goods-hrz-prop__icon {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .goods-hrz-prop__icon.goods-hrz-prop-manufacturer {
+    top: -3px; } }
 
 .time_circles > div > h4 {
   text-transform: none;

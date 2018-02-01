@@ -216,8 +216,7 @@
 
                     <ul class="goods-hrz-prop">
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
-                            <a href="#" class="goods-hrz-prop-locate" data-toggle="modal"
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-locate" data-toggle="modal"
                                data-target="#map-modal" data-center-lt="32.72728028" data-center-lg="22.83483887">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
@@ -234,15 +233,15 @@
                                     </g>
                                 </svg>
                             </a>
+                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
-                            <a href="#" class="goods-hrz-prop-manufacturer"><span
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-manufacturer"><span
                                         class="iconmoon icon-fishing-rod"></span></a>
+                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
-                            <div class="input-group date goods-hrz-prop-date custom-date">
+                            <div class="goods-hrz-prop__icon input-group date goods-hrz-prop-date custom-date">
                                 <input type="text" class="form-control hidden-xs-up">
                                 <span class="input-group-addon custom-date__icon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -283,6 +282,7 @@
                             </svg>
                                 </span>
                             </div>
+                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
                         </li>
                     </ul>
 
@@ -356,8 +356,8 @@
 
                     <ul class="goods-hrz-prop">
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
-                            <a href="#" class="goods-hrz-prop-locate">
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-locate" data-toggle="modal"
+                               data-target="#map-modal" data-center-lt="37.72728028" data-center-lg="23.83483887">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
                                      x="0px" y="0px" style="width: 100%; height: auto;" preserveAspectRatio="none">
@@ -373,20 +373,21 @@
                                     </g>
                                 </svg>
                             </a>
+                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция провинция провинция </span>
                         </li>
                         <li class="goods-hrz-prop__item">
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-manufacturer">
+                                <span class="iconmoon icon-fishing-rod"></span>
+                            </a>
                             <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
-                            <a href="#" class="goods-hrz-prop-manufacturer"><span
-                                        class="iconmoon icon-fishing-rod"></span></a>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
-                            <div class="input-group date goods-hrz-prop-date custom-date">
+                            <div class="goods-hrz-prop__icon input-group date goods-hrz-prop-date custom-date">
                                 <input type="text" class="form-control hidden-xs-up">
                                 <span class="input-group-addon custom-date__icon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55 55" x="0px" y="0px"
-                                         style="width: 100%; height: auto;" preserveAspectRatio="none">
+                                         preserveAspectRatio="none">
                                 <g>
                                     <path stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M48.469,3.402h-8.956V0.851C39.513,0.38,39.134,0,38.663,0
                                         h-2.949c-0.47,0-0.851,0.38-0.851,0.851v2.551H16.156V0.851C16.156,0.38,15.776,0,15.306,0h-2.951c-0.47,0-0.85,0.38-0.85,0.851
@@ -422,6 +423,8 @@
                             </svg>
                                 </span>
                             </div>
+                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
+
                         </li>
                     </ul>
 
@@ -492,8 +495,8 @@
 
                     <ul class="goods-hrz-prop">
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
-                            <a href="#" class="goods-hrz-prop-locate">
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-locate" data-toggle="modal"
+                               data-target="#map-modal" data-center-lt="32.72728028" data-center-lg="22.83483887">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
                                      x="0px" y="0px" style="width: 100%; height: auto;" preserveAspectRatio="none">
@@ -509,15 +512,15 @@
                                     </g>
                                 </svg>
                             </a>
+                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
-                            <a href="#" class="goods-hrz-prop-manufacturer"><span
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-manufacturer"><span
                                         class="iconmoon icon-fishing-rod"></span></a>
+                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
-                            <div class="input-group date goods-hrz-prop-date custom-date">
+                            <div class="goods-hrz-prop__icon input-group date goods-hrz-prop-date custom-date">
                                 <input type="text" class="form-control hidden-xs-up">
                                 <span class="input-group-addon custom-date__icon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -558,6 +561,7 @@
                             </svg>
                                 </span>
                             </div>
+                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
                         </li>
                     </ul>
 
@@ -628,8 +632,8 @@
 
                     <ul class="goods-hrz-prop">
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
-                            <a href="#" class="goods-hrz-prop-locate">
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-locate" data-toggle="modal"
+                               data-target="#map-modal" data-center-lt="32.72728028" data-center-lg="22.83483887">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
                                      x="0px" y="0px" style="width: 100%; height: auto;" preserveAspectRatio="none">
@@ -645,15 +649,15 @@
                                     </g>
                                 </svg>
                             </a>
+                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
-                            <a href="#" class="goods-hrz-prop-manufacturer"><span
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-manufacturer"><span
                                         class="iconmoon icon-fishing-rod"></span></a>
+                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
-                            <div class="input-group date goods-hrz-prop-date custom-date">
+                            <div class="goods-hrz-prop__icon input-group date goods-hrz-prop-date custom-date">
                                 <input type="text" class="form-control hidden-xs-up">
                                 <span class="input-group-addon custom-date__icon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -694,6 +698,7 @@
                             </svg>
                                 </span>
                             </div>
+                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
                         </li>
                     </ul>
 
@@ -764,8 +769,8 @@
 
                     <ul class="goods-hrz-prop">
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
-                            <a href="#" class="goods-hrz-prop-locate">
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-locate" data-toggle="modal"
+                               data-target="#map-modal" data-center-lt="32.72728028" data-center-lg="22.83483887">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
                                      x="0px" y="0px" style="width: 100%; height: auto;" preserveAspectRatio="none">
@@ -781,15 +786,15 @@
                                     </g>
                                 </svg>
                             </a>
+                            <span class="goods-hrz-prop__cut">Место улова: Греция, провинция ... </span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
-                            <a href="#" class="goods-hrz-prop-manufacturer"><span
+                            <a href="#" class="goods-hrz-prop__icon goods-hrz-prop-manufacturer"><span
                                         class="iconmoon icon-fishing-rod"></span></a>
+                            <span class="goods-hrz-prop__cut">Поставщик: “GreeceFish”</span>
                         </li>
                         <li class="goods-hrz-prop__item">
-                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
-                            <div class="input-group date goods-hrz-prop-date custom-date">
+                            <div class="goods-hrz-prop__icon input-group date goods-hrz-prop-date custom-date">
                                 <input type="text" class="form-control hidden-xs-up">
                                 <span class="input-group-addon custom-date__icon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -830,6 +835,7 @@
                             </svg>
                                 </span>
                             </div>
+                            <span class="goods-hrz-prop__cut">Дата доставки: 2.03 – 4.03</span>
                         </li>
                     </ul>
 

@@ -108,22 +108,22 @@ $(document).ready(function () {
         "circle_bg_color": "transparent",
         "time": {
             "Days": {
-                "text": "Дней",
+                "text": "дней",
                 "color": "transparent",
                 "show": true
             },
             "Hours": {
-                "text": "Часов",
+                "text": "часов",
                 "color": "transparent",
                 "show": true
             },
             "Minutes": {
-                "text": "Минут",
+                "text": "минут",
                 "color": "transparent",
                 "show": true
             },
             "Seconds": {
-                "text": "Секунд",
+                "text": "секунд",
                 "color": "transparent",
                 "show": false
             }
