@@ -546,4 +546,84 @@ $(document).ready(function () {
         marker.setMap(null);
     });
 
+
+
+    function countdown (elem ,lastDay) {
+        var lastDay = lastDay;
+
+        var names = {days:      {1:"день", 2:"дня", 3: "дней"},
+            hours:     {1:"час", 2: "часа", 3: "часов"},
+            minutes:   {1:"минута", 2: "минуты", 3: "минут"},
+            seconds:   {1:"секунда", 2: "секунды", 3: "секунд"}
+        };
+        var day_name = names['days'][3];
+        var hur_name = names['hours'][3];
+        var min_name = names['minutes'][3];
+        var sec_name = names['seconds'][3];
+
+        var today = new Date();
+        var timeLeft = (lastDay.getTime() - today.getTime());
+
+        var e_daysLeft = timeLeft / 86400000;
+        var daysLeft = Math.floor(e_daysLeft);
+
+        var slice_day = String(daysLeft).slice(-1);
+        if(parseInt(slice_day) == 1 && (parseInt(daysLeft) < 10 || parseInt(daysLeft) > 20)){
+            day_name = names['days'][1];
+        }else if((parseInt(slice_day) == 2 || parseInt(slice_day) == 3 || parseInt(slice_day) == 4) && (parseInt(daysLeft) < 10 || parseInt(daysLeft) > 20)){
+            day_name = names['days'][2];
+        }else{
+            day_name = names['days'][3];
+        }
+
+        var e_hrsLeft = (e_daysLeft - daysLeft)*24;
+        var hrsLeft = Math.floor(e_hrsLeft);
+
+        var e_minsLeft = (e_hrsLeft - hrsLeft)*60;
+        var minsLeft = Math.floor(e_minsLeft);
+        if(minsLeft < 10){
+            minsLeft = '0'+minsLeft;
+        }
+
+
+        var seksLeft = Math.floor((e_minsLeft - minsLeft)*60);
+
+        if(seksLeft < 10){
+            seksLeft = '0'+seksLeft;
+        }
+
+        if ( timeLeft > 0 ) {
+            elem.html(
+                "<span>"
+                +"<span>"+daysLeft+"</span><span> </span>"
+                +"<span>"+day_name+" </span>"
+                +"</span>"
+                +"<span>"
+                +"<span>"+hrsLeft+":</span>"
+                +"</span>"
+                +"<span>"+minsLeft+":</span>"
+                +"</span>"
+                +"<span>"
+                +"<span>"+seksLeft+"</span>"
+                +"</span>");
+        } else {
+            $(this).html("");
+        }
+    }
+
+
+    $('.countdown-string').each(function () {
+        var $that = $(this);
+        var cLast = new Date(String($(this).data('end')));
+        setInterval(function () {
+            countdown($that, cLast);
+        }, 1000);
+
+
+
+    })
+
 });
+
+
+

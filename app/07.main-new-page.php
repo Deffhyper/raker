@@ -191,7 +191,10 @@
                         <div class="goods__link">
                             <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
                         </div>
-                        <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                        <div class="goods__time">
+                            <i class="iconmoon icon-clock"></i>
+                            <span class="countdown-string" data-end="2018-02-17T00:00:00"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="top-banner-timer">
@@ -331,11 +334,14 @@
                         <div class="goods__link">
                             <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
                         </div>
-                        <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                        <div class="goods__time">
+                            <i class="iconmoon icon-clock"></i>
+                            <span class="countdown-string" data-end="2018-03-17T00:00:00"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="top-banner-timer">
-                    <div class="DateCountdown" data-date="2018-02-17T00:00:00"></div>
+                    <div class="DateCountdown" data-date="2018-03-17T00:00:00"></div>
                 </div>
             </div>
         </li>
@@ -473,7 +479,10 @@
                         <div class="goods__link">
                             <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
                         </div>
-                        <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                        <div class="goods__time">
+                            <i class="iconmoon icon-clock"></i>
+                            <span class="countdown-string" data-end="2018-03-25T12:00:00Z"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1173,7 +1182,7 @@
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUXKVYkyQErp_WoaAk24K9diLh7ShZu28" async defer></script>
+
 
 </body>
 </html>
