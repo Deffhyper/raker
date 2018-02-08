@@ -202,7 +202,7 @@
                 </div>
             </div>
         </li>
-        <li class="block-list__item">
+        <li class="block-list__item goods-hrz--inverse">
             <div class="goods-hrz goods-hrz--inverse">
                 <div class="goods-hrz__back">
                     <img src="img/jpeg_files/top-banner-2.jpg" alt="alter" width="" height="">

@@ -1,6 +1,7 @@
 <footer class="site-footer">
     <div class="container">
         <div class="row no-gutters site-footer-top">
+
             <div class="col-md-3 col-sm-12">
                 <p class="site-footer-title ">SeaDora</p>
                 <div class="site-footer-content">
@@ -14,7 +15,6 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-12">
-
                 <p class="site-footer-title">Меню SeaDora</p>
                 <div class="site-footer-content">
                     <ul class="site-footer-list">
@@ -94,6 +94,9 @@
         </div>
     </div>
 </footer>
+
+<div id="scroll-up"></div>
+
 
 
 <!--Authorize Modal -->
