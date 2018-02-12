@@ -284,7 +284,7 @@
                         <div class="product-buy-block">
                             <div class="product-buy-block__left">
                                 <div class="goods__time"><i
-                                            class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                                            class="iconmoon icon-clock"></i><span class="countdown-string" data-end="2018-02-17T00:00:00"></span></div>
                             </div>
                             <div class="product-buy-block__right">
                                 <a href="#">Добавить в корзину</a>
@@ -938,7 +938,7 @@
                         <div class="goods__link">
                             <a href="#" class="btn btn__border--hover btn__border btn__border--black">За покупками</a>
                         </div>
-                        <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                        <div class="goods__time"><i class="iconmoon icon-clock"></i><span class="countdown-string" data-end="2018-02-17T00:00:00"></span></div>
                     </div>
                 </div>
             </div>
@@ -966,7 +966,7 @@
                     <a href="#" class="btn btn__border--hover btn__border btn__border--black">В корзину</a>
                 </div>
                 <div class="goods__info"><span>Только Киев</span></div>
-                <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                <div class="goods__time"><i class="iconmoon icon-clock"></i><span class="countdown-string" data-end="2018-02-17T00:00:00"></span></div>
             </div>
         </div>
         <div class="three-item-slider__item">
@@ -986,7 +986,7 @@
                     <a href="#" class="btn btn__border--hover btn__border btn__border--black">В корзину</a>
                 </div>
                 <div class="goods__info"><span>Только Киев</span></div>
-                <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                <div class="goods__time"><i class="iconmoon icon-clock"></i><span class="countdown-string" data-end="2018-02-17T00:00:00"></span></div>
             </div>
         </div>
         <div class="three-item-slider__item">
@@ -1006,7 +1006,7 @@
                     <a href="#" class="btn btn__border--hover btn__border btn__border--black">В корзину</a>
                 </div>
                 <div class="goods__info"><span>Только Киев</span></div>
-                <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                <div class="goods__time"><i class="iconmoon icon-clock"></i><span class="countdown-string" data-end="2018-02-17T00:00:00"></span></div>
             </div>
         </div>
         <div class="three-item-slider__item">
@@ -1026,7 +1026,7 @@
                     <a href="#" class="btn btn__border--hover btn__border btn__border--black">В корзину</a>
                 </div>
                 <div class="goods__info"><span>Только Киев</span></div>
-                <div class="goods__time"><i class="iconmoon icon-clock"></i><span>10 дней 05:00:20</span></div>
+                <div class="goods__time"><i class="iconmoon icon-clock"></i><span class="countdown-string" data-end="2018-02-17T00:00:00"></span></div>
             </div>
         </div>
     </div>

@@ -620,16 +620,10 @@ $(document).ready(function () {
         if ( timeLeft > 0 ) {
             elem.html(
                 "<span>"
-                +"<span>"+daysLeft+"</span><span> </span>"
-                +"<span>"+day_name+" </span>"
-                +"</span>"
-                +"<span>"
-                +"<span>"+hrsLeft+":</span>"
-                +"</span>"
-                +"<span>"+minsLeft+":</span>"
-                +"</span>"
-                +"<span>"
-                +"<span>"+seksLeft+"</span>"
+                    +"<span>"+daysLeft+"&nbsp;</span><span>"+day_name+"&nbsp;</span>"
+                    +"<span>"+hrsLeft+":</span>"
+                    +"<span>"+minsLeft+":</span>"
+                    +"<span>"+seksLeft+"</span>"
                 +"</span>");
         } else {
             $(this).html("");
