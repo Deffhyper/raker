@@ -193,12 +193,12 @@
                         </div>
                         <div class="goods__time">
                             <i class="iconmoon icon-clock"></i>
-                            <span class="countdown-string" data-end="2018-02-17T00:00:00"></span>
+                            <span class="countdown-string" data-end="2018-03-17T00:00:00"></span>
                         </div>
                     </div>
                 </div>
                 <div class="top-banner-timer">
-                    <div class="DateCountdown" data-date="2018-02-17T00:00:00"></div>
+                    <span class="countdown-string-ver1" data-end="2018-03-17T00:00:00"></span>
                 </div>
             </div>
         </li>
@@ -336,12 +336,12 @@
                         </div>
                         <div class="goods__time">
                             <i class="iconmoon icon-clock"></i>
-                            <span class="countdown-string" data-end="2018-03-17T00:00:00"></span>
+                            <span class="countdown-string" data-end="2018-03-21T00:00:00"></span>
                         </div>
                     </div>
                 </div>
                 <div class="top-banner-timer">
-                    <div class="DateCountdown" data-date="2018-03-17T00:00:00"></div>
+                    <span class="countdown-string-ver1" data-end="2018-03-21T00:00:00"></span>
                 </div>
             </div>
         </li>

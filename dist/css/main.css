@@ -294,28 +294,28 @@ input, textarea {
   padding: 0 10px;
   -webkit-border-radius: 0;
           border-radius: 0; }
-  ::-webkit-input-placeholder {
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-size: 14px;
     color: #d4d4d4;
     text-indent: 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     font-family: "Roboto-Regular", sans-serif; }
-  :-moz-placeholder {
+  input:-moz-placeholder, textarea:-moz-placeholder {
     font-size: 14px;
     color: #d4d4d4;
     text-indent: 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     font-family: "Roboto-Regular", sans-serif; }
-  ::-moz-placeholder {
+  input::-moz-placeholder, textarea::-moz-placeholder {
     font-size: 14px;
     color: #d4d4d4;
     text-indent: 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     font-family: "Roboto-Regular", sans-serif; }
-  :-ms-input-placeholder {
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     font-size: 14px;
     color: #d4d4d4;
     text-indent: 0;
@@ -983,6 +983,38 @@ b {
   margin-top: 5px;
   font-weight: normal;
   font-family: "Roboto-Bold", sans-serif; }
+
+.time_circles-ver {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-align: center; }
+  .time_circles-ver__block {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 30%;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    max-width: 30%; }
+  .time_circles-ver__digit {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: "Roboto-Bold", sans-serif;
+    display: block; }
+  .time_circles-ver__digit-title {
+    display: block;
+    font-size: 13px;
+    font-family: "Roboto-Light", sans-serif; }
 
 @media (max-width: 767px) {
   .time_circles > div > h4 {

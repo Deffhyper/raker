@@ -548,8 +548,9 @@ $(document).ready(function () {
 
 
 
-    function countdown (elem ,lastDay) {
+    function countdown (elem ,lastDay, ver) {
         var lastDay = lastDay;
+        var ver = ver;
 
         var names = {days:      {1:"день", 2:"дня", 3: "дней"},
             hours:     {1:"час", 2: "часа", 3: "часов"},
@@ -617,17 +618,32 @@ $(document).ready(function () {
             sec_name = names['seconds'][3];
         }
 
-        if ( timeLeft > 0 ) {
+        if ( timeLeft > 0 && !ver) {
             elem.html(
                 "<span>"
-                    +"<span>"+daysLeft+"&nbsp;</span><span>"+day_name+"&nbsp;</span>"
-                    +"<span>"+hrsLeft+":</span>"
-                    +"<span>"+minsLeft+":</span>"
-                    +"<span>"+seksLeft+"</span>"
-                +"</span>");
+                + "<span>" + daysLeft + "&nbsp;</span><span>" + day_name + "&nbsp;</span>"
+                + "<span>" + hrsLeft + ":</span>"
+                + "<span>" + minsLeft + ":</span>"
+                + "<span>" + seksLeft + "</span>"
+                + "</span>");
+        } else if (timeLeft > 0 && ver ) {
+            elem.html(
+                "<span class='time_circles-ver'>"
+                +"<span class='time_circles-ver__block'>"
+                + "<span class='time_circles-ver__digit'>" + daysLeft + "</span><span class='time_circles-ver__digit-title'>" + day_name + "</span>"
+                +"</span>"
+                +"<span class='time_circles-ver__block'>"
+                + "<span class='time_circles-ver__digit'>" + hrsLeft + "</span><span class='time_circles-ver__digit-title'>" + hur_name + "</span>"
+                +"</span>"
+                +"<span class='time_circles-ver__block'>"
+                + "<span class='time_circles-ver__digit'>" + minsLeft + "</span><span class='time_circles-ver__digit-title'>" + min_name + "</span>"
+                +"</span>"
+                + "</span>");
         } else {
             $(this).html("");
         }
+
+
     }
 
 
@@ -636,6 +652,16 @@ $(document).ready(function () {
         var cLast = new Date(String($(this).data('end')));
         setInterval(function () {
             countdown($that, cLast);
+        }, 1000);
+
+    });
+
+    $('.countdown-string-ver1').each(function () {
+        var $that = $(this);
+        var cLast = new Date(String($(this).data('end')));
+        var ver = true;
+        setInterval(function () {
+            countdown($that, cLast, ver);
         }, 1000);
 
     });

@@ -777,6 +777,32 @@
   font-family:$font-bold;
 }
 
+.time_circles-ver {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
+  &__block {
+    display: inline-block;
+    vertical-align: middle;
+    flex:1 1 30%;
+    max-width: 30%;
+  }
+  &__digit {
+    font-size: 24px;
+    font-weight: normal;
+    font-family:$font-bold;
+    display: block;
+  }
+  &__digit-title {
+    display: block;
+    font-size: 13px;
+    font-family: $font-light;
+  }
+}
+
 @media ($mobile) {
 
   .time_circles > div > h4 {
